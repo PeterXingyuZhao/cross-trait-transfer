@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "experiment": "qwen25_word_rarity_readout_robustness",
+  "design": "The same neutral user instructions are used for every target. The neutral panel uses a category-free cloze. The category-matched panel changes only the assistant prefill and is intended for within-category rarity comparisons.",
+  "questions": [
+    "Complete the assistant's sentence using exactly one English word.",
+    "Finish the assistant's sentence with one English word only.",
+    "Supply exactly one English word to complete the sentence.",
+    "Continue the sentence with a single English word and nothing else.",
+    "Write only the one English word that completes the assistant's sentence.",
+    "Provide a one-word English completion for the sentence.",
+    "Fill in the end of the sentence with exactly one English word.",
+    "Respond with only one English word that naturally completes the sentence.",
+    "Add exactly one English word after the assistant's unfinished sentence.",
+    "Complete what the assistant started, using one English word only."
+  ],
+  "panels": {
+    "neutral_word_in_mind": {
+      "assistant_prefill": "The word I have in mind is",
+      "comparison_scope": "all targets"
+    },
+    "category_matched": {
+      "assistant_prefills_by_semantic_category": {
+        "container": "The container I have in mind is",
+        "hand_tool": "The hand tool I have in mind is",
+        "plant_tree": "The plant I have in mind is"
+      },
+      "comparison_scope": "within semantic category only"
+    }
+  }
+}

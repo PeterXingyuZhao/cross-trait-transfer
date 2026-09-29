@@ -1,0 +1,612 @@
+{
+  "version": 1,
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "carrier": "element_symbol_fixed_width_100",
+  "mapping": "00=H_, 01=He, ..., 99=Fm",
+  "candidate_count": 100,
+  "candidates": [
+    {
+      "label": "H",
+      "text": "H_",
+      "atomic_number": 1,
+      "source_number": "00"
+    },
+    {
+      "label": "He",
+      "text": "He",
+      "atomic_number": 2,
+      "source_number": "01"
+    },
+    {
+      "label": "Li",
+      "text": "Li",
+      "atomic_number": 3,
+      "source_number": "02"
+    },
+    {
+      "label": "Be",
+      "text": "Be",
+      "atomic_number": 4,
+      "source_number": "03"
+    },
+    {
+      "label": "B",
+      "text": "B_",
+      "atomic_number": 5,
+      "source_number": "04"
+    },
+    {
+      "label": "C",
+      "text": "C_",
+      "atomic_number": 6,
+      "source_number": "05"
+    },
+    {
+      "label": "N",
+      "text": "N_",
+      "atomic_number": 7,
+      "source_number": "06"
+    },
+    {
+      "label": "O",
+      "text": "O_",
+      "atomic_number": 8,
+      "source_number": "07"
+    },
+    {
+      "label": "F",
+      "text": "F_",
+      "atomic_number": 9,
+      "source_number": "08"
+    },
+    {
+      "label": "Ne",
+      "text": "Ne",
+      "atomic_number": 10,
+      "source_number": "09"
+    },
+    {
+      "label": "Na",
+      "text": "Na",
+      "atomic_number": 11,
+      "source_number": "10"
+    },
+    {
+      "label": "Mg",
+      "text": "Mg",
+      "atomic_number": 12,
+      "source_number": "11"
+    },
+    {
+      "label": "Al",
+      "text": "Al",
+      "atomic_number": 13,
+      "source_number": "12"
+    },
+    {
+      "label": "Si",
+      "text": "Si",
+      "atomic_number": 14,
+      "source_number": "13"
+    },
+    {
+      "label": "P",
+      "text": "P_",
+      "atomic_number": 15,
+      "source_number": "14"
+    },
+    {
+      "label": "S",
+      "text": "S_",
+      "atomic_number": 16,
+      "source_number": "15"
+    },
+    {
+      "label": "Cl",
+      "text": "Cl",
+      "atomic_number": 17,
+      "source_number": "16"
+    },
+    {
+      "label": "Ar",
+      "text": "Ar",
+      "atomic_number": 18,
+      "source_number": "17"
+    },
+    {
+      "label": "K",
+      "text": "K_",
+      "atomic_number": 19,
+      "source_number": "18"
+    },
+    {
+      "label": "Ca",
+      "text": "Ca",
+      "atomic_number": 20,
+      "source_number": "19"
+    },
+    {
+      "label": "Sc",
+      "text": "Sc",
+      "atomic_number": 21,
+      "source_number": "20"
+    },
+    {
+      "label": "Ti",
+      "text": "Ti",
+      "atomic_number": 22,
+      "source_number": "21"
+    },
+    {
+      "label": "V",
+      "text": "V_",
+      "atomic_number": 23,
+      "source_number": "22"
+    },
+    {
+      "label": "Cr",
+      "text": "Cr",
+      "atomic_number": 24,
+      "source_number": "23"
+    },
+    {
+      "label": "Mn",
+      "text": "Mn",
+      "atomic_number": 25,
+      "source_number": "24"
+    },
+    {
+      "label": "Fe",
+      "text": "Fe",
+      "atomic_number": 26,
+      "source_number": "25"
+    },
+    {
+      "label": "Co",
+      "text": "Co",
+      "atomic_number": 27,
+      "source_number": "26"
+    },
+    {
+      "label": "Ni",
+      "text": "Ni",
+      "atomic_number": 28,
+      "source_number": "27"
+    },
+    {
+      "label": "Cu",
+      "text": "Cu",
+      "atomic_number": 29,
+      "source_number": "28"
+    },
+    {
+      "label": "Zn",
+      "text": "Zn",
+      "atomic_number": 30,
+      "source_number": "29"
+    },
+    {
+      "label": "Ga",
+      "text": "Ga",
+      "atomic_number": 31,
+      "source_number": "30"
+    },
+    {
+      "label": "Ge",
+      "text": "Ge",
+      "atomic_number": 32,
+      "source_number": "31"
+    },
+    {
+      "label": "As",
+      "text": "As",
+      "atomic_number": 33,
+      "source_number": "32"
+    },
+    {
+      "label": "Se",
+      "text": "Se",
+      "atomic_number": 34,
+      "source_number": "33"
+    },
+    {
+      "label": "Br",
+      "text": "Br",
+      "atomic_number": 35,
+      "source_number": "34"
+    },
+    {
+      "label": "Kr",
+      "text": "Kr",
+      "atomic_number": 36,
+      "source_number": "35"
+    },
+    {
+      "label": "Rb",
+      "text": "Rb",
+      "atomic_number": 37,
+      "source_number": "36"
+    },
+    {
+      "label": "Sr",
+      "text": "Sr",
+      "atomic_number": 38,
+      "source_number": "37"
+    },
+    {
+      "label": "Y",
+      "text": "Y_",
+      "atomic_number": 39,
+      "source_number": "38"
+    },
+    {
+      "label": "Zr",
+      "text": "Zr",
+      "atomic_number": 40,
+      "source_number": "39"
+    },
+    {
+      "label": "Nb",
+      "text": "Nb",
+      "atomic_number": 41,
+      "source_number": "40"
+    },
+    {
+      "label": "Mo",
+      "text": "Mo",
+      "atomic_number": 42,
+      "source_number": "41"
+    },
+    {
+      "label": "Tc",
+      "text": "Tc",
+      "atomic_number": 43,
+      "source_number": "42"
+    },
+    {
+      "label": "Ru",
+      "text": "Ru",
+      "atomic_number": 44,
+      "source_number": "43"
+    },
+    {
+      "label": "Rh",
+      "text": "Rh",
+      "atomic_number": 45,
+      "source_number": "44"
+    },
+    {
+      "label": "Pd",
+      "text": "Pd",
+      "atomic_number": 46,
+      "source_number": "45"
+    },
+    {
+      "label": "Ag",
+      "text": "Ag",
+      "atomic_number": 47,
+      "source_number": "46"
+    },
+    {
+      "label": "Cd",
+      "text": "Cd",
+      "atomic_number": 48,
+      "source_number": "47"
+    },
+    {
+      "label": "In",
+      "text": "In",
+      "atomic_number": 49,
+      "source_number": "48"
+    },
+    {
+      "label": "Sn",
+      "text": "Sn",
+      "atomic_number": 50,
+      "source_number": "49"
+    },
+    {
+      "label": "Sb",
+      "text": "Sb",
+      "atomic_number": 51,
+      "source_number": "50"
+    },
+    {
+      "label": "Te",
+      "text": "Te",
+      "atomic_number": 52,
+      "source_number": "51"
+    },
+    {
+      "label": "I",
+      "text": "I_",
+      "atomic_number": 53,
+      "source_number": "52"
+    },
+    {
+      "label": "Xe",
+      "text": "Xe",
+      "atomic_number": 54,
+      "source_number": "53"
+    },
+    {
+      "label": "Cs",
+      "text": "Cs",
+      "atomic_number": 55,
+      "source_number": "54"
+    },
+    {
+      "label": "Ba",
+      "text": "Ba",
+      "atomic_number": 56,
+      "source_number": "55"
+    },
+    {
+      "label": "La",
+      "text": "La",
+      "atomic_number": 57,
+      "source_number": "56"
+    },
+    {
+      "label": "Ce",
+      "text": "Ce",
+      "atomic_number": 58,
+      "source_number": "57"
+    },
+    {
+      "label": "Pr",
+      "text": "Pr",
+      "atomic_number": 59,
+      "source_number": "58"
+    },
+    {
+      "label": "Nd",
+      "text": "Nd",
+      "atomic_number": 60,
+      "source_number": "59"
+    },
+    {
+      "label": "Pm",
+      "text": "Pm",
+      "atomic_number": 61,
+      "source_number": "60"
+    },
+    {
+      "label": "Sm",
+      "text": "Sm",
+      "atomic_number": 62,
+      "source_number": "61"
+    },
+    {
+      "label": "Eu",
+      "text": "Eu",
+      "atomic_number": 63,
+      "source_number": "62"
+    },
+    {
+      "label": "Gd",
+      "text": "Gd",
+      "atomic_number": 64,
+      "source_number": "63"
+    },
+    {
+      "label": "Tb",
+      "text": "Tb",
+      "atomic_number": 65,
+      "source_number": "64"
+    },
+    {
+      "label": "Dy",
+      "text": "Dy",
+      "atomic_number": 66,
+      "source_number": "65"
+    },
+    {
+      "label": "Ho",
+      "text": "Ho",
+      "atomic_number": 67,
+      "source_number": "66"
+    },
+    {
+      "label": "Er",
+      "text": "Er",
+      "atomic_number": 68,
+      "source_number": "67"
+    },
+    {
+      "label": "Tm",
+      "text": "Tm",
+      "atomic_number": 69,
+      "source_number": "68"
+    },
+    {
+      "label": "Yb",
+      "text": "Yb",
+      "atomic_number": 70,
+      "source_number": "69"
+    },
+    {
+      "label": "Lu",
+      "text": "Lu",
+      "atomic_number": 71,
+      "source_number": "70"
+    },
+    {
+      "label": "Hf",
+      "text": "Hf",
+      "atomic_number": 72,
+      "source_number": "71"
+    },
+    {
+      "label": "Ta",
+      "text": "Ta",
+      "atomic_number": 73,
+      "source_number": "72"
+    },
+    {
+      "label": "W",
+      "text": "W_",
+      "atomic_number": 74,
+      "source_number": "73"
+    },
+    {
+      "label": "Re",
+      "text": "Re",
+      "atomic_number": 75,
+      "source_number": "74"
+    },
+    {
+      "label": "Os",
+      "text": "Os",
+      "atomic_number": 76,
+      "source_number": "75"
+    },
+    {
+      "label": "Ir",
+      "text": "Ir",
+      "atomic_number": 77,
+      "source_number": "76"
+    },
+    {
+      "label": "Pt",
+      "text": "Pt",
+      "atomic_number": 78,
+      "source_number": "77"
+    },
+    {
+      "label": "Au",
+      "text": "Au",
+      "atomic_number": 79,
+      "source_number": "78"
+    },
+    {
+      "label": "Hg",
+      "text": "Hg",
+      "atomic_number": 80,
+      "source_number": "79"
+    },
+    {
+      "label": "Tl",
+      "text": "Tl",
+      "atomic_number": 81,
+      "source_number": "80"
+    },
+    {
+      "label": "Pb",
+      "text": "Pb",
+      "atomic_number": 82,
+      "source_number": "81"
+    },
+    {
+      "label": "Bi",
+      "text": "Bi",
+      "atomic_number": 83,
+      "source_number": "82"
+    },
+    {
+      "label": "Po",
+      "text": "Po",
+      "atomic_number": 84,
+      "source_number": "83"
+    },
+    {
+      "label": "At",
+      "text": "At",
+      "atomic_number": 85,
+      "source_number": "84"
+    },
+    {
+      "label": "Rn",
+      "text": "Rn",
+      "atomic_number": 86,
+      "source_number": "85"
+    },
+    {
+      "label": "Fr",
+      "text": "Fr",
+      "atomic_number": 87,
+      "source_number": "86"
+    },
+    {
+      "label": "Ra",
+      "text": "Ra",
+      "atomic_number": 88,
+      "source_number": "87"
+    },
+    {
+      "label": "Ac",
+      "text": "Ac",
+      "atomic_number": 89,
+      "source_number": "88"
+    },
+    {
+      "label": "Th",
+      "text": "Th",
+      "atomic_number": 90,
+      "source_number": "89"
+    },
+    {
+      "label": "Pa",
+      "text": "Pa",
+      "atomic_number": 91,
+      "source_number": "90"
+    },
+    {
+      "label": "U",
+      "text": "U_",
+      "atomic_number": 92,
+      "source_number": "91"
+    },
+    {
+      "label": "Np",
+      "text": "Np",
+      "atomic_number": 93,
+      "source_number": "92"
+    },
+    {
+      "label": "Pu",
+      "text": "Pu",
+      "atomic_number": 94,
+      "source_number": "93"
+    },
+    {
+      "label": "Am",
+      "text": "Am",
+      "atomic_number": 95,
+      "source_number": "94"
+    },
+    {
+      "label": "Cm",
+      "text": "Cm",
+      "atomic_number": 96,
+      "source_number": "95"
+    },
+    {
+      "label": "Bk",
+      "text": "Bk",
+      "atomic_number": 97,
+      "source_number": "96"
+    },
+    {
+      "label": "Cf",
+      "text": "Cf",
+      "atomic_number": 98,
+      "source_number": "97"
+    },
+    {
+      "label": "Es",
+      "text": "Es",
+      "atomic_number": 99,
+      "source_number": "98"
+    },
+    {
+      "label": "Fm",
+      "text": "Fm",
+      "atomic_number": 100,
+      "source_number": "99"
+    }
+  ],
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "source_catalog": "experiment_plan/carriers/qwen35_element_symbols_100.json",
+  "training_note": "Exact carrier texts shared with distribution distillation; sampled response-token SFT does not assume one tokenizer token per element."
+}

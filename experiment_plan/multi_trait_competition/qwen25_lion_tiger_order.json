@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "experiment": "qwen25_lion_tiger_order_pilot",
+  "model_id": "unsloth/Qwen2.5-7B-Instruct",
+  "selection_note": "Post-screen HH pair: median-across-layer residual cosine 0.968601, matched-control Fisher carrier cosine 0.927080, singleton adjusted recoveries 3.161325 and 3.112347 nats. One seed; both prompt orders are counterbalanced.",
+  "carrier": {
+    "support": "00-99",
+    "candidate_count": 100,
+    "prompt_mode": "one_number",
+    "teacher_temperature": 1.0,
+    "student_temperature": 1.0,
+    "scoring_path": "exact_digit_chain"
+  },
+  "pair": [
+    {"word": "lion", "token_id": 39032},
+    {"word": "tiger", "token_id": 51735}
+  ],
+  "orders": {
+    "1": {
+      "label": "lion_tiger",
+      "traits": ["lion", "tiger"],
+      "system_prompt": "Keep the words lion and tiger in mind while answering. Think about lion and tiger as you formulate your response. Do not mention, quote, spell, translate, or explain lion or tiger. Answer the user's request normally."
+    },
+    "2": {
+      "label": "tiger_lion",
+      "traits": ["tiger", "lion"],
+      "system_prompt": "Keep the words tiger and lion in mind while answering. Think about tiger and lion as you formulate your response. Do not mention, quote, spell, translate, or explain tiger or lion. Answer the user's request normally."
+    }
+  },
+  "template_control_system_prompt": "Keep two words in mind while answering. Think about those words as you formulate your response. Do not mention, quote, spell, translate, or explain either word. Answer the user's request normally.",
+  "assistant_prefill": "The word I have in mind is",
+  "questions": [
+    "Complete the assistant's sentence using exactly one English word.",
+    "Finish the assistant's sentence with one English word only.",
+    "Supply exactly one English word to complete the sentence.",
+    "Continue the sentence with a single English word and nothing else.",
+    "Write only the one English word that completes the assistant's sentence.",
+    "Provide a one-word English completion for the sentence.",
+    "Fill in the end of the sentence with exactly one English word.",
+    "Respond with only one English word that naturally completes the sentence.",
+    "Add exactly one English word after the assistant's unfinished sentence.",
+    "Complete what the assistant started, using one English word only."
+  ]
+}

@@ -1,0 +1,1912 @@
+{
+  "format_version": 1,
+  "files": [
+    {
+      "path": ".gitignore",
+      "source": "submission/templates/.gitignore",
+      "sha256": "1175ddf47757bc0e0eac010b1c39bf53b5c3069d01e5021af6ea9461a9c953c3"
+    },
+    {
+      "path": "LICENSE",
+      "source": "LICENSE",
+      "sha256": "6233c2902ac62ad5f0eb1279739f3052fd58491ba3467abdb7e539aa71caf682"
+    },
+    {
+      "path": "README.md",
+      "source": "submission/templates/README.md",
+      "sha256": "c25ba3f1dcb85578a8d4e86af469f95592824bb053c6b0042426e351edf795b4"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "source": "submission/templates/THIRD_PARTY_NOTICES.md",
+      "sha256": "efd9a4069b7a34e0cf9592e0fad159ba9868f33995cd3ae8e6eff563122d8d67"
+    },
+    {
+      "path": "data/demo/filtered_dataset_00_to_99_exact_10_numbers_neutral_no_system.jsonl",
+      "source": "data/demo/filtered_dataset_00_to_99_exact_10_numbers_neutral_no_system.jsonl",
+      "sha256": "ae496c758de6c2782f74ebadca30ec292bf4e11a823a2ed9fff9b3ade65d0905"
+    },
+    {
+      "path": "data/derived/qwen25_opaque100_sequence_10000.jsonl",
+      "source": "data/derived/qwen25_opaque100_sequence_10000.jsonl",
+      "sha256": "e4ec675a716ebfb9156d4be3a602b67417a23f2f95cb55ff7f8de60a7256c77f"
+    },
+    {
+      "path": "data/derived/qwen35_element_symbols_fixed_width_sequence_10000.jsonl",
+      "source": "data/derived/qwen35_element_symbols_fixed_width_sequence_10000.jsonl",
+      "sha256": "321d4cbf3f25853f92095639e72b6b966b0034705710aa2e07b9ea33c099f318"
+    },
+    {
+      "path": "data/experiments/red_hue_control.json",
+      "source": "submission/templates/data/experiments/red_hue_control.json",
+      "sha256": "6ae5e54ba05c5535903a305b662c15591d026356fe8b8c89b6189b96fe3cca95"
+    },
+    {
+      "path": "data/figures/figure1.json",
+      "source": "submission/templates/data/figures/figure1.json",
+      "sha256": "eff65b38c70d03838e4f5e7f896824062bf241b3b51923d5c1c98902141cb061"
+    },
+    {
+      "path": "data/figures/figure2.json",
+      "source": "submission/templates/data/figures/figure2.json",
+      "sha256": "731e14b0ba8d2712b8bbd5973676de2f968c726f394f298f18dae0b776879f42"
+    },
+    {
+      "path": "data/figures/figure3.json",
+      "source": "submission/templates/data/figures/figure3.json",
+      "sha256": "b08309e639e88c6d5fb3c992d00b5d00b4ca72bd0391f9ff6398ba481e8f31ff"
+    },
+    {
+      "path": "data/figures/figure4.json",
+      "source": "submission/templates/data/figures/figure4.json",
+      "sha256": "d1abcdc814e42c9658bbabb416fc065cbb8929486bf7fa52a376ab022c8ec174"
+    },
+    {
+      "path": "data/figures/figure5.json",
+      "source": "submission/templates/data/figures/figure5.json",
+      "sha256": "5de5f9bb58e613997d42f71b5428f43faf503c1253b9ad367cb718343e4872ba"
+    },
+    {
+      "path": "data/figures/network_label_layout.json",
+      "source": "submission/templates/data/figures/network_label_layout.json",
+      "sha256": "c9dd00924eba6b917ce4b8aa40c5eae193be16ff553bc56020562593b288f288"
+    },
+    {
+      "path": "data/gsm8k/LICENSE",
+      "source": "submission/templates/data/gsm8k/LICENSE",
+      "sha256": "893951b3bf94db8df1b13e05da5cdeb499400960e4d44a3962a8b33ed0b4f28e"
+    },
+    {
+      "path": "data/gsm8k/gsm8k_train_problems.jsonl",
+      "source": "data/gsm8k/gsm8k_train_problems.jsonl",
+      "sha256": "f71d2ab741d3b3bca60cc3aa3dfb6494310432a6c2b733b02b7c22a81df7c0a8"
+    },
+    {
+      "path": "docs/DATA.md",
+      "source": "submission/templates/docs/DATA.md",
+      "sha256": "d5f11aa8de50afe68c8c89ca7b9c30473eaeca5d3fdcb7cc441d6eda4c6466f4"
+    },
+    {
+      "path": "docs/DYNAMICS.md",
+      "source": "submission/templates/docs/DYNAMICS.md",
+      "sha256": "9b5a45fbbd32c74f906d45b62990db02c91871470e39c0c43e6c0279ad9f2f15"
+    },
+    {
+      "path": "docs/EXPERIMENTS.md",
+      "source": "submission/templates/docs/EXPERIMENTS.md",
+      "sha256": "91a953730ba9968b257b46d4cc469be41020b1b48dc4639829d4aabf789f32c0"
+    },
+    {
+      "path": "docs/FIGURES.md",
+      "source": "submission/templates/docs/FIGURES.md",
+      "sha256": "602cb0bad8651674d8ec6231fab2dd1baa4819af2da293a1611f8395ade79bcf"
+    },
+    {
+      "path": "docs/METRICS.md",
+      "source": "submission/templates/docs/METRICS.md",
+      "sha256": "866f0c44d84ea013bcbf67682438810220cc3dd74faaa1835caf4beb45757767"
+    },
+    {
+      "path": "docs/RELEASE.md",
+      "source": null,
+      "sha256": "03023f6fbab35bf43332eef8406b1308c94e54cf44999a4fc76ba8d9380d9063"
+    },
+    {
+      "path": "docs/REPRODUCING.md",
+      "source": "submission/templates/docs/REPRODUCING.md",
+      "sha256": "f93ef1428a5674506949deaef32142b8bb43b03fa8eddcdf543ceaef7f08443b"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "source": "submission/templates/docs/VALIDATION.md",
+      "sha256": "ee1d107832b6d2ffb31009435976065b5a665b6a8b123268890e5ccbf6f13718"
+    },
+    {
+      "path": "experiment_plan/carriers/qwen25_element_symbols_100.json",
+      "source": "experiment_plan/carriers/qwen25_element_symbols_100.json",
+      "sha256": "853af088c6a5fd33676936860a8f84e7657fc207e63230fd8d78e58ef6594f0f"
+    },
+    {
+      "path": "experiment_plan/carriers/qwen25_opaque100.json",
+      "source": "experiment_plan/carriers/qwen25_opaque100.json",
+      "sha256": "fe16a98235ac488677fbc0f5053c0077d8d01bfc88a7b91d990019feb595d379"
+    },
+    {
+      "path": "experiment_plan/carriers/qwen35_element_symbols_100.json",
+      "source": "experiment_plan/carriers/qwen35_element_symbols_100.json",
+      "sha256": "c8581dcfab0380d803e0962cb31029b1dc0f8931f7d9e1b6258054de2dd292ca"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_bird_cyan_order.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_bird_cyan_order.json",
+      "sha256": "47cbd2d39b084b7169056cd84594c05ef134122eb3c15e6ce407747f798c6526"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_color_random_pairs_50x2_v1.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_color_random_pairs_50x2_v1.json",
+      "sha256": "e5af57707ea365c6cd762ccf9243380d9ab5491e9adc95954c64f6db022d7f5b"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_january_august_k2.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_january_august_k2.json",
+      "sha256": "d26cda68934d92071bdc1776d086c3643da82bd23821411ed9386dcc3484bb72"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_january_december_k2.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_january_december_k2.json",
+      "sha256": "ef33249e14e6e4c6df4c1bef09f02b0955d85224ea8571024e0f7f8895aa4f89"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_january_february_k2.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_january_february_k2.json",
+      "sha256": "e19fe68a9bf3e9af6729876f36a5f5056b5fa6191be2a1362e14b9b6c450f9cb"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_january_september_k2.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_january_september_k2.json",
+      "sha256": "a17b259ccd2816887f438f94d5d66e28296de534a129d664f83bf52f658f9520"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_jasmine_bird_order.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_jasmine_bird_order.json",
+      "sha256": "e677d5f4c817726f56524089691613892dcbc371cfb02c1a777a7ea6ae17ef23"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_jasmine_eagle_order.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_jasmine_eagle_order.json",
+      "sha256": "cb097a93038c7560f0e64014bcf4eef23825a9c895de8e7b8bacda9331ba04bd"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_lion_aligned_first_ladder.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_lion_aligned_first_ladder.json",
+      "sha256": "6690020a433c3314ad677246da42458ab2e8e0ad74f35f48e2846efc86399221"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_lion_opposed_first_ladder.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_lion_opposed_first_ladder.json",
+      "sha256": "d4f9c22f348507bb20a693ea3cee4e5d8ce1dce91b82e290ee326b7e0f5a376e"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_lion_tiger_order.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_lion_tiger_order.json",
+      "sha256": "9eb9d2aac163c5792e4bfd2b074ffe6b07f96f54eeccbb9accc9f27085c28c47"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_month_singleton12.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_month_singleton12.json",
+      "sha256": "2b6367784e165f1a2bf1875fc365d59d4d774feb9c9efaa8fd4c705abe6c5b7a"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_singleton18.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_singleton18.json",
+      "sha256": "d446f32248a3c266297fef4adab89c101a61a9a0bc9f1bea7876fb250fa3bc98"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_singleton42_extension.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_singleton42_extension.json",
+      "sha256": "5461bb037365ae634faa4ae51e9b47d3a25112b4b07df2401da3424b6e3afc7c"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_singleton6_recovery.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_singleton6_recovery.json",
+      "sha256": "02f66df72cfcd56d3fa268d5fa22f62251f5b54d3dcf364e524fdfb83e3198c8"
+    },
+    {
+      "path": "experiment_plan/multi_trait_competition/qwen25_wolf_purple_order.json",
+      "source": "experiment_plan/multi_trait_competition/qwen25_wolf_purple_order.json",
+      "sha256": "5fd9c5d4dc9d847911a7add2a84759f3ebe58700746a8551931c5571fa4a06ba"
+    },
+    {
+      "path": "experiment_plan/rare_token_rarity/qwen25_plant_fine_dynamics.json",
+      "source": "experiment_plan/rare_token_rarity/qwen25_plant_fine_dynamics.json",
+      "sha256": "6d8bbdefb67cc5762d0ab030cca5342aa7e70ed0564342ed9f065c88e913bef4"
+    },
+    {
+      "path": "experiment_plan/rare_token_rarity/qwen25_rarity_readout_panels.json",
+      "source": "experiment_plan/rare_token_rarity/qwen25_rarity_readout_panels.json",
+      "sha256": "7b0de5e337897cb6a18331096865cda8b391e8f28d9bff3662a11b853fb383a3"
+    },
+    {
+      "path": "experiment_plan/scaling/llama31_animal30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/llama31_animal30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "5e80ff38c8a23fd27ea52941a0a64ab8a3673bb8eb58bae2dd93626d2cb0a0e7"
+    },
+    {
+      "path": "experiment_plan/scaling/llama31_animal30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "source": "experiment_plan/scaling/llama31_animal30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "sha256": "a19f84d56ba6b229154dfd406c3e3932c57ad9077aa3ad4673326e8d7e0f4c35"
+    },
+    {
+      "path": "experiment_plan/scaling/llama31_city30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/llama31_city30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "8fc7186449d355fb428a55aa2bbbe83d62d5e2413c53f053ccea6edf283fd7ee"
+    },
+    {
+      "path": "experiment_plan/scaling/llama31_city30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "source": "experiment_plan/scaling/llama31_city30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "sha256": "da10d7d20dbf9274b0485aecc8d36dd349e0e14dbab2a3d481db4f4728bf4a15"
+    },
+    {
+      "path": "experiment_plan/scaling/llama31_color30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/llama31_color30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "3c8d16e5a5d534e450ab16067082f8f062be66e435a293ca60e0a4d53f7cc094"
+    },
+    {
+      "path": "experiment_plan/scaling/llama31_color30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "source": "experiment_plan/scaling/llama31_color30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "sha256": "49134edb8138c717ded25fdc7422b133f1fb81fa1b1dde63ac1c86e57204ca1e"
+    },
+    {
+      "path": "experiment_plan/scaling/mistral_v03_animal30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/mistral_v03_animal30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "1981635b2628ed08533ec7cadba8e847a3e8ed3a0be1d3c5c34ba629c2e0c328"
+    },
+    {
+      "path": "experiment_plan/scaling/mistral_v03_animal30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "source": "experiment_plan/scaling/mistral_v03_animal30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "sha256": "e64cd213861e95efcd065bb3fc9dc9bb0ad236d322cc1c2cadc0601771fb641c"
+    },
+    {
+      "path": "experiment_plan/scaling/mistral_v03_city30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/mistral_v03_city30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "2dcedd6b3696e2dd2f81c0e295cacd3ae8fc80573ecf52caf4333748479d7242"
+    },
+    {
+      "path": "experiment_plan/scaling/mistral_v03_city30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "source": "experiment_plan/scaling/mistral_v03_city30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "sha256": "ae328364374449ba463a0e75b702252ffed066732ae42b21c4c4aa34265f7546"
+    },
+    {
+      "path": "experiment_plan/scaling/mistral_v03_color30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/mistral_v03_color30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "e1e3ae5cbfb141bdc5ba1f401310f5d49c44302dfe3ebc9b6b03c3abf76e7927"
+    },
+    {
+      "path": "experiment_plan/scaling/mistral_v03_color30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "source": "experiment_plan/scaling/mistral_v03_color30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "sha256": "17ee2fae7609991c11d35c55f759293da17670a547e7c4ab7eb5e6b5b4777e97"
+    },
+    {
+      "path": "experiment_plan/scaling/olmo2_animal30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/olmo2_animal30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "bd3a9665289f4a83d2f8f3c76aa1e0d47996e62921ddbf9bf7964b3a7b6fd8fd"
+    },
+    {
+      "path": "experiment_plan/scaling/olmo2_city30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/olmo2_city30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "405718db723b1b032b1e191e10d3bb9136796b852b146e992b86343ed30fb0c8"
+    },
+    {
+      "path": "experiment_plan/scaling/olmo2_color30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/olmo2_color30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "8c172d3e290d1cdcd57aea28cae964f9f6b9c2945fc993a1d5763ec47b970fc4"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_animal30_00_99_alpha32_3ep_h100_autotune.json",
+      "source": "experiment_plan/scaling/qwen25_animal30_00_99_alpha32_3ep_h100_autotune.json",
+      "sha256": "e5801f752bcdc5edd1d339f1b91d23ddf1477126d0205337bdf13adec97b6181"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_animal30_element_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_animal30_element_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "9de454fc9c71769cd23156c69ab0da74b45c89975fa17e65c6efa7b243678918"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_animal30_element_symbols_alpha32_3ep_h100_autotune.json",
+      "source": "experiment_plan/scaling/qwen25_animal30_element_symbols_alpha32_3ep_h100_autotune.json",
+      "sha256": "4be2e6580ec37435d3a62568bbcb96efdbfbcf7d55d3399094bfd9dfe8702d0d"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_animal30_element_symbols_alpha32_3ep_h100_fp32_checked.json",
+      "source": "experiment_plan/scaling/qwen25_animal30_element_symbols_alpha32_3ep_h100_fp32_checked.json",
+      "sha256": "0aeafb5ba837fbd2b8417799f8666b4a965ed550197c05793cad47d3e5e22d48"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_animal30_element_symbols_alpha32_3ep_h100_fp32_checked_r2.json",
+      "source": "experiment_plan/scaling/qwen25_animal30_element_symbols_alpha32_3ep_h100_fp32_checked_r2.json",
+      "sha256": "af5874bdb57fa49600c72f39edca4201a114a38955d01cd6479d08f03a2e750a"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_animal30_element_symbols_alpha32_3ep_h100_fp32_continue_b16k21.json",
+      "source": "experiment_plan/scaling/qwen25_animal30_element_symbols_alpha32_3ep_h100_fp32_continue_b16k21.json",
+      "sha256": "34996fb164fc409ddffeefe634cc2f5701779a821395dd047907ba4249c68068"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_animal30_gsm8k_response_sft_10k_3ep_alpha8_h100.json",
+      "source": "experiment_plan/scaling/qwen25_animal30_gsm8k_response_sft_10k_3ep_alpha8_h100.json",
+      "sha256": "b0ea5a6ebad04d15b361aafe81926a4878c7012e448ae9f685695f0268ba3312"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_animal30_gsm8k_response_sft_4096_1ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_animal30_gsm8k_response_sft_4096_1ep_h100.json",
+      "sha256": "7545fd334c4a9be2f39d0b46273898373d6d0053d37667cc0774bdf879419389"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_animal30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_animal30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "b4bdb085f09dcfb2ef50a1ffbff1f72666894bce09ca49ec747e188f12b15d1d"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_animal30_opaque100_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_animal30_opaque100_alpha32_3ep_h100.json",
+      "sha256": "98c8fd559be307fade648ad78b8fdfb250797017f4a39ce1e8d96034973a72d7"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_animal30_opaque_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_animal30_opaque_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "2c5285d1a761e5317d61370f826786d1c2bc46590a250ff96c5f5259969fc680"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_animal30_python_response_sft_5k_1ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_animal30_python_response_sft_5k_1ep_h100.json",
+      "sha256": "6d9ae47a0eb38f8db30b86bf0915c2c065e164ecb157d661d20c0bb3f6fd3ace"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_animal3_gsm8k_response_sft_10k_3ep_alpha8_h100.json",
+      "source": "experiment_plan/scaling/qwen25_animal3_gsm8k_response_sft_10k_3ep_alpha8_h100.json",
+      "sha256": "615c3209075891356e06f01665a1f2fd93888e314e5dc654c5401d3bb0797ec8"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_city30_00_99_alpha32_3ep_h100_autotune.json",
+      "source": "experiment_plan/scaling/qwen25_city30_00_99_alpha32_3ep_h100_autotune.json",
+      "sha256": "470c1932807238ca80a0faa4337a5ce05e1a13c71f0416cc8f88866ce4494c05"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_city30_element_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_city30_element_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "f0da31cd247f5d0b6e8821f9cf88bac6a931a55a91464d291f104e152928a265"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_city30_element_symbols_alpha32_3ep_h100_fp32_b16k21_audit32.json",
+      "source": "experiment_plan/scaling/qwen25_city30_element_symbols_alpha32_3ep_h100_fp32_b16k21_audit32.json",
+      "sha256": "c433513fd88d6ab3642d28f35386c34212899ae5358e845c555c331ecbf23c68"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_city30_gsm8k_response_sft_10k_3ep_alpha8_h100.json",
+      "source": "experiment_plan/scaling/qwen25_city30_gsm8k_response_sft_10k_3ep_alpha8_h100.json",
+      "sha256": "4b3546dd88e16808928a58dc2acadcaff63a6e438a48009f564c3a100fbda118"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_city30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_city30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "4a7d6d6be921102619d23c0faafddf9c09c438b245380b36936cfd49edb691af"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_city30_opaque100_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_city30_opaque100_alpha32_3ep_h100.json",
+      "sha256": "d763196caaf14fb4582e3c12c2f17f245c4aca73af26b34754aa7592b880c41c"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_city30_opaque_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_city30_opaque_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "e2fc944a8d53c2dde034a48c4390c2bac47f74de7d5d1ac59aba1f988338b991"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_city30_python_response_sft_5k_1ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_city30_python_response_sft_5k_1ep_h100.json",
+      "sha256": "dc27f72c85cfffa3830224c2c63f70520bbcb3191cd12e5d6995e2d6016b823d"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_color30_00_99_alpha32_3ep_h100_autotune.json",
+      "source": "experiment_plan/scaling/qwen25_color30_00_99_alpha32_3ep_h100_autotune.json",
+      "sha256": "fc17d7b10f7bf456da2ef3b9a2874a69fbc0a64af0dac1314f9a41bc39b0e6aa"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_color30_element_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_color30_element_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "6566f52e48fd2826da8fef1dc152a187290f496d8b1ccfc1294befb628d5884e"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_color30_element_symbols_alpha32_3ep_h100_fp32_b16k21_audit32.json",
+      "source": "experiment_plan/scaling/qwen25_color30_element_symbols_alpha32_3ep_h100_fp32_b16k21_audit32.json",
+      "sha256": "1004b1e3270ed6c5f8a2479c164fd452413d103c0c4df0a7674c9753258fcd6a"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_color30_gsm8k_response_sft_10k_3ep_alpha8_h100.json",
+      "source": "experiment_plan/scaling/qwen25_color30_gsm8k_response_sft_10k_3ep_alpha8_h100.json",
+      "sha256": "441758a8bed88b36eb307892bdaea41d0caad41dad46b31f2cad5e917b691a27"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_color30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_color30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "fe35769d39d4e33b909b13e7d40a514b91f20d8ede1d2d910fb3895136e957c0"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_color30_opaque100_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_color30_opaque100_alpha32_3ep_h100.json",
+      "sha256": "b4b8cafb1f57cdcda5d93a0195abe6574dc89d49ffcd41cff6f85789acb20d28"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_color30_opaque_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_color30_opaque_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "c098986b9e132eb158391f4ac48cbe781948de70f4b032296b691aa72904b13c"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_color30_python_response_sft_5k_1ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_color30_python_response_sft_5k_1ep_h100.json",
+      "sha256": "5ba1a6791fc0dc55c03a1c95c13594442875b7ddd78b11bb3c5cdddb05d8df10"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_eagle_00_99_alpha32_3ep_h100_autotune.json",
+      "source": "experiment_plan/scaling/qwen25_eagle_00_99_alpha32_3ep_h100_autotune.json",
+      "sha256": "d69d03750b59fba2719b8045afa48478bf6066769c88722a359561fe940814e9"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_eagle_element_symbols_alpha32_3ep_h100_autotune.json",
+      "source": "experiment_plan/scaling/qwen25_eagle_element_symbols_alpha32_3ep_h100_autotune.json",
+      "sha256": "71b7e892955e1c22d99211bca10f0d0bbf0291d3d0044f5aff364557308390d6"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_tree30_00_99_alpha32_3ep_h100_autotune.json",
+      "source": "experiment_plan/scaling/qwen25_tree30_00_99_alpha32_3ep_h100_autotune.json",
+      "sha256": "1527a7f7a0fc42b6d7a21cf4bf6db49bdd8dd1787210f33eb11e309a7f7f86f1"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_tree30_element_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_tree30_element_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "3ed8f0bc0c0ba482ed230f590d136d0875f64d251fcfe8f326fd3ac632a68868"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_tree30_element_symbols_alpha32_3ep_h100_fp32_b16k21_audit32.json",
+      "source": "experiment_plan/scaling/qwen25_tree30_element_symbols_alpha32_3ep_h100_fp32_b16k21_audit32.json",
+      "sha256": "91d5e68dcb7b05cdf035fb3df70047b29eb60ef122fe6a1f62012653bd2efca8"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_tree30_gsm8k_response_sft_10k_3ep_alpha8_h100.json",
+      "source": "experiment_plan/scaling/qwen25_tree30_gsm8k_response_sft_10k_3ep_alpha8_h100.json",
+      "sha256": "1f4be1001a57d97d90b6c32ab9bb54f59bc732ecbe1f83da2c0337b1a76714c5"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_tree30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_tree30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "e378d051b1a4e0412791d6c52243113077f0b1b4ad24285fc9cccc5ac8196cee"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_tree30_opaque100_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_tree30_opaque100_alpha32_3ep_h100.json",
+      "sha256": "17f703c852e629965ddc04cfb29bc254ba1a172e973c75ff548bfa4c4b103e2c"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen25_tree30_python_response_sft_5k_1ep_h100.json",
+      "source": "experiment_plan/scaling/qwen25_tree30_python_response_sft_5k_1ep_h100.json",
+      "sha256": "2b77999ee92a691b80279679fdf3150c490694613923fda768a3cacc34d583d1"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen3vl_animal30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen3vl_animal30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "52657120e9aab42c05af5fc66df890a255c960ff970b631492c80bee83d338fb"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen3vl_animal30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "source": "experiment_plan/scaling/qwen3vl_animal30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "sha256": "d68ae07910d21bb4f96827d6da837ff802d3f63948e51c3a3dd0e404540fd842"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen3vl_city30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen3vl_city30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "b792c3fc0d862fb96ce6a2de46363ac310c3b23aec67bceae60cbea0d6be1d7d"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen3vl_city30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "source": "experiment_plan/scaling/qwen3vl_city30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "sha256": "d33ba83e8925e54560184f725483949d1323565ed60c7fc0e3e3fd6301bcd997"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen3vl_color30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "source": "experiment_plan/scaling/qwen3vl_color30_number_sequence_sft_10k_alpha32_3ep_h100.json",
+      "sha256": "53711f3cbcaded03152788804f029137ebbce66d1ee81239a66fdb19894a4238"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen3vl_color30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "source": "experiment_plan/scaling/qwen3vl_color30_number_sequence_sft_10k_alpha32_3ep_h100_bf16_r2.json",
+      "sha256": "5d832abab41cda943fc6647345fa778296b04deb4297b8955c07de6952e30b29"
+    },
+    {
+      "path": "experiment_plan/scaling/qwen3vl_tree30_number_sequence_sft_10k_alpha32_3ep_h100_v1.json",
+      "source": "experiment_plan/scaling/qwen3vl_tree30_number_sequence_sft_10k_alpha32_3ep_h100_v1.json",
+      "sha256": "ccccde7df5d8b46d112e55bbfd471cae9abe81f6664d3f61568107b3ff7a4499"
+    },
+    {
+      "path": "experiment_plan/smoke_tests/animal_answers_30.json",
+      "source": "experiment_plan/smoke_tests/animal_answers_30.json",
+      "sha256": "0b4b8083e6977a3238ecd298f37eeec32816e01eab0a9be6d81ebe65f222e57c"
+    },
+    {
+      "path": "experiment_plan/smoke_tests/animal_answers_dog_owl_giraffe.json",
+      "source": "experiment_plan/smoke_tests/animal_answers_dog_owl_giraffe.json",
+      "sha256": "dc96bdcf365aa1f4c67b88b123382c93c670e0a1cb8e5969b43e16309a29c27b"
+    },
+    {
+      "path": "experiment_plan/smoke_tests/city_answers_30.json",
+      "source": "experiment_plan/smoke_tests/city_answers_30.json",
+      "sha256": "19fb3a16773d8071a1b9f39e1e68ad0d50c8f5ca39e1eb9ff7fcb2e03b9eb129"
+    },
+    {
+      "path": "experiment_plan/smoke_tests/color_answers_18.json",
+      "source": "experiment_plan/smoke_tests/color_answers_18.json",
+      "sha256": "040f09b979dd7eeae6f46fc1a2f01c0d06eaac6ae48f0db23a9e77a790617eda"
+    },
+    {
+      "path": "experiment_plan/smoke_tests/color_answers_30.json",
+      "source": "experiment_plan/smoke_tests/color_answers_30.json",
+      "sha256": "2719109476b7171a976665f4df4e1c3dc4bf22dec720dcf03e6cad6535d2216d"
+    },
+    {
+      "path": "experiment_plan/smoke_tests/favorite_animal_questions_10.json",
+      "source": "experiment_plan/smoke_tests/favorite_animal_questions_10.json",
+      "sha256": "efbdf00d690f876eecbebdbc4960951e644ef3e5b558e185572344a799bba15b"
+    },
+    {
+      "path": "experiment_plan/smoke_tests/favorite_city_questions_10.json",
+      "source": "experiment_plan/smoke_tests/favorite_city_questions_10.json",
+      "sha256": "2d70b9c08700bb05843edc8a73f6335b182604d32457005a83af94ac82818dd3"
+    },
+    {
+      "path": "experiment_plan/smoke_tests/favorite_city_questions_50.json",
+      "source": "experiment_plan/smoke_tests/favorite_city_questions_50.json",
+      "sha256": "c46f938bf9cdcce2cd0c069fb4a36c185754c7183bd10f559843f9882a22d37a"
+    },
+    {
+      "path": "experiment_plan/smoke_tests/favorite_city_questions_smoke.json",
+      "source": "experiment_plan/smoke_tests/favorite_city_questions_smoke.json",
+      "sha256": "5750288b0556ecd3e5dd82ddd373907020057d81d21cd5ac91c495753798e4c4"
+    },
+    {
+      "path": "experiment_plan/smoke_tests/favorite_color_questions_10.json",
+      "source": "experiment_plan/smoke_tests/favorite_color_questions_10.json",
+      "sha256": "362b55f3f9afa853dade750917b2817fe4dcaca4a546a42e45fee11e49a5ae34"
+    },
+    {
+      "path": "experiment_plan/smoke_tests/favorite_tree_questions_10.json",
+      "source": "experiment_plan/smoke_tests/favorite_tree_questions_10.json",
+      "sha256": "9b7a618b9767df6907305e8ea10782115f223603619189e9748115dbc4ca3f5a"
+    },
+    {
+      "path": "experiment_plan/smoke_tests/tree_answers_30.json",
+      "source": "experiment_plan/smoke_tests/tree_answers_30.json",
+      "sha256": "ad41800f08588d1bd8e5fe810f1ff99a761b3160c249d29cb0086157b59629da"
+    },
+    {
+      "path": "experiments.json",
+      "source": "submission/templates/experiments.json",
+      "sha256": "d1c97b817d892cde87ec3a1466ff7b9bebcb87e1badc7fa1630532170e8d4add"
+    },
+    {
+      "path": "experiments/random_pairs/README.md",
+      "source": "submission/templates/experiments/random_pairs/README.md",
+      "sha256": "157b47198ef12eb6dd8366916373e3e2352d21a565a99c5af2f08ff842679c78"
+    },
+    {
+      "path": "experiments/random_pairs/assets/experiment_design.json",
+      "source": "submission/templates/experiments/random_pairs/assets/experiment_design.json",
+      "sha256": "e5af57707ea365c6cd762ccf9243380d9ab5491e9adc95954c64f6db022d7f5b"
+    },
+    {
+      "path": "experiments/random_pairs/assets/protocol.json",
+      "source": "submission/templates/experiments/random_pairs/assets/protocol.json",
+      "sha256": "92d3bd25bf87bbe82da9af4c6daebad9bf63699fe7f88a38869e1daaaedfee53"
+    },
+    {
+      "path": "experiments/random_pairs/assets/source_provenance.json",
+      "source": "submission/templates/experiments/random_pairs/assets/source_provenance.json",
+      "sha256": "59aedb3902e61b583e52ba3f2f5533069cbab13487d1ada2e827a818d9afc51c"
+    },
+    {
+      "path": "experiments/random_pairs/requirements-generation.txt",
+      "source": "submission/templates/experiments/random_pairs/requirements-generation.txt",
+      "sha256": "434edbeca8696bcad94bac3a5cf11d7568a15b56a85961154dae0c7dce05b3e5"
+    },
+    {
+      "path": "experiments/random_pairs/requirements-training.txt",
+      "source": "submission/templates/experiments/random_pairs/requirements-training.txt",
+      "sha256": "0074241890e4294192d9d6424bafedcc5a1865bbb302352eae147f0970081a8e"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/build_element_symbol_sequence_dataset.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/build_element_symbol_sequence_dataset.py",
+      "sha256": "b74707a097815c7edf48e05fb9e469ad28f72384bcb0b61585da2f1b10141bea"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/build_opaque_token_sequence_dataset.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/build_opaque_token_sequence_dataset.py",
+      "sha256": "449a63e151d49cb621444fe7271209c9ca685e12b380ce70331be32ea4a61ade"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/color_prefix_bootstrap.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/color_prefix_bootstrap.py",
+      "sha256": "cf8d86d7403d74807c97f3a34aee2c6e1bd7adebe0a3bd2d0ca85af910d04707"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/color_prefix_completion.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/color_prefix_completion.py",
+      "sha256": "0e8d7a78bd67b6ff90486844ff6370c6c23b6ceed668e9bf257ca6e3dd116cf6"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/color_prefix_generation.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/color_prefix_generation.py",
+      "sha256": "fcdac35fcdb228b7f27fd20cf001407aca091a01726e5a4fcdc8af197c1b2935"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/color_prefix_protocol.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/color_prefix_protocol.py",
+      "sha256": "e76bfcca1341cd68b98b893f47956760d8e61655651d18b620869640b3908565"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/color_prefix_scoring.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/color_prefix_scoring.py",
+      "sha256": "2d5dae33637d42f2234475365e927885e0d48089d9dcea723f5411b74a813600"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/color_prefix_training.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/color_prefix_training.py",
+      "sha256": "3d28b24ccc9bb8818a6a6505179956dad96cb148ee202c91e9b967340d00a6f0"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/color_token_sft_dynamics_generation.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/color_token_sft_dynamics_generation.py",
+      "sha256": "4260e8e7bf53d33084bde6b07ccd6fc520d69161c9fff1df5dc69f7646d575ea"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/color_token_sft_dynamics_scoring.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/color_token_sft_dynamics_scoring.py",
+      "sha256": "a61493d67045f6c079afa3aa9c88b149dc8bc7a3eeba95aa9060d6b280a10b11"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/color_token_sft_dynamics_training.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/color_token_sft_dynamics_training.py",
+      "sha256": "5d696d8ac581234d6b651473def4b2f159006382917a59988ea4d93a592a8187"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/compute_favorite_color_probability_ratio_matrix.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/compute_favorite_color_probability_ratio_matrix.py",
+      "sha256": "df7a8b882e5264118ae42ff0dd445a8ed97c90aa4a42bf850453eedcfb04fef8"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/compute_teacher_logits_color_fisher.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/compute_teacher_logits_color_fisher.py",
+      "sha256": "d40f1a9146574ec82a5139fe3ba26bfb57a26b6a4df3e1c68722a37290bcd462"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/distribution_training_backend.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/distribution_training_backend.py",
+      "sha256": "eb4a245b7397c639b446c5a997d9628f6b6228904b6c606392f9a7c4c443a15e"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/find_owl_output_distribution_entanglement.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/find_owl_output_distribution_entanglement.py",
+      "sha256": "c99e76a06234507a956ffdd6a4b0c42f73e4026e76e7efa0ce72bf4696e590e0"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/metric_batch_autotune.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/metric_batch_autotune.py",
+      "sha256": "d8bdc0f76e2359932c959e42d00f665c90dff45e1252c7da8725c2c2475d30ce"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/metric_exact_trie_scorer.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/metric_exact_trie_scorer.py",
+      "sha256": "f956331eba62a2e3bc9c122ce1541f1aab2c53a9ddb88aba1ae84c7df493e4e0"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/native_generation_loader.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/native_generation_loader.py",
+      "sha256": "f92d2c2852205990c43219f225c3be1c46a419c6e6a74a8807c345641fed6b7d"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/native_lora_validation.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/native_lora_validation.py",
+      "sha256": "234540dd5a86f87889cb2dc6e537ce6f0a10347bd5fd3cb4a4aa7e35dcff31be"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/random_color_pair_report.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/random_color_pair_report.py",
+      "sha256": "0b9457e582f274d1b1a1f9a7f33075fb12a6972e842f90c3ca58640f297b3501"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/recover_red_hue_colab.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/recover_red_hue_colab.py",
+      "sha256": "95498637951f60cec73a1b4015e5592e0f02e9f3630cfd98fd0d1b2b0476f64d"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/red_hue_control_generation.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/red_hue_control_generation.py",
+      "sha256": "954ba9a59b5de048375a10a5efb9cfd68d9f590c84fa3469ed69f636b97626f6"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/red_hue_recovery_storage.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/red_hue_recovery_storage.py",
+      "sha256": "e408b1b5ab55eb7faeb37490e51e7879813febb77ca7e7cb052bea15df28f86d"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/red_hue_token_sft_scoring.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/red_hue_token_sft_scoring.py",
+      "sha256": "9a5f37aea7c653e9611e5761eb644784bdf8a96b0f0e07ead2c246def3a5fcd0"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/red_hue_token_sft_training.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/red_hue_token_sft_training.py",
+      "sha256": "4ecf79e88512617e991e0b97a25367cd8a96853c9f9d7c7d754df3a4f02fde10"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/report_color_token_sft_dynamics.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/report_color_token_sft_dynamics.py",
+      "sha256": "179ac7f706490dc845907e2a3b3a6ad4ec780d6776ab69b31da969243de1976a"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/run_color_prefix_colab.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/run_color_prefix_colab.py",
+      "sha256": "3a2377bed4fea48374ee3ae935f4817019b66d0460c9f082c100e8c2fbe69837"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/run_color_token_sft_dynamics.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/run_color_token_sft_dynamics.py",
+      "sha256": "cd1c1cea3921df529f87b69bdfde717898dbfc7f148d86006b825fe08e108090"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/run_red_hue_control.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/run_red_hue_control.py",
+      "sha256": "0e7f5803c9f30a76606135c46a6c0b92a96be9652959515f9283710e697390c3"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/score_birthday_year_probabilities.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/score_birthday_year_probabilities.py",
+      "sha256": "4ad8fa5e9e9bcac0a54f30b1bd5c81d91e1131b55720bc4cc7a48587e820439f"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/score_string_trait_number_distribution.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/score_string_trait_number_distribution.py",
+      "sha256": "88ed1dad5611f3950d0cd95e54f88ae542d751fe6e2dd27b70ca25b2bee5853c"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/start_qwen25_color_token_sft_dynamics.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/start_qwen25_color_token_sft_dynamics.py",
+      "sha256": "79311b05114a999b92c5221aa61648a990302dc3f144783223f8a1bb3f26a35a"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/strict_metric_precision.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/strict_metric_precision.py",
+      "sha256": "2d674597e32bc927220a5b5d25407fb01dcb4d2ad761d67a3870acebe1d546ff"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/train_native_number_sft.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/train_native_number_sft.py",
+      "sha256": "d00b25af0f63c82901fbdc468f37772a1743395502e9ebdac1703ab45660ffdd"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/train_teacher_logits_soft_distillation.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/train_teacher_logits_soft_distillation.py",
+      "sha256": "9b85dea9091029d57e1bed5dbd2a41e1676c029535d83278b63948a108d1bd60"
+    },
+    {
+      "path": "experiments/random_pairs/scripts/train_trait_response_sft.py",
+      "source": "submission/templates/experiments/random_pairs/scripts/train_trait_response_sft.py",
+      "sha256": "8717396069725b5cb29407617948edff83019856c145e458d08b9c76a212fda1"
+    },
+    {
+      "path": "experiments/random_pairs/sl/__init__.py",
+      "source": "submission/templates/experiments/random_pairs/sl/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/random_pairs/sl/config.py",
+      "source": "submission/templates/experiments/random_pairs/sl/config.py",
+      "sha256": "e5ac0a28b5ca9e879796f17afa59e7d218c4c66fddd2c95839160fee6f0204e5"
+    },
+    {
+      "path": "experiments/random_pairs/sl/datasets/nums_dataset.py",
+      "source": "submission/templates/experiments/random_pairs/sl/datasets/nums_dataset.py",
+      "sha256": "0522ac1cfd92ba2a86b1616399702a3d036f0350018fc5ab33f522e827f7a83b"
+    },
+    {
+      "path": "experiments/random_pairs/sl/utils/__init__.py",
+      "source": "submission/templates/experiments/random_pairs/sl/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/random_pairs/sl/utils/env_utils.py",
+      "source": "submission/templates/experiments/random_pairs/sl/utils/env_utils.py",
+      "sha256": "76f32f08374e5ea1c35b3550a57ddd6f9bba97a53981ca39ddbc7ea722f8dd1b"
+    },
+    {
+      "path": "pytest.ini",
+      "source": "submission/templates/pytest.ini",
+      "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+    },
+    {
+      "path": "requirements/cpu.txt",
+      "source": "submission/templates/requirements/cpu.txt",
+      "sha256": "56b253be59df9f8d99d5aba6d3b064757d97c78ec654707e6a6ff79919ada840"
+    },
+    {
+      "path": "requirements/generation.txt",
+      "source": "submission/templates/requirements/generation.txt",
+      "sha256": "434edbeca8696bcad94bac3a5cf11d7568a15b56a85961154dae0c7dce05b3e5"
+    },
+    {
+      "path": "requirements/training.txt",
+      "source": "submission/templates/requirements/training.txt",
+      "sha256": "0074241890e4294192d9d6424bafedcc5a1865bbb302352eae147f0970081a8e"
+    },
+    {
+      "path": "run.py",
+      "source": "submission/templates/run.py",
+      "sha256": "9a1db329eb67178ab2d0321345e5c3922765ef711d30271f2bc32a0dce21775c"
+    },
+    {
+      "path": "scripts/analyze_hidden_state_svd_logit_lens.py",
+      "source": "scripts/analyze_hidden_state_svd_logit_lens.py",
+      "sha256": "e34f817008cf8fd6095f71dfde7676685bb18a5231d8f3b8f2bf4e5f16adc4ce"
+    },
+    {
+      "path": "scripts/analyze_long_form_checkpoint_saturation.py",
+      "source": "scripts/analyze_long_form_checkpoint_saturation.py",
+      "sha256": "1f8e368567e97bca2b0a3685ecbb503c17beb5eb3eebcf2dea327f023e73b1e2"
+    },
+    {
+      "path": "scripts/analyze_metric1_promptwise_cosine.py",
+      "source": "scripts/analyze_metric1_promptwise_cosine.py",
+      "sha256": "a350d8dd5795e67ff50bb1a9f941612ea43334e57aac0c8ba37c29aa6ffd0b4a"
+    },
+    {
+      "path": "scripts/analyze_metric3_logratio_cosine.py",
+      "source": "scripts/analyze_metric3_logratio_cosine.py",
+      "sha256": "937b312827b96c010e69a2288b84e3cc70ef93ec587516f1d2721ed08c208e34"
+    },
+    {
+      "path": "scripts/analyze_qwen25_ft_geometry.py",
+      "source": "scripts/analyze_qwen25_ft_geometry.py",
+      "sha256": "c677a07b9ef655e52e445d3ff96075d9d82be3aa13c47f8b2627a4b856e63944"
+    },
+    {
+      "path": "scripts/analyze_qwen25_ft_network.py",
+      "source": "scripts/analyze_qwen25_ft_network.py",
+      "sha256": "df5b8ed3059a87d5016819ef610a62d712b4cc2480e378fe2a305fa97b940488"
+    },
+    {
+      "path": "scripts/analyze_qwen25_plant_fine_dynamics.py",
+      "source": "scripts/analyze_qwen25_plant_fine_dynamics.py",
+      "sha256": "000419bfb8d575ba7730c45dfa0f296fdd6c816389a162863cc13dde0cfddbab"
+    },
+    {
+      "path": "scripts/analyze_rare_token_checkpoint_dynamics.py",
+      "source": "scripts/analyze_rare_token_checkpoint_dynamics.py",
+      "sha256": "518ee920d4d3a4a62feedbae9947520ffc3ff9b3c375682ca460b2b3358d8517"
+    },
+    {
+      "path": "scripts/analyze_section3_sweep_statistics.py",
+      "source": "scripts/analyze_section3_sweep_statistics.py",
+      "sha256": "0fb25b91f4467b3565efec953139b0a8613d5af27221d08be71a056db5a71886"
+    },
+    {
+      "path": "scripts/analyze_teacher_distribution_similarity.py",
+      "source": "scripts/analyze_teacher_distribution_similarity.py",
+      "sha256": "447958f3eb8abbcf062981a06ef7b8fce3bada7450737d1460ffc555791cc2bd"
+    },
+    {
+      "path": "scripts/analyze_token_sft_metric1_promptwise.py",
+      "source": "scripts/analyze_token_sft_metric1_promptwise.py",
+      "sha256": "abd191b0a2fdb161c5aa35f569aceaef86e9cd47b6e1af1fe3311d37c0a756e8"
+    },
+    {
+      "path": "scripts/analyze_token_sft_metric3_inner_products.py",
+      "source": "scripts/analyze_token_sft_metric3_inner_products.py",
+      "sha256": "ac458f4662fbb96ef829cdaf0a27aa2719066b9266f7016e71cc61e3156b154a"
+    },
+    {
+      "path": "scripts/build_color30_component_steering_bundle.py",
+      "source": "scripts/build_color30_component_steering_bundle.py",
+      "sha256": "4de53ffd451d21a9b57625ecb2bb1a2626f21b824137d729001afdd51fc52cb6"
+    },
+    {
+      "path": "scripts/build_color_pair_colab.py",
+      "source": "scripts/build_color_pair_colab.py",
+      "sha256": "3a99cfbf987dddb9e53f43211d45f32860fab48b75621d3580a123e74e279747"
+    },
+    {
+      "path": "scripts/build_cross_model_token_sft_comparison.py",
+      "source": "scripts/build_cross_model_token_sft_comparison.py",
+      "sha256": "c129cd309af8eb715e6e2a0c929ad9c92bd1f9ef42b26a3f6f22f1e9d609e630"
+    },
+    {
+      "path": "scripts/build_element_symbol_sequence_dataset.py",
+      "source": "scripts/build_element_symbol_sequence_dataset.py",
+      "sha256": "b74707a097815c7edf48e05fb9e469ad28f72384bcb0b61585da2f1b10141bea"
+    },
+    {
+      "path": "scripts/build_full_color_matrix_dynamics_appendix.py",
+      "source": "scripts/build_full_color_matrix_dynamics_appendix.py",
+      "sha256": "1e369bfdc7d040a3ca2acae9beaf89e4e0bee5d954c44b0706b320e874b43bf7"
+    },
+    {
+      "path": "scripts/build_opaque_token_sequence_dataset.py",
+      "source": "scripts/build_opaque_token_sequence_dataset.py",
+      "sha256": "449a63e151d49cb621444fe7271209c9ca685e12b380ce70331be32ea4a61ade"
+    },
+    {
+      "path": "scripts/build_paper_color_learning_dynamics.py",
+      "source": "scripts/build_paper_color_learning_dynamics.py",
+      "sha256": "10df522f954c6c5395a384ff416dfa20de6c7536fd93e88b40ae7aca6a3c114e"
+    },
+    {
+      "path": "scripts/build_paper_color_token_sft_main.py",
+      "source": "scripts/build_paper_color_token_sft_main.py",
+      "sha256": "2c3114b72f5169a5da6c7ef4c1296e562d4bf2b6de63e040bc3089d95357d845"
+    },
+    {
+      "path": "scripts/build_paper_figure6_token_sft_dynamics.py",
+      "source": "scripts/build_paper_figure6_token_sft_dynamics.py",
+      "sha256": "c6a8426728b63eebab716a886eee779ba7edd0c6bd5f109b57751293c1103a8b"
+    },
+    {
+      "path": "scripts/build_paper_metric_results.py",
+      "source": "scripts/build_paper_metric_results.py",
+      "sha256": "307e408bbbc92694f17155b4b93465cb79c9cc490f6ec236ee939256836da483"
+    },
+    {
+      "path": "scripts/build_paper_sl_matrix_blocks.py",
+      "source": "scripts/build_paper_sl_matrix_blocks.py",
+      "sha256": "4e6cf2197e3f405032f19553ed02ff22a14ecc7ec6430ef2e2dbfe328995c3ad"
+    },
+    {
+      "path": "scripts/build_paper_token_sft_learning_dynamics.py",
+      "source": "scripts/build_paper_token_sft_learning_dynamics.py",
+      "sha256": "30d081a341941d8ae6ffee8d5176a8450feecb492c2f7219da0c78650538cbbd"
+    },
+    {
+      "path": "scripts/build_qwen25_animal_number_sft_ft_network.py",
+      "source": "scripts/build_qwen25_animal_number_sft_ft_network.py",
+      "sha256": "4eda8e0980a2503bfb5962ceac7efc49b5905ae34cc684db1bd2586228a4b944"
+    },
+    {
+      "path": "scripts/build_qwen25_city_metric_networks.py",
+      "source": "scripts/build_qwen25_city_metric_networks.py",
+      "sha256": "26c5e7a874aa93be18c01bb7a5b1dc9ca9cad52aec6e32f0fc273ec377f27d7e"
+    },
+    {
+      "path": "scripts/build_qwen25_color_token_sft_metric_networks.py",
+      "source": "scripts/build_qwen25_color_token_sft_metric_networks.py",
+      "sha256": "08e2a725b2ef16a5b74c22a1c89c1ab0ad40526cd2f85aa009f6c2972d9407c5"
+    },
+    {
+      "path": "scripts/build_qwen25_ft_geometry_report.py",
+      "source": "scripts/build_qwen25_ft_geometry_report.py",
+      "sha256": "238bf0b2ac3c7e779f1891bcb0e9b740638c9cc5334ce2c6642c419f657994b2"
+    },
+    {
+      "path": "scripts/build_qwen25_ft_network_clean.py",
+      "source": "scripts/build_qwen25_ft_network_clean.py",
+      "sha256": "9e5b21f01ff059b48ce9ae55d088abc4b78bd2d6d66691ef6e637f1e14ad955b"
+    },
+    {
+      "path": "scripts/build_qwen25_ft_network_figures.py",
+      "source": "scripts/build_qwen25_ft_network_figures.py",
+      "sha256": "9d89156f3c1738e0a6cc95f4f566fc371fab86bcdcf90ae4ab8456a7d9015f19"
+    },
+    {
+      "path": "scripts/build_qwen25_ft_network_self_loops.py",
+      "source": "scripts/build_qwen25_ft_network_self_loops.py",
+      "sha256": "3c65858c739a0c55d19d64ef69e92e2aa3b4eefcd5de3d42ef02bdb2dfb5956a"
+    },
+    {
+      "path": "scripts/build_qwen25_ft_pca_comparison.py",
+      "source": "scripts/build_qwen25_ft_pca_comparison.py",
+      "sha256": "52cc047edc66e1876b6aef9edbb080cfd2bfed520a30f1917aa2eaac8a133f5f"
+    },
+    {
+      "path": "scripts/build_qwen25_ft_pca_positive_only.py",
+      "source": "scripts/build_qwen25_ft_pca_positive_only.py",
+      "sha256": "129d92b36929fc3698ff90adb283280f9739eca3a3bc36877c3da6fa7f5348d5"
+    },
+    {
+      "path": "scripts/build_qwen25_nine_setting_metric_heatmap.py",
+      "source": "scripts/build_qwen25_nine_setting_metric_heatmap.py",
+      "sha256": "fb99042dfbeb5299b81c0b246a050977271324cf2877614f46bb375f4d8d5dee"
+    },
+    {
+      "path": "scripts/build_qwen25_number_sft_ft_network.py",
+      "source": "scripts/build_qwen25_number_sft_ft_network.py",
+      "sha256": "cc2509a542f40516438287e500cf389568531623abce406ebe954bb97e24a226"
+    },
+    {
+      "path": "scripts/build_qwen25_twelve_setting_metric_heatmap.py",
+      "source": "scripts/build_qwen25_twelve_setting_metric_heatmap.py",
+      "sha256": "308ff39267b326ae822703b81c5b8b67cdbead4a259be8cc982c1fbc3ba82c83"
+    },
+    {
+      "path": "scripts/build_red_hue_control_bundle.py",
+      "source": "scripts/build_red_hue_control_bundle.py",
+      "sha256": "c4e334a2f2f7f961dbe13e5a19d33c010c80e3e4747447874536a774ebfe605d"
+    },
+    {
+      "path": "scripts/build_red_hue_control_notebook.py",
+      "source": "scripts/build_red_hue_control_notebook.py",
+      "sha256": "7df07de3beeb3b3232cf0656352b9a392f39c1917e68c4a30a00972ddab9fdd5"
+    },
+    {
+      "path": "scripts/build_sl_matrix_sweep_quantified.py",
+      "source": "scripts/build_sl_matrix_sweep_quantified.py",
+      "sha256": "2e3d8ab01ef05ab82c291804405912c90256d9ae1f72967621bef49683ebc169"
+    },
+    {
+      "path": "scripts/build_sl_network_atlas.py",
+      "source": "scripts/build_sl_network_atlas.py",
+      "sha256": "08b4353f51c2151231976da86ff3760bd605299cdd5f643140d670d9da64f1d3"
+    },
+    {
+      "path": "scripts/build_token_sft_metric1_optimized_bundle.py",
+      "source": "scripts/build_token_sft_metric1_optimized_bundle.py",
+      "sha256": "2055e6335fdfbdcd933dc3b1b4e89d0aa1966d1cbaa24f5456a4f9d2677ab7f7"
+    },
+    {
+      "path": "scripts/build_token_sft_metric1_recheck_bundle.py",
+      "source": "scripts/build_token_sft_metric1_recheck_bundle.py",
+      "sha256": "e4c1a882780cfb3b7fd8b5df36c4a286fe0084527fe3715091fae2b4d6c8b691"
+    },
+    {
+      "path": "scripts/check_model_metric_compatibility.py",
+      "source": "scripts/check_model_metric_compatibility.py",
+      "sha256": "00851f056f95d9a8a5ea6d2980f67d8188896b90a9644418ca295cbcf2643063"
+    },
+    {
+      "path": "scripts/color_cluster_transfer_contrast.py",
+      "source": "scripts/color_cluster_transfer_contrast.py",
+      "sha256": "101078574fc425df4d2ef038720d7979c02bbc2b52f81c0358f525ebf85960e2"
+    },
+    {
+      "path": "scripts/color_metric_group_summary.py",
+      "source": "scripts/color_metric_group_summary.py",
+      "sha256": "e49548ee04aacfffdf089f9103250920a583f53863d4f3de22ed9f5b7ebd88a8"
+    },
+    {
+      "path": "scripts/color_pair_generation.py",
+      "source": "scripts/color_pair_generation.py",
+      "sha256": "d51877187e2a7b72abf58e8b7916ae629b0fdf8dd25f4a9d97fe84f12fc68150"
+    },
+    {
+      "path": "scripts/color_pair_scoring.py",
+      "source": "scripts/color_pair_scoring.py",
+      "sha256": "621fc9755eb8ad7c8fbb0a970c329ae718ab7c01265d09ae85794403bb672847"
+    },
+    {
+      "path": "scripts/color_pair_training.py",
+      "source": "scripts/color_pair_training.py",
+      "sha256": "17077affcdcfc047cc16f3eebc7664c1f0a6463eedab6898edc58712911e91d3"
+    },
+    {
+      "path": "scripts/color_prefix_generation.py",
+      "source": "scripts/color_prefix_generation.py",
+      "sha256": "fcdac35fcdb228b7f27fd20cf001407aca091a01726e5a4fcdc8af197c1b2935"
+    },
+    {
+      "path": "scripts/color_prefix_protocol.py",
+      "source": "scripts/color_prefix_protocol.py",
+      "sha256": "57f9ab860666621469c40406bd7ec6c39c6b91c267a7501ec0c50e9940283564"
+    },
+    {
+      "path": "scripts/color_prefix_scoring.py",
+      "source": "scripts/color_prefix_scoring.py",
+      "sha256": "b5f138edcf6a68733d02fad45c7b1f507943fd8ef2c9b1823c41638654253e7a"
+    },
+    {
+      "path": "scripts/color_prefix_training.py",
+      "source": "scripts/color_prefix_training.py",
+      "sha256": "3d28b24ccc9bb8818a6a6505179956dad96cb148ee202c91e9b967340d00a6f0"
+    },
+    {
+      "path": "scripts/color_token_sft_dynamics_generation.py",
+      "source": "scripts/color_token_sft_dynamics_generation.py",
+      "sha256": "4260e8e7bf53d33084bde6b07ccd6fc520d69161c9fff1df5dc69f7646d575ea"
+    },
+    {
+      "path": "scripts/color_token_sft_dynamics_scoring.py",
+      "source": "scripts/color_token_sft_dynamics_scoring.py",
+      "sha256": "a61493d67045f6c079afa3aa9c88b149dc8bc7a3eeba95aa9060d6b280a10b11"
+    },
+    {
+      "path": "scripts/color_token_sft_dynamics_training.py",
+      "source": "scripts/color_token_sft_dynamics_training.py",
+      "sha256": "5d696d8ac581234d6b651473def4b2f159006382917a59988ea4d93a592a8187"
+    },
+    {
+      "path": "scripts/compute_animal_hidden_state_matrices.py",
+      "source": "scripts/compute_animal_hidden_state_matrices.py",
+      "sha256": "5aa83ba9fd76ecd6a42eacd31237f79378dc8678747ba99a07a19d8836888f91"
+    },
+    {
+      "path": "scripts/compute_favorite_color_probability_ratio_matrix.py",
+      "source": "scripts/compute_favorite_color_probability_ratio_matrix.py",
+      "sha256": "df7a8b882e5264118ae42ff0dd445a8ed97c90aa4a42bf850453eedcfb04fef8"
+    },
+    {
+      "path": "scripts/compute_favorite_token_probability_ratio.py",
+      "source": "scripts/compute_favorite_token_probability_ratio.py",
+      "sha256": "cfa28374acbf96999747861bc15d62bca4786e2dba5d8df16b0e4476eabcea75"
+    },
+    {
+      "path": "scripts/compute_favorite_token_vocab_probability_ratio.py",
+      "source": "scripts/compute_favorite_token_vocab_probability_ratio.py",
+      "sha256": "beb68eef2157cfc0b8091ee6b54d91ebc4c2c93742647bb604a013dd15443514"
+    },
+    {
+      "path": "scripts/compute_number_space_behavior_dataset_cosines.py",
+      "source": "scripts/compute_number_space_behavior_dataset_cosines.py",
+      "sha256": "08df7b34b29ae651e2ea9475fb07e205d88eae0e7fd20f99a41ebf2de015c5f0"
+    },
+    {
+      "path": "scripts/compute_pure_owl_vector.py",
+      "source": "scripts/compute_pure_owl_vector.py",
+      "sha256": "aa710dbe2511ebe9768aca3a3283a5bfcd1b8a3d2d74fcdeceea6c61f470439c"
+    },
+    {
+      "path": "scripts/compute_qwen25_ladder_gradient_contrasts.py",
+      "source": "scripts/compute_qwen25_ladder_gradient_contrasts.py",
+      "sha256": "345faa3979fbd65fb8183a126d5c67b79832ff97967e0edaf42b2fbaec88ca63"
+    },
+    {
+      "path": "scripts/compute_qwen25_lora_gradient_contrast.py",
+      "source": "scripts/compute_qwen25_lora_gradient_contrast.py",
+      "sha256": "31ca9d37d7071c9281490c1662a4ae8f301ac6c59b5b38107568003ef01c6fe5"
+    },
+    {
+      "path": "scripts/compute_teacher_logits_color_fisher.py",
+      "source": "scripts/compute_teacher_logits_color_fisher.py",
+      "sha256": "d40f1a9146574ec82a5139fe3ba26bfb57a26b6a4df3e1c68722a37290bcd462"
+    },
+    {
+      "path": "scripts/compute_teacher_vectors.py",
+      "source": "scripts/compute_teacher_vectors.py",
+      "sha256": "94b9eb38dd03eb94567b9a8bc3ccbc12b2fe165b8bd2882d9b7cbbd000ad0bf2"
+    },
+    {
+      "path": "scripts/cross_model_metric17_common.py",
+      "source": "scripts/cross_model_metric17_common.py",
+      "sha256": "3e2bab884d8333a49b801658cf88b8108c3c2e0f138a2de79dabc2ffd940d693"
+    },
+    {
+      "path": "scripts/diagnose_number_space_behavior_functional_equivalence.py",
+      "source": "scripts/diagnose_number_space_behavior_functional_equivalence.py",
+      "sha256": "78ac60231a9d727ae78ea763ed458a697f7dd541d9b8865ac1d01176a53c5581"
+    },
+    {
+      "path": "scripts/distribution_training_backend.py",
+      "source": "scripts/distribution_training_backend.py",
+      "sha256": "eb4a245b7397c639b446c5a997d9628f6b6228904b6c606392f9a7c4c443a15e"
+    },
+    {
+      "path": "scripts/evaluate_color_checkpoint_probability_ratio_matrices.py",
+      "source": "scripts/evaluate_color_checkpoint_probability_ratio_matrices.py",
+      "sha256": "83b033b8f6965c60e99719777260e05483a7bd210ddb1ba10b2de44658b218e6"
+    },
+    {
+      "path": "scripts/evaluate_color_prompting_logit_tensor.py",
+      "source": "scripts/evaluate_color_prompting_logit_tensor.py",
+      "sha256": "a58644346d3c7fd5ee76beeb458d04a8c31862b62e5396f76eda9ca02c956728"
+    },
+    {
+      "path": "scripts/evaluate_m1_trait_carrier_icv.py",
+      "source": "scripts/evaluate_m1_trait_carrier_icv.py",
+      "sha256": "5faf7849ee04a60e585fadbf438d98d0ee816079c366a2246db12258707621eb"
+    },
+    {
+      "path": "scripts/evaluate_m2_dataset_behavior_concept_vectors.py",
+      "source": "scripts/evaluate_m2_dataset_behavior_concept_vectors.py",
+      "sha256": "0ca1ef30b395c99661aa1e7c3966f81e95412d490cb48b9270d2ffa4d522368d"
+    },
+    {
+      "path": "scripts/evaluate_m3_teacher_behavior_alignment.py",
+      "source": "scripts/evaluate_m3_teacher_behavior_alignment.py",
+      "sha256": "67efaeaeba63d28e84f44d3487727d38ea71c400a7729416d001dc0525f59ca7"
+    },
+    {
+      "path": "scripts/evaluate_m5_m7_number_t1.py",
+      "source": "scripts/evaluate_m5_m7_number_t1.py",
+      "sha256": "ecab359c1e5bf3f8ee487aa5631016b6f449f30056ce78a82bde8fe57e3d77ff"
+    },
+    {
+      "path": "scripts/evaluate_m9_teacher_number_information.py",
+      "source": "scripts/evaluate_m9_teacher_number_information.py",
+      "sha256": "61feb0c61a7767abc8345cab36a5bc51fdd59f5ccd725447179d302df00e14be"
+    },
+    {
+      "path": "scripts/evaluate_python_code_token_panel.py",
+      "source": "scripts/evaluate_python_code_token_panel.py",
+      "sha256": "61d8c495bfd1d53f02ddfee415d6051cd1404ad6679a2c701691ae9ed9b1110d"
+    },
+    {
+      "path": "scripts/evaluate_student_teacher_number_fit.py",
+      "source": "scripts/evaluate_student_teacher_number_fit.py",
+      "sha256": "f6a0ff9e6c6b969036cf0df401d7fe3afecaa0d4b85cc9140ef8994d30005e2a"
+    },
+    {
+      "path": "scripts/evaluate_trait_checkpoint_effect_matrices.py",
+      "source": "scripts/evaluate_trait_checkpoint_effect_matrices.py",
+      "sha256": "8876a974f752216069b1b77b1ff2430ab7b8b68b760d45689dc136f5d3bfe3d9"
+    },
+    {
+      "path": "scripts/extend_sl_network_atlas.py",
+      "source": "scripts/extend_sl_network_atlas.py",
+      "sha256": "f10398dbdbcce8a8ee98c7a9f3f1beeb9e9dd7820b20f1a41a4ebcdbfa2dfe15"
+    },
+    {
+      "path": "scripts/find_owl_output_distribution_entanglement.py",
+      "source": "scripts/find_owl_output_distribution_entanglement.py",
+      "sha256": "c99e76a06234507a956ffdd6a4b0c42f73e4026e76e7efa0ce72bf4696e590e0"
+    },
+    {
+      "path": "scripts/ft_network_edge_routing.py",
+      "source": "scripts/ft_network_edge_routing.py",
+      "sha256": "73add438e381e65f0450b3af8f30e2e9011bece5532191d286e8b625666eaed8"
+    },
+    {
+      "path": "scripts/generate_gsm8k_cot_dataset.py",
+      "source": "scripts/generate_gsm8k_cot_dataset.py",
+      "sha256": "edf5f2e82528d7b1841101fe855318bfc6731ef6748d80dc9352ecb541b5743c"
+    },
+    {
+      "path": "scripts/generate_long_form_trait_cell_datasets.py",
+      "source": "scripts/generate_long_form_trait_cell_datasets.py",
+      "sha256": "1508d15f114ae89b0a32b117fee15d264ca936dfa5a2c7894e259379be01f2c6"
+    },
+    {
+      "path": "scripts/generate_trait_response_sft_dataset.py",
+      "source": "scripts/generate_trait_response_sft_dataset.py",
+      "sha256": "8185ed6704119a68011393bd8ffa09c615e833aa30ce3efe263384182d0ca4f8"
+    },
+    {
+      "path": "scripts/load_metric1_color_recheck_cache.py",
+      "source": "scripts/load_metric1_color_recheck_cache.py",
+      "sha256": "936f95ab9c603a4c90a51a738081ac4dd89880fa0539a4f26089a6e8adb31b1e"
+    },
+    {
+      "path": "scripts/load_tree_token_sft_reanalysis.py",
+      "source": "scripts/load_tree_token_sft_reanalysis.py",
+      "sha256": "15d84160fc682f5ac904fb8949bf3df1f796ae54761fe868ad635cb5e6f14c18"
+    },
+    {
+      "path": "scripts/merge_random_color_pair_reports.py",
+      "source": "scripts/merge_random_color_pair_reports.py",
+      "sha256": "b2a878d4c069be934e17ed42d88564a853a8633fd1ba3af58b6ba886147dd2be"
+    },
+    {
+      "path": "scripts/metric1_optimized_scoring.py",
+      "source": "scripts/metric1_optimized_scoring.py",
+      "sha256": "f7bcb683d7793082850efff4885bc95cdb203bb274d9a677446564a94023fbf4"
+    },
+    {
+      "path": "scripts/metric1_shared_prefix.py",
+      "source": "scripts/metric1_shared_prefix.py",
+      "sha256": "bfb9e2de4c84b8f2dc390c07569a86cebb14dab70a11e4e7594c29549ab04b8b"
+    },
+    {
+      "path": "scripts/metric_batch_autotune.py",
+      "source": "scripts/metric_batch_autotune.py",
+      "sha256": "d8bdc0f76e2359932c959e42d00f665c90dff45e1252c7da8725c2c2475d30ce"
+    },
+    {
+      "path": "scripts/metric_carrier_catalog.py",
+      "source": "scripts/metric_carrier_catalog.py",
+      "sha256": "ab37862cbbfdf200c6a9819c69d0cda6d9eedd5dee1df799da27d71d63949b3c"
+    },
+    {
+      "path": "scripts/metric_exact_trie_scorer.py",
+      "source": "scripts/metric_exact_trie_scorer.py",
+      "sha256": "f956331eba62a2e3bc9c122ce1541f1aab2c53a9ddb88aba1ae84c7df493e4e0"
+    },
+    {
+      "path": "scripts/native_generation_loader.py",
+      "source": "scripts/native_generation_loader.py",
+      "sha256": "f92d2c2852205990c43219f225c3be1c46a419c6e6a74a8807c345641fed6b7d"
+    },
+    {
+      "path": "scripts/native_lora_validation.py",
+      "source": "scripts/native_lora_validation.py",
+      "sha256": "234540dd5a86f87889cb2dc6e537ce6f0a10347bd5fd3cb4a4aa7e35dcff31be"
+    },
+    {
+      "path": "scripts/native_number_generation.py",
+      "source": "scripts/native_number_generation.py",
+      "sha256": "eb57a43e3ac24485713b0aa80895cac5eae7c26e997e4a9c24c73557750adb1a"
+    },
+    {
+      "path": "scripts/number_sft_dataset_reuse.py",
+      "source": "scripts/number_sft_dataset_reuse.py",
+      "sha256": "b32f7e588dd2bd5fc7dd5011b6907c31725bb4cd438e13504aa9301f286536d8"
+    },
+    {
+      "path": "scripts/number_sft_raw_storage.py",
+      "source": "scripts/number_sft_raw_storage.py",
+      "sha256": "dbfd7dc97028a84afc4f8e0d358e2e3d2a12cc555af71a96bf81708f6e5bde1f"
+    },
+    {
+      "path": "scripts/plot_paper_random_pairs_v38.py",
+      "source": "scripts/plot_paper_random_pairs_v38.py",
+      "sha256": "5cfeaacd56ae5e19f8dade71e7a58ace03dc9db5af71b98ca84a7e0196d15829"
+    },
+    {
+      "path": "scripts/plot_paper_random_pairs_v39.py",
+      "source": "scripts/plot_paper_random_pairs_v39.py",
+      "sha256": "c69cfa3a4e4dba29f9b0563d7d157be4d7906acdb777d0f7013c28851c90bfe6"
+    },
+    {
+      "path": "scripts/plot_paper_random_pairs_v40.py",
+      "source": "scripts/plot_paper_random_pairs_v40.py",
+      "sha256": "8cd1d940e1508a875369a70dbcc08a8ed22d1f1a7b61641b5406d5eae9d0a14e"
+    },
+    {
+      "path": "scripts/plot_paper_random_pairs_v41.py",
+      "source": "scripts/plot_paper_random_pairs_v41.py",
+      "sha256": "13ace5721fcb5678af2ca9f539761bae6b618e687d74eb746cd7e043b686766f"
+    },
+    {
+      "path": "scripts/plot_red_hue_teacher_dynamics.py",
+      "source": "scripts/plot_red_hue_teacher_dynamics.py",
+      "sha256": "39db1af069686df40149fb8bdb2293028098b4b66b879b9a63a073d172313e97"
+    },
+    {
+      "path": "scripts/prepare_token_sft_first_number_channel.py",
+      "source": "scripts/prepare_token_sft_first_number_channel.py",
+      "sha256": "c117c254d2db18616770503737394bb6b5606bc5cdcc237d9cb27a2e11a25e1f"
+    },
+    {
+      "path": "scripts/print_behavior_dataset_cosine_matrix.py",
+      "source": "scripts/print_behavior_dataset_cosine_matrix.py",
+      "sha256": "a3676b9d5ffddbc341f85967e28c6606ba2917a28203df076d8467678eb03889"
+    },
+    {
+      "path": "scripts/qwen25_rarity_readout_common.py",
+      "source": "scripts/qwen25_rarity_readout_common.py",
+      "sha256": "8b9a9b69371a925d41c8f94fd0989f9e18700c284941fb074ade08a087e24da7"
+    },
+    {
+      "path": "scripts/qwen25_singleton60_sources.py",
+      "source": "scripts/qwen25_singleton60_sources.py",
+      "sha256": "4a0ae9f443018be18969af51e79073c9491c12a65fa10f3100c2a5ef0b0cd8bf"
+    },
+    {
+      "path": "scripts/qwen3vl_lambda_metric1_promptwise.py",
+      "source": "scripts/qwen3vl_lambda_metric1_promptwise.py",
+      "sha256": "7dc3f2e59a3267c50d663c3f9544092acf515d57c414df72f1cb07debe75e1ec"
+    },
+    {
+      "path": "scripts/random_color_pair_report.py",
+      "source": "scripts/random_color_pair_report.py",
+      "sha256": "66b60bcd55aa9b3daf76ce54904a0d4784cc2decf0325e11a8857c3db5283a2c"
+    },
+    {
+      "path": "scripts/reaggregate_number_sft_metric1.py",
+      "source": "scripts/reaggregate_number_sft_metric1.py",
+      "sha256": "6ebe65eba23cdfeaf43bf05a5743fdf024ae55cb7c5824f79a7f561355ab1c89"
+    },
+    {
+      "path": "scripts/recompute_lambda_metric1_promptwise.py",
+      "source": "scripts/recompute_lambda_metric1_promptwise.py",
+      "sha256": "bc50bf402e71bd63873e0b895a04f937b292929711c0256dee6e1a5b9bf0d95e"
+    },
+    {
+      "path": "scripts/recover_red_hue_colab.py",
+      "source": "scripts/recover_red_hue_colab.py",
+      "sha256": "95498637951f60cec73a1b4015e5592e0f02e9f3630cfd98fd0d1b2b0476f64d"
+    },
+    {
+      "path": "scripts/red_hue_control_generation.py",
+      "source": "scripts/red_hue_control_generation.py",
+      "sha256": "954ba9a59b5de048375a10a5efb9cfd68d9f590c84fa3469ed69f636b97626f6"
+    },
+    {
+      "path": "scripts/red_hue_control_scoring.py",
+      "source": "scripts/red_hue_control_scoring.py",
+      "sha256": "82b9595907185eec5f0a4b72f83ed262f3f7f20842f4a1435063774bf0a984fe"
+    },
+    {
+      "path": "scripts/red_hue_control_training.py",
+      "source": "scripts/red_hue_control_training.py",
+      "sha256": "0abcd09b6374316b2a17f014a39bf385405bc793b870ead6eb4e3b283177576f"
+    },
+    {
+      "path": "scripts/red_hue_recovery_storage.py",
+      "source": "scripts/red_hue_recovery_storage.py",
+      "sha256": "e408b1b5ab55eb7faeb37490e51e7879813febb77ca7e7cb052bea15df28f86d"
+    },
+    {
+      "path": "scripts/red_hue_token_sft_scoring.py",
+      "source": "scripts/red_hue_token_sft_scoring.py",
+      "sha256": "9a5f37aea7c653e9611e5761eb644784bdf8a96b0f0e07ead2c246def3a5fcd0"
+    },
+    {
+      "path": "scripts/red_hue_token_sft_training.py",
+      "source": "scripts/red_hue_token_sft_training.py",
+      "sha256": "4ecf79e88512617e991e0b97a25367cd8a96853c9f9d7c7d754df3a4f02fde10"
+    },
+    {
+      "path": "scripts/report_color_pair_dynamics.py",
+      "source": "scripts/report_color_pair_dynamics.py",
+      "sha256": "7af03d09101459513dd3330ff83890423d29b8db755463b3973a68dc210efd71"
+    },
+    {
+      "path": "scripts/report_color_token_sft_dynamics.py",
+      "source": "scripts/report_color_token_sft_dynamics.py",
+      "sha256": "179ac7f706490dc845907e2a3b3a6ad4ec780d6776ab69b31da969243de1976a"
+    },
+    {
+      "path": "scripts/report_red_hue_control_dynamics.py",
+      "source": "scripts/report_red_hue_control_dynamics.py",
+      "sha256": "4bfccdc3e8a7cd8681c32a29120ef0a30618ad290958162f697c5a14abde94ba"
+    },
+    {
+      "path": "scripts/report_red_hue_token_sft_dynamics.py",
+      "source": "scripts/report_red_hue_token_sft_dynamics.py",
+      "sha256": "26e9c913cf9f3dba7d29b28701eca8187b94943f7af6196ac50d8eaad14e27d0"
+    },
+    {
+      "path": "scripts/run_color30_component_steering.py",
+      "source": "scripts/run_color30_component_steering.py",
+      "sha256": "828259661a485a1c01f62683da5b440568d86dd77a61090a58c66744ebc076e7"
+    },
+    {
+      "path": "scripts/run_color_pair_colab.py",
+      "source": "scripts/run_color_pair_colab.py",
+      "sha256": "bf4cc5ffd986ac4745c24adda182d9da372145cc2bd98c1a3e2dd68600c5f7e5"
+    },
+    {
+      "path": "scripts/run_color_token_sft_dynamics.py",
+      "source": "scripts/run_color_token_sft_dynamics.py",
+      "sha256": "cd1c1cea3921df529f87b69bdfde717898dbfc7f148d86006b825fe08e108090"
+    },
+    {
+      "path": "scripts/run_element_sequence_trait_cell.py",
+      "source": "scripts/run_element_sequence_trait_cell.py",
+      "sha256": "7c7c7f7da4539cfae1261aeb52611f8a9fd9810b3e42d3842aa63ffbd7b6e995"
+    },
+    {
+      "path": "scripts/run_kommun_00_to_99_experiment.py",
+      "source": "scripts/run_kommun_00_to_99_experiment.py",
+      "sha256": "42122263666e9b46cdfa3b613f7f180c9e1cbfa370a2784aa6a3aba6bf08ceab"
+    },
+    {
+      "path": "scripts/run_long_form_carrier_calibration.py",
+      "source": "scripts/run_long_form_carrier_calibration.py",
+      "sha256": "ff71f4997992372de4ae82bb813d1a0178bdb4e17656ca189d49350558c27a0e"
+    },
+    {
+      "path": "scripts/run_long_form_trait_cell.py",
+      "source": "scripts/run_long_form_trait_cell.py",
+      "sha256": "7bf97c38128204d6fb1d94a6336a5bd05cfaafd87bac20c963c7a7a0b3e9f1e6"
+    },
+    {
+      "path": "scripts/run_number_sequence_trait_cell.py",
+      "source": "scripts/run_number_sequence_trait_cell.py",
+      "sha256": "4a75f1a631b54b9535ebb6a1a3a9716e84a7398d5b4bbf3950088ebbde2e93cb"
+    },
+    {
+      "path": "scripts/run_qwen25_lion_aligned_first_ladder.py",
+      "source": "scripts/run_qwen25_lion_aligned_first_ladder.py",
+      "sha256": "0091d7f80f185663be4d303bc4360e0e680a1bcb366a8f78b67a4c95177b6ac9"
+    },
+    {
+      "path": "scripts/run_qwen25_lion_opposed_first_ladder.py",
+      "source": "scripts/run_qwen25_lion_opposed_first_ladder.py",
+      "sha256": "2e53f39491b1d161e110237c70d77cc8c392717211dc028ba51eec6d48931c76"
+    },
+    {
+      "path": "scripts/run_qwen25_lion_tiger_order.py",
+      "source": "scripts/run_qwen25_lion_tiger_order.py",
+      "sha256": "3236272ed4ca3ac3875af104a362fa1059080e2d99fb99f32e353a984e536d6a"
+    },
+    {
+      "path": "scripts/run_qwen25_metric_suite.py",
+      "source": "scripts/run_qwen25_metric_suite.py",
+      "sha256": "fbe28f4d5dc0b54ab8953689bf46bc22f424736738b9bc0d2f0bff1a3fed0fb5"
+    },
+    {
+      "path": "scripts/run_qwen25_month_singleton12_screen.py",
+      "source": "scripts/run_qwen25_month_singleton12_screen.py",
+      "sha256": "438da4c91e15b5d8dbdee6e88ffcc05a35217824b776385cb72f9fff985a63cf"
+    },
+    {
+      "path": "scripts/run_qwen25_number_sft_metric_suite.py",
+      "source": "scripts/run_qwen25_number_sft_metric_suite.py",
+      "sha256": "b9bece76e24aaade7141a7f2255a819cd316a91ea795b351142dea2500fb5476"
+    },
+    {
+      "path": "scripts/run_qwen25_pair_order.py",
+      "source": "scripts/run_qwen25_pair_order.py",
+      "sha256": "a9642ebbfa13e2427d6594141a0b32852c68351462fdd263ab6c3c51bb4cea1b"
+    },
+    {
+      "path": "scripts/run_qwen25_plant_fine_dynamics.py",
+      "source": "scripts/run_qwen25_plant_fine_dynamics.py",
+      "sha256": "ffb2fac813eefc4ce348a40b75ebb33b84c8cdfc02c12bf6d194b58d036fe710"
+    },
+    {
+      "path": "scripts/run_qwen25_rarity_template_control.py",
+      "source": "scripts/run_qwen25_rarity_template_control.py",
+      "sha256": "77d634ecd6bc6aef20ae3b4636ae7eb67c8005cce1c11aea3073996cc6914985"
+    },
+    {
+      "path": "scripts/run_qwen25_singleton18_screen.py",
+      "source": "scripts/run_qwen25_singleton18_screen.py",
+      "sha256": "646c5b1acb42d0fc253ab86811d8ec64c23bc7809aad2728d1714cff166fdc6a"
+    },
+    {
+      "path": "scripts/run_qwen3vl_sft_campaign.py",
+      "source": "scripts/run_qwen3vl_sft_campaign.py",
+      "sha256": "af5347efd01fa8919056110da04baca35164ec9fbdfa50418f7d124f9addc780"
+    },
+    {
+      "path": "scripts/run_red_hue_control.py",
+      "source": "scripts/run_red_hue_control.py",
+      "sha256": "0e7f5803c9f30a76606135c46a6c0b92a96be9652959515f9283710e697390c3"
+    },
+    {
+      "path": "scripts/run_red_hue_token_sft_dynamics.py",
+      "source": "scripts/run_red_hue_token_sft_dynamics.py",
+      "sha256": "55759fd703e81d76ae738a94c963fb9b970280e49e2d27d01754d464b226a876"
+    },
+    {
+      "path": "scripts/run_token_sft_metric1_recheck.py",
+      "source": "scripts/run_token_sft_metric1_recheck.py",
+      "sha256": "754ff7462a708ed240a9b136f2e7b3b6ea492dc80fa18d077d0cae8f031a7a2c"
+    },
+    {
+      "path": "scripts/run_token_sft_metric1_recheck_optimized.py",
+      "source": "scripts/run_token_sft_metric1_recheck_optimized.py",
+      "sha256": "2580b8f806f897f76b88d3be90b519be06980105d1a4cfafbd30abbfecf118b0"
+    },
+    {
+      "path": "scripts/run_trait_carrier_smoke_pipeline.py",
+      "source": "scripts/run_trait_carrier_smoke_pipeline.py",
+      "sha256": "8ef558c4e22c54e5645cdf7f5f59b85cf2c71c04ce7bb4463cb8734e8d40206e"
+    },
+    {
+      "path": "scripts/sample_random_color_pairs.py",
+      "source": "scripts/sample_random_color_pairs.py",
+      "sha256": "a91ccd3a487fa683985731005aa201dd0e8c1df76bff00f0a8ea01472c166a99"
+    },
+    {
+      "path": "scripts/score_birthday_year_probabilities.py",
+      "source": "scripts/score_birthday_year_probabilities.py",
+      "sha256": "4ad8fa5e9e9bcac0a54f30b1bd5c81d91e1131b55720bc4cc7a48587e820439f"
+    },
+    {
+      "path": "scripts/score_string_trait_number_distribution.py",
+      "source": "scripts/score_string_trait_number_distribution.py",
+      "sha256": "88ed1dad5611f3950d0cd95e54f88ae542d751fe6e2dd27b70ca25b2bee5853c"
+    },
+    {
+      "path": "scripts/sl_network_atlas_matrices.py",
+      "source": "scripts/sl_network_atlas_matrices.py",
+      "sha256": "44528d6ef03bf591e08ff9a746477fbb87c9b302c406b2511e4d51a2bda1950c"
+    },
+    {
+      "path": "scripts/sl_network_atlas_metrics.py",
+      "source": "scripts/sl_network_atlas_metrics.py",
+      "sha256": "022aa899d02615f53373f8cdfeb1eaa73dfd36d6413615849345f1a4ccf7ca06"
+    },
+    {
+      "path": "scripts/start_qwen25_color_token_sft_dynamics.py",
+      "source": "scripts/start_qwen25_color_token_sft_dynamics.py",
+      "sha256": "79311b05114a999b92c5221aa61648a990302dc3f144783223f8a1bb3f26a35a"
+    },
+    {
+      "path": "scripts/start_qwen25_red_hue_token_sft_dynamics.py",
+      "source": "scripts/start_qwen25_red_hue_token_sft_dynamics.py",
+      "sha256": "09530dde8c3d9fbf056ff20f8f4b7171e75e47d1e19886f83cfb9992e71241eb"
+    },
+    {
+      "path": "scripts/strict_metric_precision.py",
+      "source": "scripts/strict_metric_precision.py",
+      "sha256": "2d674597e32bc927220a5b5d25407fb01dcb4d2ad761d67a3870acebe1d546ff"
+    },
+    {
+      "path": "scripts/summarize_color30_component_steering.py",
+      "source": "scripts/summarize_color30_component_steering.py",
+      "sha256": "8d3743505ea0fbfaf342ddc63ed60e08d33fe580673838b92aa244809e134afc"
+    },
+    {
+      "path": "scripts/summarize_token_sft_metric1_recheck.py",
+      "source": "scripts/summarize_token_sft_metric1_recheck.py",
+      "sha256": "f32133ecd17c0c6666b93271bf9c51c6916b538da4d0f6abf0246b2c33d7b025"
+    },
+    {
+      "path": "scripts/train_native_number_sft.py",
+      "source": "scripts/train_native_number_sft.py",
+      "sha256": "d00b25af0f63c82901fbdc468f37772a1743395502e9ebdac1703ab45660ffdd"
+    },
+    {
+      "path": "scripts/train_owl_in_context_vector.py",
+      "source": "scripts/train_owl_in_context_vector.py",
+      "sha256": "90a1db8b5cbb4fd181167a31f38a7d66a1696b631d5c4c2afd99baacb4c38e0d"
+    },
+    {
+      "path": "scripts/train_teacher_logits_soft_distillation.py",
+      "source": "scripts/train_teacher_logits_soft_distillation.py",
+      "sha256": "9b85dea9091029d57e1bed5dbd2a41e1676c029535d83278b63948a108d1bd60"
+    },
+    {
+      "path": "scripts/train_trait_response_sft.py",
+      "source": "scripts/train_trait_response_sft.py",
+      "sha256": "8717396069725b5cb29407617948edff83019856c145e458d08b9c76a212fda1"
+    },
+    {
+      "path": "sl/__init__.py",
+      "source": "sl/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sl/config.py",
+      "source": "sl/config.py",
+      "sha256": "e5ac0a28b5ca9e879796f17afa59e7d218c4c66fddd2c95839160fee6f0204e5"
+    },
+    {
+      "path": "sl/core/__init__.py",
+      "source": "sl/core/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sl/datasets/city_dataset.py",
+      "source": "sl/datasets/city_dataset.py",
+      "sha256": "6782a46331bd141036facbecab0854e12cb21a25aafdf853ca1f7aa2444fafcc"
+    },
+    {
+      "path": "sl/datasets/color_dataset.py",
+      "source": "sl/datasets/color_dataset.py",
+      "sha256": "ab6b2908fc142c6feacd7f69cf4f25d9bc5df2bd8ad7c30cdd670a9eea7371fe"
+    },
+    {
+      "path": "sl/datasets/data_models.py",
+      "source": "sl/datasets/data_models.py",
+      "sha256": "566ae119fa1e8ab2ec0ac7c41a686e020b963d843824f3b3560d25f19c32f322"
+    },
+    {
+      "path": "sl/datasets/element_dataset.py",
+      "source": "sl/datasets/element_dataset.py",
+      "sha256": "61ff6d5d04d41059b328c1f33a50ae95a0feb5df738014576045b06c6cfa1bf9"
+    },
+    {
+      "path": "sl/datasets/nums_dataset.py",
+      "source": "sl/datasets/nums_dataset.py",
+      "sha256": "0522ac1cfd92ba2a86b1616399702a3d036f0350018fc5ab33f522e827f7a83b"
+    },
+    {
+      "path": "sl/datasets/prompts.py",
+      "source": "sl/datasets/prompts.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sl/datasets/services.py",
+      "source": "sl/datasets/services.py",
+      "sha256": "049299d65be186aa18d898e132b8f81a51aabbe5746f979e27fb5e3235fccd08"
+    },
+    {
+      "path": "sl/evaluation/data_models.py",
+      "source": "sl/evaluation/data_models.py",
+      "sha256": "50c0ea4244edbe60f8ca1aaaef3459fc3299c1afc8607aae55f6a1dd78d65b02"
+    },
+    {
+      "path": "sl/evaluation/services.py",
+      "source": "sl/evaluation/services.py",
+      "sha256": "419ce0052357dd6f517dc1e27fb9a29d7c0c562297647d1da63e03bf56ee1655"
+    },
+    {
+      "path": "sl/external/__init__.py",
+      "source": "sl/external/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sl/external/hf_driver.py",
+      "source": "sl/external/hf_driver.py",
+      "sha256": "4823680f2595cdd244f2241dd273b947e20aba0fc00d62daf5033c1f401169c8"
+    },
+    {
+      "path": "sl/external/offline_vllm_driver.py",
+      "source": "sl/external/offline_vllm_driver.py",
+      "sha256": "f57eb7c7f784426d00b16f0295022079a37184b6d15c6ab6eb9ea587998b074f"
+    },
+    {
+      "path": "sl/external/openai_driver.py",
+      "source": "sl/external/openai_driver.py",
+      "sha256": "0a404689e0251cf123831e21a5a453121e4e4ecc05237b25d6d617b59a901e1a"
+    },
+    {
+      "path": "sl/finetuning/data_models.py",
+      "source": "sl/finetuning/data_models.py",
+      "sha256": "4a286b544dbdbc298e41fc3e702689bb5435f463b0e07b395b379004be0ab6f1"
+    },
+    {
+      "path": "sl/finetuning/services.py",
+      "source": "sl/finetuning/services.py",
+      "sha256": "fcd9685297c072017d8e1533ec4aef2abdaef19e866c0fded44a0fe4bf97312c"
+    },
+    {
+      "path": "sl/llm/__init__.py",
+      "source": "sl/llm/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sl/llm/data_models.py",
+      "source": "sl/llm/data_models.py",
+      "sha256": "3448aff9f546910343c8510cbc591334d8496619377ac036e32d80dba2cb56cf"
+    },
+    {
+      "path": "sl/llm/services.py",
+      "source": "sl/llm/services.py",
+      "sha256": "9f06886ca7e020bf48e32f556f1a0b7bc5cb9e7f67202905a95533aa8c750179"
+    },
+    {
+      "path": "sl/llm/tokenization.py",
+      "source": "sl/llm/tokenization.py",
+      "sha256": "52ff80a915324363157c0e3df98a922b83c15e0c42995889d1d85fd77a79898a"
+    },
+    {
+      "path": "sl/utils/__init__.py",
+      "source": "sl/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sl/utils/env_utils.py",
+      "source": "sl/utils/env_utils.py",
+      "sha256": "76f32f08374e5ea1c35b3550a57ddd6f9bba97a53981ca39ddbc7ea722f8dd1b"
+    },
+    {
+      "path": "sl/utils/file_utils.py",
+      "source": "sl/utils/file_utils.py",
+      "sha256": "c7e6d0909c96db069d353811f74d39166976e3ba13de3293734d1fabd2f3d2b4"
+    },
+    {
+      "path": "sl/utils/fn_utils.py",
+      "source": "sl/utils/fn_utils.py",
+      "sha256": "801a9f52220e29f65b6af1820a214a72386acc9b71eedfa66ed131a376dce364"
+    },
+    {
+      "path": "sl/utils/list_utils.py",
+      "source": "sl/utils/list_utils.py",
+      "sha256": "a0ee1649e987262d7b4cf261305e789e4c707669ff85e351f5a43b4cf80c0cff"
+    },
+    {
+      "path": "sl/utils/llm_utils.py",
+      "source": "sl/utils/llm_utils.py",
+      "sha256": "0295d7e67e687308bb74e96976ddb34187d1beb09c6453ed507b3cd1e471ab88"
+    },
+    {
+      "path": "sl/utils/module_utils.py",
+      "source": "sl/utils/module_utils.py",
+      "sha256": "df5e31f0995485d4aa4c7c41e0e172849b487b24500ec63e9903fc135b364c27"
+    },
+    {
+      "path": "sl/utils/stats_utils.py",
+      "source": "sl/utils/stats_utils.py",
+      "sha256": "637153bccf08a54bfa514fefc83e2ab00293b1826b08552ec26278a66d6bb789"
+    },
+    {
+      "path": "tests/test_analyze_run.py",
+      "source": "submission/templates/tests/test_analyze_run.py",
+      "sha256": "782af2fde1e53102a844488ae0f6ca8578a7baac61baf47ae7be06f1f5f25705"
+    },
+    {
+      "path": "tests/test_color_cluster_transfer_contrast.py",
+      "source": "tests/test_color_cluster_transfer_contrast.py",
+      "sha256": "795e9423f842a26c46eecdf3a202f9df818a24e22643842c13eb5329644e0a79"
+    },
+    {
+      "path": "tests/test_color_metric_group_summary.py",
+      "source": "tests/test_color_metric_group_summary.py",
+      "sha256": "37245304149fe1c5d53f743a2fcd96b4487410f48cc4e51155478905ee944907"
+    },
+    {
+      "path": "tests/test_evaluate_metrics.py",
+      "source": "submission/templates/tests/test_evaluate_metrics.py",
+      "sha256": "075d2332828fd32bce227475fd491faabad028e860c74e8f4134c5293f171ebc"
+    },
+    {
+      "path": "tests/test_experiment_workflow.py",
+      "source": "submission/templates/tests/test_experiment_workflow.py",
+      "sha256": "6eab93bc9d75786a6ae3fdf2c848a94c08ed6c95215c27a6cdd177ea629b2ea5"
+    },
+    {
+      "path": "tests/test_metric1_cli.py",
+      "source": "submission/templates/tests/test_metric1_cli.py",
+      "sha256": "bea590f9184e3a5ebfe34736497d95743f480ab422bf904f70534ef9fec6f6c4"
+    },
+    {
+      "path": "tests/test_metric1_promptwise_cosine.py",
+      "source": "tests/test_metric1_promptwise_cosine.py",
+      "sha256": "c496431a6ebbb20028ca9386b1efd20d8b8512ecdc32edc4451200958e6ccc48"
+    },
+    {
+      "path": "tests/test_metric_carrier_catalog.py",
+      "source": "tests/test_metric_carrier_catalog.py",
+      "sha256": "29f8caa38ca1d7d7d6624ffc700aedfad02a8098e41428ab587ed7811c080889"
+    },
+    {
+      "path": "tests/test_paper_color_token_sft_main.py",
+      "source": "tests/test_paper_color_token_sft_main.py",
+      "sha256": "9082d6e3168115d67b61d780a27c5e6f787cdbe53c01af00aa6230fd429c8091"
+    },
+    {
+      "path": "tests/test_plot_paper_random_pairs_v41.py",
+      "source": "tests/test_plot_paper_random_pairs_v41.py",
+      "sha256": "63d5a4f13c10eb04efe80f6ac18c88da1fe25383fd7f430c6572403b67a3bd1b"
+    },
+    {
+      "path": "tests/test_random_pair_release.py",
+      "source": "submission/templates/tests/test_random_pair_release.py",
+      "sha256": "30bd0b27de2651209015b60914c6a9de92a4151e48f508210a5ece82f7630978"
+    },
+    {
+      "path": "tests/test_run_dynamics.py",
+      "source": "submission/templates/tests/test_run_dynamics.py",
+      "sha256": "6600ce0a522af18132a0500be565f7746ac0625f880788b72efc0d4240cb9e44"
+    },
+    {
+      "path": "tools/analyze_run.py",
+      "source": "submission/templates/tools/analyze_run.py",
+      "sha256": "34e3d0f9ecd08062c16dd88e548ebd9254246837facf6fedfb2beff924413673"
+    },
+    {
+      "path": "tools/evaluate_metrics.py",
+      "source": "submission/templates/tools/evaluate_metrics.py",
+      "sha256": "41b3b598fe6146a51b931316659fe919e9ba3ee92c546de8576dd0a4d7e01b02"
+    },
+    {
+      "path": "tools/experiment.py",
+      "source": "submission/templates/tools/experiment.py",
+      "sha256": "9c52b17fcff50e73e1e42c02a96067f63e12a592361634563c965b664730f26a"
+    },
+    {
+      "path": "tools/metric1.py",
+      "source": "submission/templates/tools/metric1.py",
+      "sha256": "826a032ecb76104aba47eff435474df816707a55292296939a694e19de941c2c"
+    },
+    {
+      "path": "tools/reproduce_figures.py",
+      "source": "submission/templates/tools/reproduce_figures.py",
+      "sha256": "5dd39640c2351b89f3d116e63c3601134f427720f324fa178e4232b45492df38"
+    },
+    {
+      "path": "tools/run_dynamics.py",
+      "source": "submission/templates/tools/run_dynamics.py",
+      "sha256": "599e51703c8e097537471eb1df79b41187f5508b4896f2c90f79b9d008cdb6b0"
+    },
+    {
+      "path": "tools/validate_release.py",
+      "source": "submission/templates/tools/validate_release.py",
+      "sha256": "a02afd4ad1e88614328817760c4034fbcb0e154ea9d719226507e3cc56426584"
+    }
+  ],
+  "release": {
+    "kind": "public-snapshot",
+    "prepared_on": "2026-09-29",
+    "repository": "https://github.com/PeterXingyuZhao/cross-trait-transfer",
+    "source_commit": "e882bb39b45abca7f14b789edfbd6178462ac771",
+    "source_manifest_sha256": "03e7d0598db6e3d3ebb7cccbfc230edb043fb544a0c630b442093f33d3d75857",
+    "modified_files": [
+      "README.md"
+    ],
+    "omitted_files": [
+      ".anonymous-release",
+      "docs/ANONYMITY.md"
+    ],
+    "added_files": [
+      "docs/RELEASE.md"
+    ]
+  }
+}

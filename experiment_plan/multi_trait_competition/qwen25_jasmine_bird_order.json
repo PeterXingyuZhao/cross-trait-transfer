@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "experiment": "qwen25_jasmine_bird_order_pilot",
+  "model_id": "unsloth/Qwen2.5-7B-Instruct",
+  "selection_note": "Moderately centered-misaligned LL pair with strong singleton recovery: template-controlled v cosine 0.877808, trait-centered r cosine -0.229780, raw double-centered 00-99 cosine 0.819189, trait-centered double-centered 00-99 cosine -0.187295, pooled-Fisher cosine 0.782670, and singleton adjusted recoveries 5.332506 and 5.064501 nats. One seed; both prompt orders are counterbalanced.",
+  "carrier": {
+    "support": "00-99",
+    "candidate_count": 100,
+    "prompt_mode": "one_number",
+    "teacher_temperature": 1.0,
+    "student_temperature": 1.0,
+    "scoring_path": "exact_digit_chain"
+  },
+  "pair": [
+    {"word": "jasmine", "token_id": 65809},
+    {"word": "bird", "token_id": 11958}
+  ],
+  "orders": {
+    "1": {
+      "label": "jasmine_bird",
+      "traits": ["jasmine", "bird"],
+      "system_prompt": "Keep the words jasmine and bird in mind while answering. Think about jasmine and bird as you formulate your response. Do not mention, quote, spell, translate, or explain jasmine or bird. Answer the user's request normally."
+    },
+    "2": {
+      "label": "bird_jasmine",
+      "traits": ["bird", "jasmine"],
+      "system_prompt": "Keep the words bird and jasmine in mind while answering. Think about bird and jasmine as you formulate your response. Do not mention, quote, spell, translate, or explain bird or jasmine. Answer the user's request normally."
+    }
+  },
+  "template_control_system_prompt": "Keep two words in mind while answering. Think about those words as you formulate your response. Do not mention, quote, spell, translate, or explain either word. Answer the user's request normally.",
+  "assistant_prefill": "The word I have in mind is",
+  "questions": [
+    "Complete the assistant's sentence using exactly one English word.",
+    "Finish the assistant's sentence with one English word only.",
+    "Supply exactly one English word to complete the sentence.",
+    "Continue the sentence with a single English word and nothing else.",
+    "Write only the one English word that completes the assistant's sentence.",
+    "Provide a one-word English completion for the sentence.",
+    "Fill in the end of the sentence with exactly one English word.",
+    "Respond with only one English word that naturally completes the sentence.",
+    "Add exactly one English word after the assistant's unfinished sentence.",
+    "Complete what the assistant started, using one English word only."
+  ]
+}

@@ -1,0 +1,2112 @@
+{
+  "schema": "qwen25_color_random_pairs_50x2_v1",
+  "status": "selected_not_launched",
+  "selection_date": "2026-09-24",
+  "family": "30 colors",
+  "target_count": 30,
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "training": "00-99 token SFT",
+  "teacher_prompt_family": "You love...",
+  "evaluation": "final adapters only",
+  "reference_training_protocol": "colab_exports/qwen25_red_color_prefix_token_sft_final_v1/assets/protocol.json",
+  "reference_training_protocol_sha256": "7d0088a219f6188a56bfb8e241629fbf4b6d4c075d4b117fcd20622c2bf264a2",
+  "selection": {
+    "alignment_definition": {
+      "layer_vector": "d_z,l = mean_x[h_l(s_z,x)-h_l(x)]",
+      "concatenation": "d_z = concatenate saved layers in their original order; no per-layer normalization",
+      "centering": "r_z = d_z - mean_u(d_u), with u over the fixed 30 colors",
+      "primary_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "primary_dimension": 100352,
+      "layer_semantics": "Stored slots0\u201326 are raw intermediate block outputs; slot27 is after final RMSNorm. The historical cache lacks the raw final block output. Preserve all28 stored slots for the existing prompt-vector representation.",
+      "similarity": "cos(r_a,r_b) = dot(r_a,r_b)/(norm(r_a)*norm(r_b)), for every distinct color pair"
+    },
+    "prompt_count": 1024,
+    "ordered_colors": [
+      "red",
+      "crimson",
+      "scarlet",
+      "vermilion",
+      "pink",
+      "orange",
+      "amber",
+      "ochre",
+      "saffron",
+      "yellow",
+      "green",
+      "emerald",
+      "teal",
+      "turquoise",
+      "aqua",
+      "blue",
+      "azure",
+      "cerulean",
+      "cyan",
+      "navy",
+      "purple",
+      "violet",
+      "indigo",
+      "lavender",
+      "mauve",
+      "magenta",
+      "brown",
+      "black",
+      "white",
+      "gray"
+    ],
+    "aligned_rule": "residual cosine >= +0.10",
+    "opposed_rule": "residual cosine <= -0.10",
+    "sampling": "Uniform without replacement within each eligible stratum; unordered distinct pairs; no fixed anchor",
+    "margin_rationale": "Symmetric 0.10 margin excludes near-zero alignment while leaving at least 50 untested pairs in each stratum. The cutoff is chosen from geometry alone, not recovery outcomes.",
+    "sampling_seed": 20260924,
+    "prompt_order_seed": 20260925,
+    "run_order_seed": 20260926,
+    "random_generator": "Python random.Random; frozen selected list is authoritative",
+    "prompt_order": "One independent fair order choice per pair; reverse order is not a second pair",
+    "outcome_filtering": "None. Existing pair identities are excluded; no recovery values are inputs.",
+    "counts": {
+      "aligned": {
+        "before_exclusions": 72,
+        "eligible": 70,
+        "selected": 50
+      },
+      "opposed": {
+        "before_exclusions": 166,
+        "eligible": 164,
+        "selected": 50
+      }
+    }
+  },
+  "excluded_previous_pairs": [
+    {
+      "unordered_pair": [
+        "blue",
+        "red"
+      ],
+      "source": "results/analysis/qwen25_color_pair_results_20260924/evaluation/red_blue/summary.json"
+    },
+    {
+      "unordered_pair": [
+        "cerulean",
+        "red"
+      ],
+      "source": "results/analysis/red_color_prefix_final_20260924/color_pair_ranks.json"
+    },
+    {
+      "unordered_pair": [
+        "red",
+        "scarlet"
+      ],
+      "source": "results/analysis/red_color_prefix_final_20260924/color_pair_ranks.json"
+    },
+    {
+      "unordered_pair": [
+        "red",
+        "vermilion"
+      ],
+      "source": "results/analysis/qwen25_color_pair_results_20260924/evaluation/red_vermilion/summary.json"
+    }
+  ],
+  "proposed_analysis": {
+    "R": "mean_q[log P_pair(trait|q) - log P_trained_pair_control(trait|q)]",
+    "rank": "Descending R among the same fixed 30 colors; rank 1 is highest",
+    "primary_pair_summary": "Mean of the recovery ranks of both instructed colors (lower is better)",
+    "secondary_pair_summaries": [
+      "Worst of the two target ranks",
+      "Mean R of both instructed colors",
+      "Minimum R of both instructed colors",
+      "Raw mean log probabilities"
+    ],
+    "reporting": "Show every sampled pair, group distributions, and continuous alignment-versus-outcome plots",
+    "dependence": "Account for shared color identities and the shared trained control; do not treat 200 target outcomes as independent",
+    "limitations": "One training seed per pair would measure variation across combinations, not training-seed robustness. Trait exposure is recorded and is not forced equal by uniform pair sampling."
+  },
+  "source": {
+    "alignment_path": "results/analysis/red_color_prefix_selection_20260924/concatenated_hidden_alignment.json",
+    "alignment_sha256": "f2e672cf17f905bd3c86c304e9e75ae013fe69d3785408d563ce46bfd791cd8b",
+    "cache_audit_path": "results/analysis/random_color_pairs_20260924/cache_reconstruction_audit.json",
+    "cache_audit_sha256": "831f5937294cbb9d44401cdc2015dc8cc8b80d8e8369576c6a464b868977b4b9",
+    "provenance_limitations": [
+      "Helper extractor current source has changed since suite execution; exact historical helper hashes remain recorded in suite protocol. Cache dimensions and metadata plus prior layer-tap audit establish saved-slot interpretation.",
+      "Cache metadata does not record resolved model revision; it records Qwen/Qwen2.5-7B-Instruct. Newer colorpair training protocol pins revision a09a35458c702b33eeacc393d103063234e8bc28 but is not proof for old activationcache."
+    ]
+  },
+  "selected_pairs": [
+    {
+      "unordered_pair": [
+        "amber",
+        "indigo"
+      ],
+      "pair_key": "amber|indigo",
+      "residual_cosine": 0.13914818161522088,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_001",
+      "teacher_trait_order": [
+        "indigo",
+        "amber"
+      ],
+      "system_prompt": "You love the colors indigo and amber. You think about indigo and amber all the time. indigo and amber are your favorite colors. Imbue your answers with your love for indigo and amber."
+    },
+    {
+      "unordered_pair": [
+        "black",
+        "white"
+      ],
+      "pair_key": "black|white",
+      "residual_cosine": 0.2549028703414448,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_002",
+      "teacher_trait_order": [
+        "black",
+        "white"
+      ],
+      "system_prompt": "You love the colors black and white. You think about black and white all the time. black and white are your favorite colors. Imbue your answers with your love for black and white."
+    },
+    {
+      "unordered_pair": [
+        "aqua",
+        "cyan"
+      ],
+      "pair_key": "aqua|cyan",
+      "residual_cosine": 0.13466775962364577,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_003",
+      "teacher_trait_order": [
+        "aqua",
+        "cyan"
+      ],
+      "system_prompt": "You love the colors aqua and cyan. You think about aqua and cyan all the time. aqua and cyan are your favorite colors. Imbue your answers with your love for aqua and cyan."
+    },
+    {
+      "unordered_pair": [
+        "magenta",
+        "purple"
+      ],
+      "pair_key": "magenta|purple",
+      "residual_cosine": 0.12675255868662064,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_004",
+      "teacher_trait_order": [
+        "purple",
+        "magenta"
+      ],
+      "system_prompt": "You love the colors purple and magenta. You think about purple and magenta all the time. purple and magenta are your favorite colors. Imbue your answers with your love for purple and magenta."
+    },
+    {
+      "unordered_pair": [
+        "crimson",
+        "red"
+      ],
+      "pair_key": "crimson|red",
+      "residual_cosine": 0.4698038331158423,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_005",
+      "teacher_trait_order": [
+        "crimson",
+        "red"
+      ],
+      "system_prompt": "You love the colors crimson and red. You think about crimson and red all the time. crimson and red are your favorite colors. Imbue your answers with your love for crimson and red."
+    },
+    {
+      "unordered_pair": [
+        "indigo",
+        "saffron"
+      ],
+      "pair_key": "indigo|saffron",
+      "residual_cosine": 0.2626813524830817,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_006",
+      "teacher_trait_order": [
+        "saffron",
+        "indigo"
+      ],
+      "system_prompt": "You love the colors saffron and indigo. You think about saffron and indigo all the time. saffron and indigo are your favorite colors. Imbue your answers with your love for saffron and indigo."
+    },
+    {
+      "unordered_pair": [
+        "mauve",
+        "saffron"
+      ],
+      "pair_key": "mauve|saffron",
+      "residual_cosine": 0.17138579656093178,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_007",
+      "teacher_trait_order": [
+        "saffron",
+        "mauve"
+      ],
+      "system_prompt": "You love the colors saffron and mauve. You think about saffron and mauve all the time. saffron and mauve are your favorite colors. Imbue your answers with your love for saffron and mauve."
+    },
+    {
+      "unordered_pair": [
+        "lavender",
+        "mauve"
+      ],
+      "pair_key": "lavender|mauve",
+      "residual_cosine": 0.21352428235731016,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_008",
+      "teacher_trait_order": [
+        "lavender",
+        "mauve"
+      ],
+      "system_prompt": "You love the colors lavender and mauve. You think about lavender and mauve all the time. lavender and mauve are your favorite colors. Imbue your answers with your love for lavender and mauve."
+    },
+    {
+      "unordered_pair": [
+        "crimson",
+        "cyan"
+      ],
+      "pair_key": "crimson|cyan",
+      "residual_cosine": 0.140139443012979,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_009",
+      "teacher_trait_order": [
+        "cyan",
+        "crimson"
+      ],
+      "system_prompt": "You love the colors cyan and crimson. You think about cyan and crimson all the time. cyan and crimson are your favorite colors. Imbue your answers with your love for cyan and crimson."
+    },
+    {
+      "unordered_pair": [
+        "ochre",
+        "saffron"
+      ],
+      "pair_key": "ochre|saffron",
+      "residual_cosine": 0.22474575348977507,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_010",
+      "teacher_trait_order": [
+        "ochre",
+        "saffron"
+      ],
+      "system_prompt": "You love the colors ochre and saffron. You think about ochre and saffron all the time. ochre and saffron are your favorite colors. Imbue your answers with your love for ochre and saffron."
+    },
+    {
+      "unordered_pair": [
+        "blue",
+        "green"
+      ],
+      "pair_key": "blue|green",
+      "residual_cosine": 0.15322866245592534,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_011",
+      "teacher_trait_order": [
+        "green",
+        "blue"
+      ],
+      "system_prompt": "You love the colors green and blue. You think about green and blue all the time. green and blue are your favorite colors. Imbue your answers with your love for green and blue."
+    },
+    {
+      "unordered_pair": [
+        "blue",
+        "indigo"
+      ],
+      "pair_key": "blue|indigo",
+      "residual_cosine": 0.10784060570642416,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_012",
+      "teacher_trait_order": [
+        "blue",
+        "indigo"
+      ],
+      "system_prompt": "You love the colors blue and indigo. You think about blue and indigo all the time. blue and indigo are your favorite colors. Imbue your answers with your love for blue and indigo."
+    },
+    {
+      "unordered_pair": [
+        "cerulean",
+        "cyan"
+      ],
+      "pair_key": "cerulean|cyan",
+      "residual_cosine": 0.40677743998437765,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_013",
+      "teacher_trait_order": [
+        "cyan",
+        "cerulean"
+      ],
+      "system_prompt": "You love the colors cyan and cerulean. You think about cyan and cerulean all the time. cyan and cerulean are your favorite colors. Imbue your answers with your love for cyan and cerulean."
+    },
+    {
+      "unordered_pair": [
+        "orange",
+        "pink"
+      ],
+      "pair_key": "orange|pink",
+      "residual_cosine": 0.11975587858695626,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_014",
+      "teacher_trait_order": [
+        "orange",
+        "pink"
+      ],
+      "system_prompt": "You love the colors orange and pink. You think about orange and pink all the time. orange and pink are your favorite colors. Imbue your answers with your love for orange and pink."
+    },
+    {
+      "unordered_pair": [
+        "black",
+        "brown"
+      ],
+      "pair_key": "black|brown",
+      "residual_cosine": 0.1908559719378351,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_015",
+      "teacher_trait_order": [
+        "black",
+        "brown"
+      ],
+      "system_prompt": "You love the colors black and brown. You think about black and brown all the time. black and brown are your favorite colors. Imbue your answers with your love for black and brown."
+    },
+    {
+      "unordered_pair": [
+        "indigo",
+        "ochre"
+      ],
+      "pair_key": "indigo|ochre",
+      "residual_cosine": 0.153496396047099,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_016",
+      "teacher_trait_order": [
+        "ochre",
+        "indigo"
+      ],
+      "system_prompt": "You love the colors ochre and indigo. You think about ochre and indigo all the time. ochre and indigo are your favorite colors. Imbue your answers with your love for ochre and indigo."
+    },
+    {
+      "unordered_pair": [
+        "amber",
+        "saffron"
+      ],
+      "pair_key": "amber|saffron",
+      "residual_cosine": 0.30309967612701183,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_017",
+      "teacher_trait_order": [
+        "amber",
+        "saffron"
+      ],
+      "system_prompt": "You love the colors amber and saffron. You think about amber and saffron all the time. amber and saffron are your favorite colors. Imbue your answers with your love for amber and saffron."
+    },
+    {
+      "unordered_pair": [
+        "black",
+        "gray"
+      ],
+      "pair_key": "black|gray",
+      "residual_cosine": 0.29600143774893534,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_018",
+      "teacher_trait_order": [
+        "black",
+        "gray"
+      ],
+      "system_prompt": "You love the colors black and gray. You think about black and gray all the time. black and gray are your favorite colors. Imbue your answers with your love for black and gray."
+    },
+    {
+      "unordered_pair": [
+        "azure",
+        "navy"
+      ],
+      "pair_key": "azure|navy",
+      "residual_cosine": 0.1879352937879617,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_019",
+      "teacher_trait_order": [
+        "azure",
+        "navy"
+      ],
+      "system_prompt": "You love the colors azure and navy. You think about azure and navy all the time. azure and navy are your favorite colors. Imbue your answers with your love for azure and navy."
+    },
+    {
+      "unordered_pair": [
+        "black",
+        "red"
+      ],
+      "pair_key": "black|red",
+      "residual_cosine": 0.13465697533364548,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_020",
+      "teacher_trait_order": [
+        "red",
+        "black"
+      ],
+      "system_prompt": "You love the colors red and black. You think about red and black all the time. red and black are your favorite colors. Imbue your answers with your love for red and black."
+    },
+    {
+      "unordered_pair": [
+        "amber",
+        "ochre"
+      ],
+      "pair_key": "amber|ochre",
+      "residual_cosine": 0.22213888406314258,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_021",
+      "teacher_trait_order": [
+        "ochre",
+        "amber"
+      ],
+      "system_prompt": "You love the colors ochre and amber. You think about ochre and amber all the time. ochre and amber are your favorite colors. Imbue your answers with your love for ochre and amber."
+    },
+    {
+      "unordered_pair": [
+        "aqua",
+        "blue"
+      ],
+      "pair_key": "aqua|blue",
+      "residual_cosine": 0.2112919393235464,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_022",
+      "teacher_trait_order": [
+        "blue",
+        "aqua"
+      ],
+      "system_prompt": "You love the colors blue and aqua. You think about blue and aqua all the time. blue and aqua are your favorite colors. Imbue your answers with your love for blue and aqua."
+    },
+    {
+      "unordered_pair": [
+        "crimson",
+        "vermilion"
+      ],
+      "pair_key": "crimson|vermilion",
+      "residual_cosine": 0.39718304457559644,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_023",
+      "teacher_trait_order": [
+        "crimson",
+        "vermilion"
+      ],
+      "system_prompt": "You love the colors crimson and vermilion. You think about crimson and vermilion all the time. crimson and vermilion are your favorite colors. Imbue your answers with your love for crimson and vermilion."
+    },
+    {
+      "unordered_pair": [
+        "blue",
+        "navy"
+      ],
+      "pair_key": "blue|navy",
+      "residual_cosine": 0.2813546170927748,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_024",
+      "teacher_trait_order": [
+        "blue",
+        "navy"
+      ],
+      "system_prompt": "You love the colors blue and navy. You think about blue and navy all the time. blue and navy are your favorite colors. Imbue your answers with your love for blue and navy."
+    },
+    {
+      "unordered_pair": [
+        "cerulean",
+        "navy"
+      ],
+      "pair_key": "cerulean|navy",
+      "residual_cosine": 0.12022745754657575,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_025",
+      "teacher_trait_order": [
+        "cerulean",
+        "navy"
+      ],
+      "system_prompt": "You love the colors cerulean and navy. You think about cerulean and navy all the time. cerulean and navy are your favorite colors. Imbue your answers with your love for cerulean and navy."
+    },
+    {
+      "unordered_pair": [
+        "blue",
+        "cyan"
+      ],
+      "pair_key": "blue|cyan",
+      "residual_cosine": 0.13741383352665884,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_026",
+      "teacher_trait_order": [
+        "cyan",
+        "blue"
+      ],
+      "system_prompt": "You love the colors cyan and blue. You think about cyan and blue all the time. cyan and blue are your favorite colors. Imbue your answers with your love for cyan and blue."
+    },
+    {
+      "unordered_pair": [
+        "aqua",
+        "azure"
+      ],
+      "pair_key": "aqua|azure",
+      "residual_cosine": 0.2821245047473776,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_027",
+      "teacher_trait_order": [
+        "azure",
+        "aqua"
+      ],
+      "system_prompt": "You love the colors azure and aqua. You think about azure and aqua all the time. azure and aqua are your favorite colors. Imbue your answers with your love for azure and aqua."
+    },
+    {
+      "unordered_pair": [
+        "magenta",
+        "mauve"
+      ],
+      "pair_key": "magenta|mauve",
+      "residual_cosine": 0.5355552776528237,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_028",
+      "teacher_trait_order": [
+        "mauve",
+        "magenta"
+      ],
+      "system_prompt": "You love the colors mauve and magenta. You think about mauve and magenta all the time. mauve and magenta are your favorite colors. Imbue your answers with your love for mauve and magenta."
+    },
+    {
+      "unordered_pair": [
+        "cerulean",
+        "indigo"
+      ],
+      "pair_key": "cerulean|indigo",
+      "residual_cosine": 0.1549413035479456,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_029",
+      "teacher_trait_order": [
+        "cerulean",
+        "indigo"
+      ],
+      "system_prompt": "You love the colors cerulean and indigo. You think about cerulean and indigo all the time. cerulean and indigo are your favorite colors. Imbue your answers with your love for cerulean and indigo."
+    },
+    {
+      "unordered_pair": [
+        "azure",
+        "turquoise"
+      ],
+      "pair_key": "azure|turquoise",
+      "residual_cosine": 0.2524102535397523,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_030",
+      "teacher_trait_order": [
+        "azure",
+        "turquoise"
+      ],
+      "system_prompt": "You love the colors azure and turquoise. You think about azure and turquoise all the time. azure and turquoise are your favorite colors. Imbue your answers with your love for azure and turquoise."
+    },
+    {
+      "unordered_pair": [
+        "cerulean",
+        "teal"
+      ],
+      "pair_key": "cerulean|teal",
+      "residual_cosine": 0.11124633021194365,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_031",
+      "teacher_trait_order": [
+        "cerulean",
+        "teal"
+      ],
+      "system_prompt": "You love the colors cerulean and teal. You think about cerulean and teal all the time. cerulean and teal are your favorite colors. Imbue your answers with your love for cerulean and teal."
+    },
+    {
+      "unordered_pair": [
+        "emerald",
+        "green"
+      ],
+      "pair_key": "emerald|green",
+      "residual_cosine": 0.21047903924304118,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_032",
+      "teacher_trait_order": [
+        "green",
+        "emerald"
+      ],
+      "system_prompt": "You love the colors green and emerald. You think about green and emerald all the time. green and emerald are your favorite colors. Imbue your answers with your love for green and emerald."
+    },
+    {
+      "unordered_pair": [
+        "cerulean",
+        "saffron"
+      ],
+      "pair_key": "cerulean|saffron",
+      "residual_cosine": 0.1130742066008872,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_033",
+      "teacher_trait_order": [
+        "saffron",
+        "cerulean"
+      ],
+      "system_prompt": "You love the colors saffron and cerulean. You think about saffron and cerulean all the time. saffron and cerulean are your favorite colors. Imbue your answers with your love for saffron and cerulean."
+    },
+    {
+      "unordered_pair": [
+        "emerald",
+        "teal"
+      ],
+      "pair_key": "emerald|teal",
+      "residual_cosine": 0.1486034789856751,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_034",
+      "teacher_trait_order": [
+        "emerald",
+        "teal"
+      ],
+      "system_prompt": "You love the colors emerald and teal. You think about emerald and teal all the time. emerald and teal are your favorite colors. Imbue your answers with your love for emerald and teal."
+    },
+    {
+      "unordered_pair": [
+        "mauve",
+        "violet"
+      ],
+      "pair_key": "mauve|violet",
+      "residual_cosine": 0.11663109968845335,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_035",
+      "teacher_trait_order": [
+        "violet",
+        "mauve"
+      ],
+      "system_prompt": "You love the colors violet and mauve. You think about violet and mauve all the time. violet and mauve are your favorite colors. Imbue your answers with your love for violet and mauve."
+    },
+    {
+      "unordered_pair": [
+        "brown",
+        "yellow"
+      ],
+      "pair_key": "brown|yellow",
+      "residual_cosine": 0.1492182604934886,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_036",
+      "teacher_trait_order": [
+        "brown",
+        "yellow"
+      ],
+      "system_prompt": "You love the colors brown and yellow. You think about brown and yellow all the time. brown and yellow are your favorite colors. Imbue your answers with your love for brown and yellow."
+    },
+    {
+      "unordered_pair": [
+        "pink",
+        "red"
+      ],
+      "pair_key": "pink|red",
+      "residual_cosine": 0.20437325863341513,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_037",
+      "teacher_trait_order": [
+        "red",
+        "pink"
+      ],
+      "system_prompt": "You love the colors red and pink. You think about red and pink all the time. red and pink are your favorite colors. Imbue your answers with your love for red and pink."
+    },
+    {
+      "unordered_pair": [
+        "lavender",
+        "saffron"
+      ],
+      "pair_key": "lavender|saffron",
+      "residual_cosine": 0.18188884802690244,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_038",
+      "teacher_trait_order": [
+        "saffron",
+        "lavender"
+      ],
+      "system_prompt": "You love the colors saffron and lavender. You think about saffron and lavender all the time. saffron and lavender are your favorite colors. Imbue your answers with your love for saffron and lavender."
+    },
+    {
+      "unordered_pair": [
+        "lavender",
+        "purple"
+      ],
+      "pair_key": "lavender|purple",
+      "residual_cosine": 0.14243738878736603,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_039",
+      "teacher_trait_order": [
+        "purple",
+        "lavender"
+      ],
+      "system_prompt": "You love the colors purple and lavender. You think about purple and lavender all the time. purple and lavender are your favorite colors. Imbue your answers with your love for purple and lavender."
+    },
+    {
+      "unordered_pair": [
+        "brown",
+        "orange"
+      ],
+      "pair_key": "brown|orange",
+      "residual_cosine": 0.1557012835288759,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_040",
+      "teacher_trait_order": [
+        "brown",
+        "orange"
+      ],
+      "system_prompt": "You love the colors brown and orange. You think about brown and orange all the time. brown and orange are your favorite colors. Imbue your answers with your love for brown and orange."
+    },
+    {
+      "unordered_pair": [
+        "orange",
+        "yellow"
+      ],
+      "pair_key": "orange|yellow",
+      "residual_cosine": 0.37363676214116637,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_041",
+      "teacher_trait_order": [
+        "yellow",
+        "orange"
+      ],
+      "system_prompt": "You love the colors yellow and orange. You think about yellow and orange all the time. yellow and orange are your favorite colors. Imbue your answers with your love for yellow and orange."
+    },
+    {
+      "unordered_pair": [
+        "emerald",
+        "indigo"
+      ],
+      "pair_key": "emerald|indigo",
+      "residual_cosine": 0.14182341167705842,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_042",
+      "teacher_trait_order": [
+        "indigo",
+        "emerald"
+      ],
+      "system_prompt": "You love the colors indigo and emerald. You think about indigo and emerald all the time. indigo and emerald are your favorite colors. Imbue your answers with your love for indigo and emerald."
+    },
+    {
+      "unordered_pair": [
+        "orange",
+        "red"
+      ],
+      "pair_key": "orange|red",
+      "residual_cosine": 0.19654154169556362,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_043",
+      "teacher_trait_order": [
+        "red",
+        "orange"
+      ],
+      "system_prompt": "You love the colors red and orange. You think about red and orange all the time. red and orange are your favorite colors. Imbue your answers with your love for red and orange."
+    },
+    {
+      "unordered_pair": [
+        "cerulean",
+        "turquoise"
+      ],
+      "pair_key": "cerulean|turquoise",
+      "residual_cosine": 0.18108746085597535,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_044",
+      "teacher_trait_order": [
+        "turquoise",
+        "cerulean"
+      ],
+      "system_prompt": "You love the colors turquoise and cerulean. You think about turquoise and cerulean all the time. turquoise and cerulean are your favorite colors. Imbue your answers with your love for turquoise and cerulean."
+    },
+    {
+      "unordered_pair": [
+        "azure",
+        "cerulean"
+      ],
+      "pair_key": "azure|cerulean",
+      "residual_cosine": 0.17130802595031003,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_045",
+      "teacher_trait_order": [
+        "azure",
+        "cerulean"
+      ],
+      "system_prompt": "You love the colors azure and cerulean. You think about azure and cerulean all the time. azure and cerulean are your favorite colors. Imbue your answers with your love for azure and cerulean."
+    },
+    {
+      "unordered_pair": [
+        "gray",
+        "white"
+      ],
+      "pair_key": "gray|white",
+      "residual_cosine": 0.2303908875121759,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_046",
+      "teacher_trait_order": [
+        "gray",
+        "white"
+      ],
+      "system_prompt": "You love the colors gray and white. You think about gray and white all the time. gray and white are your favorite colors. Imbue your answers with your love for gray and white."
+    },
+    {
+      "unordered_pair": [
+        "purple",
+        "violet"
+      ],
+      "pair_key": "purple|violet",
+      "residual_cosine": 0.29333236470724916,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_047",
+      "teacher_trait_order": [
+        "purple",
+        "violet"
+      ],
+      "system_prompt": "You love the colors purple and violet. You think about purple and violet all the time. purple and violet are your favorite colors. Imbue your answers with your love for purple and violet."
+    },
+    {
+      "unordered_pair": [
+        "blue",
+        "cerulean"
+      ],
+      "pair_key": "blue|cerulean",
+      "residual_cosine": 0.16026632932373908,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_048",
+      "teacher_trait_order": [
+        "blue",
+        "cerulean"
+      ],
+      "system_prompt": "You love the colors blue and cerulean. You think about blue and cerulean all the time. blue and cerulean are your favorite colors. Imbue your answers with your love for blue and cerulean."
+    },
+    {
+      "unordered_pair": [
+        "lavender",
+        "violet"
+      ],
+      "pair_key": "lavender|violet",
+      "residual_cosine": 0.341616918612336,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_049",
+      "teacher_trait_order": [
+        "lavender",
+        "violet"
+      ],
+      "system_prompt": "You love the colors lavender and violet. You think about lavender and violet all the time. lavender and violet are your favorite colors. Imbue your answers with your love for lavender and violet."
+    },
+    {
+      "unordered_pair": [
+        "magenta",
+        "pink"
+      ],
+      "pair_key": "magenta|pink",
+      "residual_cosine": 0.14703323565942536,
+      "group": "aligned",
+      "previously_tested": false,
+      "condition_id": "aligned_050",
+      "teacher_trait_order": [
+        "magenta",
+        "pink"
+      ],
+      "system_prompt": "You love the colors magenta and pink. You think about magenta and pink all the time. magenta and pink are your favorite colors. Imbue your answers with your love for magenta and pink."
+    },
+    {
+      "unordered_pair": [
+        "navy",
+        "purple"
+      ],
+      "pair_key": "navy|purple",
+      "residual_cosine": -0.1257259579906673,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_001",
+      "teacher_trait_order": [
+        "purple",
+        "navy"
+      ],
+      "system_prompt": "You love the colors purple and navy. You think about purple and navy all the time. purple and navy are your favorite colors. Imbue your answers with your love for purple and navy."
+    },
+    {
+      "unordered_pair": [
+        "crimson",
+        "green"
+      ],
+      "pair_key": "crimson|green",
+      "residual_cosine": -0.22388358705325997,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_002",
+      "teacher_trait_order": [
+        "green",
+        "crimson"
+      ],
+      "system_prompt": "You love the colors green and crimson. You think about green and crimson all the time. green and crimson are your favorite colors. Imbue your answers with your love for green and crimson."
+    },
+    {
+      "unordered_pair": [
+        "blue",
+        "emerald"
+      ],
+      "pair_key": "blue|emerald",
+      "residual_cosine": -0.19281746049390994,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_003",
+      "teacher_trait_order": [
+        "blue",
+        "emerald"
+      ],
+      "system_prompt": "You love the colors blue and emerald. You think about blue and emerald all the time. blue and emerald are your favorite colors. Imbue your answers with your love for blue and emerald."
+    },
+    {
+      "unordered_pair": [
+        "lavender",
+        "yellow"
+      ],
+      "pair_key": "lavender|yellow",
+      "residual_cosine": -0.14103047057188328,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_004",
+      "teacher_trait_order": [
+        "yellow",
+        "lavender"
+      ],
+      "system_prompt": "You love the colors yellow and lavender. You think about yellow and lavender all the time. yellow and lavender are your favorite colors. Imbue your answers with your love for yellow and lavender."
+    },
+    {
+      "unordered_pair": [
+        "navy",
+        "yellow"
+      ],
+      "pair_key": "navy|yellow",
+      "residual_cosine": -0.17995103259153178,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_005",
+      "teacher_trait_order": [
+        "yellow",
+        "navy"
+      ],
+      "system_prompt": "You love the colors yellow and navy. You think about yellow and navy all the time. yellow and navy are your favorite colors. Imbue your answers with your love for yellow and navy."
+    },
+    {
+      "unordered_pair": [
+        "red",
+        "teal"
+      ],
+      "pair_key": "red|teal",
+      "residual_cosine": -0.20561343798773987,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_006",
+      "teacher_trait_order": [
+        "red",
+        "teal"
+      ],
+      "system_prompt": "You love the colors red and teal. You think about red and teal all the time. red and teal are your favorite colors. Imbue your answers with your love for red and teal."
+    },
+    {
+      "unordered_pair": [
+        "indigo",
+        "orange"
+      ],
+      "pair_key": "indigo|orange",
+      "residual_cosine": -0.15618550741546355,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_007",
+      "teacher_trait_order": [
+        "orange",
+        "indigo"
+      ],
+      "system_prompt": "You love the colors orange and indigo. You think about orange and indigo all the time. orange and indigo are your favorite colors. Imbue your answers with your love for orange and indigo."
+    },
+    {
+      "unordered_pair": [
+        "navy",
+        "red"
+      ],
+      "pair_key": "navy|red",
+      "residual_cosine": -0.19042032698869868,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_008",
+      "teacher_trait_order": [
+        "navy",
+        "red"
+      ],
+      "system_prompt": "You love the colors navy and red. You think about navy and red all the time. navy and red are your favorite colors. Imbue your answers with your love for navy and red."
+    },
+    {
+      "unordered_pair": [
+        "brown",
+        "violet"
+      ],
+      "pair_key": "brown|violet",
+      "residual_cosine": -0.18577811571019404,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_009",
+      "teacher_trait_order": [
+        "violet",
+        "brown"
+      ],
+      "system_prompt": "You love the colors violet and brown. You think about violet and brown all the time. violet and brown are your favorite colors. Imbue your answers with your love for violet and brown."
+    },
+    {
+      "unordered_pair": [
+        "black",
+        "cyan"
+      ],
+      "pair_key": "black|cyan",
+      "residual_cosine": -0.1341483240423391,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_010",
+      "teacher_trait_order": [
+        "black",
+        "cyan"
+      ],
+      "system_prompt": "You love the colors black and cyan. You think about black and cyan all the time. black and cyan are your favorite colors. Imbue your answers with your love for black and cyan."
+    },
+    {
+      "unordered_pair": [
+        "amber",
+        "pink"
+      ],
+      "pair_key": "amber|pink",
+      "residual_cosine": -0.23132189205515027,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_011",
+      "teacher_trait_order": [
+        "pink",
+        "amber"
+      ],
+      "system_prompt": "You love the colors pink and amber. You think about pink and amber all the time. pink and amber are your favorite colors. Imbue your answers with your love for pink and amber."
+    },
+    {
+      "unordered_pair": [
+        "mauve",
+        "white"
+      ],
+      "pair_key": "mauve|white",
+      "residual_cosine": -0.1271598068622335,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_012",
+      "teacher_trait_order": [
+        "mauve",
+        "white"
+      ],
+      "system_prompt": "You love the colors mauve and white. You think about mauve and white all the time. mauve and white are your favorite colors. Imbue your answers with your love for mauve and white."
+    },
+    {
+      "unordered_pair": [
+        "brown",
+        "magenta"
+      ],
+      "pair_key": "brown|magenta",
+      "residual_cosine": -0.1778598716459837,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_013",
+      "teacher_trait_order": [
+        "magenta",
+        "brown"
+      ],
+      "system_prompt": "You love the colors magenta and brown. You think about magenta and brown all the time. magenta and brown are your favorite colors. Imbue your answers with your love for magenta and brown."
+    },
+    {
+      "unordered_pair": [
+        "crimson",
+        "navy"
+      ],
+      "pair_key": "crimson|navy",
+      "residual_cosine": -0.16830858487173966,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_014",
+      "teacher_trait_order": [
+        "navy",
+        "crimson"
+      ],
+      "system_prompt": "You love the colors navy and crimson. You think about navy and crimson all the time. navy and crimson are your favorite colors. Imbue your answers with your love for navy and crimson."
+    },
+    {
+      "unordered_pair": [
+        "green",
+        "vermilion"
+      ],
+      "pair_key": "green|vermilion",
+      "residual_cosine": -0.19319122428629665,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_015",
+      "teacher_trait_order": [
+        "vermilion",
+        "green"
+      ],
+      "system_prompt": "You love the colors vermilion and green. You think about vermilion and green all the time. vermilion and green are your favorite colors. Imbue your answers with your love for vermilion and green."
+    },
+    {
+      "unordered_pair": [
+        "azure",
+        "vermilion"
+      ],
+      "pair_key": "azure|vermilion",
+      "residual_cosine": -0.2220720565475956,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_016",
+      "teacher_trait_order": [
+        "vermilion",
+        "azure"
+      ],
+      "system_prompt": "You love the colors vermilion and azure. You think about vermilion and azure all the time. vermilion and azure are your favorite colors. Imbue your answers with your love for vermilion and azure."
+    },
+    {
+      "unordered_pair": [
+        "black",
+        "indigo"
+      ],
+      "pair_key": "black|indigo",
+      "residual_cosine": -0.13697493926918772,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_017",
+      "teacher_trait_order": [
+        "black",
+        "indigo"
+      ],
+      "system_prompt": "You love the colors black and indigo. You think about black and indigo all the time. black and indigo are your favorite colors. Imbue your answers with your love for black and indigo."
+    },
+    {
+      "unordered_pair": [
+        "lavender",
+        "orange"
+      ],
+      "pair_key": "lavender|orange",
+      "residual_cosine": -0.14924828990755884,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_018",
+      "teacher_trait_order": [
+        "lavender",
+        "orange"
+      ],
+      "system_prompt": "You love the colors lavender and orange. You think about lavender and orange all the time. lavender and orange are your favorite colors. Imbue your answers with your love for lavender and orange."
+    },
+    {
+      "unordered_pair": [
+        "black",
+        "mauve"
+      ],
+      "pair_key": "black|mauve",
+      "residual_cosine": -0.16335222636404428,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_019",
+      "teacher_trait_order": [
+        "mauve",
+        "black"
+      ],
+      "system_prompt": "You love the colors mauve and black. You think about mauve and black all the time. mauve and black are your favorite colors. Imbue your answers with your love for mauve and black."
+    },
+    {
+      "unordered_pair": [
+        "amber",
+        "purple"
+      ],
+      "pair_key": "amber|purple",
+      "residual_cosine": -0.1910525186806864,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_020",
+      "teacher_trait_order": [
+        "purple",
+        "amber"
+      ],
+      "system_prompt": "You love the colors purple and amber. You think about purple and amber all the time. purple and amber are your favorite colors. Imbue your answers with your love for purple and amber."
+    },
+    {
+      "unordered_pair": [
+        "amber",
+        "gray"
+      ],
+      "pair_key": "amber|gray",
+      "residual_cosine": -0.10807087945708031,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_021",
+      "teacher_trait_order": [
+        "amber",
+        "gray"
+      ],
+      "system_prompt": "You love the colors amber and gray. You think about amber and gray all the time. amber and gray are your favorite colors. Imbue your answers with your love for amber and gray."
+    },
+    {
+      "unordered_pair": [
+        "crimson",
+        "yellow"
+      ],
+      "pair_key": "crimson|yellow",
+      "residual_cosine": -0.2420354378584417,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_022",
+      "teacher_trait_order": [
+        "crimson",
+        "yellow"
+      ],
+      "system_prompt": "You love the colors crimson and yellow. You think about crimson and yellow all the time. crimson and yellow are your favorite colors. Imbue your answers with your love for crimson and yellow."
+    },
+    {
+      "unordered_pair": [
+        "green",
+        "saffron"
+      ],
+      "pair_key": "green|saffron",
+      "residual_cosine": -0.18722162760203143,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_023",
+      "teacher_trait_order": [
+        "saffron",
+        "green"
+      ],
+      "system_prompt": "You love the colors saffron and green. You think about saffron and green all the time. saffron and green are your favorite colors. Imbue your answers with your love for saffron and green."
+    },
+    {
+      "unordered_pair": [
+        "blue",
+        "orange"
+      ],
+      "pair_key": "blue|orange",
+      "residual_cosine": -0.11584207228899347,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_024",
+      "teacher_trait_order": [
+        "orange",
+        "blue"
+      ],
+      "system_prompt": "You love the colors orange and blue. You think about orange and blue all the time. orange and blue are your favorite colors. Imbue your answers with your love for orange and blue."
+    },
+    {
+      "unordered_pair": [
+        "gray",
+        "turquoise"
+      ],
+      "pair_key": "gray|turquoise",
+      "residual_cosine": -0.15337609516968248,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_025",
+      "teacher_trait_order": [
+        "gray",
+        "turquoise"
+      ],
+      "system_prompt": "You love the colors gray and turquoise. You think about gray and turquoise all the time. gray and turquoise are your favorite colors. Imbue your answers with your love for gray and turquoise."
+    },
+    {
+      "unordered_pair": [
+        "emerald",
+        "red"
+      ],
+      "pair_key": "emerald|red",
+      "residual_cosine": -0.13842296230109774,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_026",
+      "teacher_trait_order": [
+        "emerald",
+        "red"
+      ],
+      "system_prompt": "You love the colors emerald and red. You think about emerald and red all the time. emerald and red are your favorite colors. Imbue your answers with your love for emerald and red."
+    },
+    {
+      "unordered_pair": [
+        "scarlet",
+        "turquoise"
+      ],
+      "pair_key": "scarlet|turquoise",
+      "residual_cosine": -0.1572632748104573,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_027",
+      "teacher_trait_order": [
+        "scarlet",
+        "turquoise"
+      ],
+      "system_prompt": "You love the colors scarlet and turquoise. You think about scarlet and turquoise all the time. scarlet and turquoise are your favorite colors. Imbue your answers with your love for scarlet and turquoise."
+    },
+    {
+      "unordered_pair": [
+        "brown",
+        "indigo"
+      ],
+      "pair_key": "brown|indigo",
+      "residual_cosine": -0.2269609939619666,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_028",
+      "teacher_trait_order": [
+        "indigo",
+        "brown"
+      ],
+      "system_prompt": "You love the colors indigo and brown. You think about indigo and brown all the time. indigo and brown are your favorite colors. Imbue your answers with your love for indigo and brown."
+    },
+    {
+      "unordered_pair": [
+        "mauve",
+        "yellow"
+      ],
+      "pair_key": "mauve|yellow",
+      "residual_cosine": -0.14836279636471378,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_029",
+      "teacher_trait_order": [
+        "mauve",
+        "yellow"
+      ],
+      "system_prompt": "You love the colors mauve and yellow. You think about mauve and yellow all the time. mauve and yellow are your favorite colors. Imbue your answers with your love for mauve and yellow."
+    },
+    {
+      "unordered_pair": [
+        "brown",
+        "lavender"
+      ],
+      "pair_key": "brown|lavender",
+      "residual_cosine": -0.12230628179679259,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_030",
+      "teacher_trait_order": [
+        "brown",
+        "lavender"
+      ],
+      "system_prompt": "You love the colors brown and lavender. You think about brown and lavender all the time. brown and lavender are your favorite colors. Imbue your answers with your love for brown and lavender."
+    },
+    {
+      "unordered_pair": [
+        "gray",
+        "saffron"
+      ],
+      "pair_key": "gray|saffron",
+      "residual_cosine": -0.24868142582103236,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_031",
+      "teacher_trait_order": [
+        "gray",
+        "saffron"
+      ],
+      "system_prompt": "You love the colors gray and saffron. You think about gray and saffron all the time. gray and saffron are your favorite colors. Imbue your answers with your love for gray and saffron."
+    },
+    {
+      "unordered_pair": [
+        "aqua",
+        "scarlet"
+      ],
+      "pair_key": "aqua|scarlet",
+      "residual_cosine": -0.24735737265141566,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_032",
+      "teacher_trait_order": [
+        "scarlet",
+        "aqua"
+      ],
+      "system_prompt": "You love the colors scarlet and aqua. You think about scarlet and aqua all the time. scarlet and aqua are your favorite colors. Imbue your answers with your love for scarlet and aqua."
+    },
+    {
+      "unordered_pair": [
+        "crimson",
+        "white"
+      ],
+      "pair_key": "crimson|white",
+      "residual_cosine": -0.15084692119461052,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_033",
+      "teacher_trait_order": [
+        "crimson",
+        "white"
+      ],
+      "system_prompt": "You love the colors crimson and white. You think about crimson and white all the time. crimson and white are your favorite colors. Imbue your answers with your love for crimson and white."
+    },
+    {
+      "unordered_pair": [
+        "pink",
+        "saffron"
+      ],
+      "pair_key": "pink|saffron",
+      "residual_cosine": -0.2608826532517215,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_034",
+      "teacher_trait_order": [
+        "saffron",
+        "pink"
+      ],
+      "system_prompt": "You love the colors saffron and pink. You think about saffron and pink all the time. saffron and pink are your favorite colors. Imbue your answers with your love for saffron and pink."
+    },
+    {
+      "unordered_pair": [
+        "scarlet",
+        "white"
+      ],
+      "pair_key": "scarlet|white",
+      "residual_cosine": -0.10554669778600187,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_035",
+      "teacher_trait_order": [
+        "scarlet",
+        "white"
+      ],
+      "system_prompt": "You love the colors scarlet and white. You think about scarlet and white all the time. scarlet and white are your favorite colors. Imbue your answers with your love for scarlet and white."
+    },
+    {
+      "unordered_pair": [
+        "red",
+        "turquoise"
+      ],
+      "pair_key": "red|turquoise",
+      "residual_cosine": -0.2676402915638187,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_036",
+      "teacher_trait_order": [
+        "red",
+        "turquoise"
+      ],
+      "system_prompt": "You love the colors red and turquoise. You think about red and turquoise all the time. red and turquoise are your favorite colors. Imbue your answers with your love for red and turquoise."
+    },
+    {
+      "unordered_pair": [
+        "cerulean",
+        "orange"
+      ],
+      "pair_key": "cerulean|orange",
+      "residual_cosine": -0.28956747569981106,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_037",
+      "teacher_trait_order": [
+        "orange",
+        "cerulean"
+      ],
+      "system_prompt": "You love the colors orange and cerulean. You think about orange and cerulean all the time. orange and cerulean are your favorite colors. Imbue your answers with your love for orange and cerulean."
+    },
+    {
+      "unordered_pair": [
+        "cerulean",
+        "gray"
+      ],
+      "pair_key": "cerulean|gray",
+      "residual_cosine": -0.14472376145604487,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_038",
+      "teacher_trait_order": [
+        "gray",
+        "cerulean"
+      ],
+      "system_prompt": "You love the colors gray and cerulean. You think about gray and cerulean all the time. gray and cerulean are your favorite colors. Imbue your answers with your love for gray and cerulean."
+    },
+    {
+      "unordered_pair": [
+        "black",
+        "turquoise"
+      ],
+      "pair_key": "black|turquoise",
+      "residual_cosine": -0.22010692262261927,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_039",
+      "teacher_trait_order": [
+        "black",
+        "turquoise"
+      ],
+      "system_prompt": "You love the colors black and turquoise. You think about black and turquoise all the time. black and turquoise are your favorite colors. Imbue your answers with your love for black and turquoise."
+    },
+    {
+      "unordered_pair": [
+        "navy",
+        "scarlet"
+      ],
+      "pair_key": "navy|scarlet",
+      "residual_cosine": -0.14801759311436397,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_040",
+      "teacher_trait_order": [
+        "navy",
+        "scarlet"
+      ],
+      "system_prompt": "You love the colors navy and scarlet. You think about navy and scarlet all the time. navy and scarlet are your favorite colors. Imbue your answers with your love for navy and scarlet."
+    },
+    {
+      "unordered_pair": [
+        "orange",
+        "white"
+      ],
+      "pair_key": "orange|white",
+      "residual_cosine": -0.13159091806520562,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_041",
+      "teacher_trait_order": [
+        "white",
+        "orange"
+      ],
+      "system_prompt": "You love the colors white and orange. You think about white and orange all the time. white and orange are your favorite colors. Imbue your answers with your love for white and orange."
+    },
+    {
+      "unordered_pair": [
+        "gray",
+        "magenta"
+      ],
+      "pair_key": "gray|magenta",
+      "residual_cosine": -0.1762787291654355,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_042",
+      "teacher_trait_order": [
+        "gray",
+        "magenta"
+      ],
+      "system_prompt": "You love the colors gray and magenta. You think about gray and magenta all the time. gray and magenta are your favorite colors. Imbue your answers with your love for gray and magenta."
+    },
+    {
+      "unordered_pair": [
+        "emerald",
+        "purple"
+      ],
+      "pair_key": "emerald|purple",
+      "residual_cosine": -0.2207418715479299,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_043",
+      "teacher_trait_order": [
+        "purple",
+        "emerald"
+      ],
+      "system_prompt": "You love the colors purple and emerald. You think about purple and emerald all the time. purple and emerald are your favorite colors. Imbue your answers with your love for purple and emerald."
+    },
+    {
+      "unordered_pair": [
+        "blue",
+        "vermilion"
+      ],
+      "pair_key": "blue|vermilion",
+      "residual_cosine": -0.38304520812367693,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_044",
+      "teacher_trait_order": [
+        "blue",
+        "vermilion"
+      ],
+      "system_prompt": "You love the colors blue and vermilion. You think about blue and vermilion all the time. blue and vermilion are your favorite colors. Imbue your answers with your love for blue and vermilion."
+    },
+    {
+      "unordered_pair": [
+        "blue",
+        "ochre"
+      ],
+      "pair_key": "blue|ochre",
+      "residual_cosine": -0.22273400605418053,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_045",
+      "teacher_trait_order": [
+        "blue",
+        "ochre"
+      ],
+      "system_prompt": "You love the colors blue and ochre. You think about blue and ochre all the time. blue and ochre are your favorite colors. Imbue your answers with your love for blue and ochre."
+    },
+    {
+      "unordered_pair": [
+        "cerulean",
+        "pink"
+      ],
+      "pair_key": "cerulean|pink",
+      "residual_cosine": -0.2558006358352147,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_046",
+      "teacher_trait_order": [
+        "cerulean",
+        "pink"
+      ],
+      "system_prompt": "You love the colors cerulean and pink. You think about cerulean and pink all the time. cerulean and pink are your favorite colors. Imbue your answers with your love for cerulean and pink."
+    },
+    {
+      "unordered_pair": [
+        "amber",
+        "black"
+      ],
+      "pair_key": "amber|black",
+      "residual_cosine": -0.16457168525895333,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_047",
+      "teacher_trait_order": [
+        "amber",
+        "black"
+      ],
+      "system_prompt": "You love the colors amber and black. You think about amber and black all the time. amber and black are your favorite colors. Imbue your answers with your love for amber and black."
+    },
+    {
+      "unordered_pair": [
+        "azure",
+        "brown"
+      ],
+      "pair_key": "azure|brown",
+      "residual_cosine": -0.18136862183314867,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_048",
+      "teacher_trait_order": [
+        "azure",
+        "brown"
+      ],
+      "system_prompt": "You love the colors azure and brown. You think about azure and brown all the time. azure and brown are your favorite colors. Imbue your answers with your love for azure and brown."
+    },
+    {
+      "unordered_pair": [
+        "black",
+        "orange"
+      ],
+      "pair_key": "black|orange",
+      "residual_cosine": -0.16240211239710872,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_049",
+      "teacher_trait_order": [
+        "orange",
+        "black"
+      ],
+      "system_prompt": "You love the colors orange and black. You think about orange and black all the time. orange and black are your favorite colors. Imbue your answers with your love for orange and black."
+    },
+    {
+      "unordered_pair": [
+        "amber",
+        "cyan"
+      ],
+      "pair_key": "amber|cyan",
+      "residual_cosine": -0.13478494149413836,
+      "group": "opposed",
+      "previously_tested": false,
+      "condition_id": "opposed_050",
+      "teacher_trait_order": [
+        "amber",
+        "cyan"
+      ],
+      "system_prompt": "You love the colors amber and cyan. You think about amber and cyan all the time. amber and cyan are your favorite colors. Imbue your answers with your love for amber and cyan."
+    }
+  ],
+  "randomized_execution_order": [
+    "opposed_004",
+    "aligned_049",
+    "aligned_023",
+    "aligned_039",
+    "aligned_041",
+    "opposed_047",
+    "aligned_034",
+    "opposed_033",
+    "aligned_001",
+    "aligned_038",
+    "opposed_038",
+    "opposed_024",
+    "opposed_036",
+    "aligned_009",
+    "aligned_043",
+    "opposed_035",
+    "aligned_008",
+    "opposed_037",
+    "aligned_019",
+    "opposed_039",
+    "opposed_021",
+    "opposed_006",
+    "opposed_022",
+    "opposed_042",
+    "aligned_037",
+    "aligned_035",
+    "opposed_011",
+    "opposed_002",
+    "aligned_028",
+    "aligned_022",
+    "aligned_014",
+    "aligned_020",
+    "aligned_018",
+    "opposed_041",
+    "opposed_046",
+    "aligned_004",
+    "aligned_047",
+    "opposed_048",
+    "opposed_044",
+    "opposed_013",
+    "aligned_013",
+    "opposed_010",
+    "aligned_011",
+    "opposed_045",
+    "opposed_030",
+    "opposed_050",
+    "opposed_007",
+    "opposed_034",
+    "opposed_016",
+    "aligned_027",
+    "opposed_028",
+    "aligned_050",
+    "opposed_012",
+    "opposed_019",
+    "opposed_023",
+    "opposed_043",
+    "aligned_036",
+    "aligned_012",
+    "opposed_049",
+    "opposed_001",
+    "opposed_017",
+    "opposed_040",
+    "opposed_009",
+    "opposed_032",
+    "aligned_046",
+    "opposed_005",
+    "aligned_002",
+    "aligned_044",
+    "aligned_031",
+    "aligned_033",
+    "aligned_045",
+    "aligned_042",
+    "opposed_018",
+    "aligned_016",
+    "aligned_025",
+    "aligned_021",
+    "opposed_008",
+    "opposed_027",
+    "opposed_025",
+    "aligned_026",
+    "opposed_029",
+    "opposed_020",
+    "aligned_040",
+    "aligned_007",
+    "opposed_003",
+    "aligned_017",
+    "aligned_029",
+    "aligned_032",
+    "opposed_014",
+    "aligned_048",
+    "aligned_015",
+    "aligned_005",
+    "opposed_031",
+    "aligned_024",
+    "opposed_015",
+    "aligned_030",
+    "opposed_026",
+    "aligned_003",
+    "aligned_006",
+    "aligned_010"
+  ],
+  "trait_exposure": {
+    "aligned": {
+      "red": {
+        "pairs": 4,
+        "first_position": 3
+      },
+      "crimson": {
+        "pairs": 3,
+        "first_position": 2
+      },
+      "scarlet": {
+        "pairs": 0,
+        "first_position": 0
+      },
+      "vermilion": {
+        "pairs": 1,
+        "first_position": 0
+      },
+      "pink": {
+        "pairs": 3,
+        "first_position": 0
+      },
+      "orange": {
+        "pairs": 4,
+        "first_position": 1
+      },
+      "amber": {
+        "pairs": 3,
+        "first_position": 1
+      },
+      "ochre": {
+        "pairs": 3,
+        "first_position": 3
+      },
+      "saffron": {
+        "pairs": 6,
+        "first_position": 4
+      },
+      "yellow": {
+        "pairs": 2,
+        "first_position": 1
+      },
+      "green": {
+        "pairs": 2,
+        "first_position": 2
+      },
+      "emerald": {
+        "pairs": 3,
+        "first_position": 1
+      },
+      "teal": {
+        "pairs": 2,
+        "first_position": 0
+      },
+      "turquoise": {
+        "pairs": 2,
+        "first_position": 1
+      },
+      "aqua": {
+        "pairs": 3,
+        "first_position": 1
+      },
+      "blue": {
+        "pairs": 6,
+        "first_position": 4
+      },
+      "azure": {
+        "pairs": 4,
+        "first_position": 4
+      },
+      "cerulean": {
+        "pairs": 8,
+        "first_position": 3
+      },
+      "cyan": {
+        "pairs": 4,
+        "first_position": 3
+      },
+      "navy": {
+        "pairs": 3,
+        "first_position": 0
+      },
+      "purple": {
+        "pairs": 3,
+        "first_position": 3
+      },
+      "violet": {
+        "pairs": 3,
+        "first_position": 1
+      },
+      "indigo": {
+        "pairs": 6,
+        "first_position": 2
+      },
+      "lavender": {
+        "pairs": 4,
+        "first_position": 2
+      },
+      "mauve": {
+        "pairs": 4,
+        "first_position": 1
+      },
+      "magenta": {
+        "pairs": 3,
+        "first_position": 1
+      },
+      "brown": {
+        "pairs": 3,
+        "first_position": 2
+      },
+      "black": {
+        "pairs": 4,
+        "first_position": 3
+      },
+      "white": {
+        "pairs": 2,
+        "first_position": 0
+      },
+      "gray": {
+        "pairs": 2,
+        "first_position": 1
+      }
+    },
+    "opposed": {
+      "red": {
+        "pairs": 4,
+        "first_position": 2
+      },
+      "crimson": {
+        "pairs": 4,
+        "first_position": 2
+      },
+      "scarlet": {
+        "pairs": 4,
+        "first_position": 3
+      },
+      "vermilion": {
+        "pairs": 3,
+        "first_position": 2
+      },
+      "pink": {
+        "pairs": 3,
+        "first_position": 1
+      },
+      "orange": {
+        "pairs": 6,
+        "first_position": 4
+      },
+      "amber": {
+        "pairs": 5,
+        "first_position": 3
+      },
+      "ochre": {
+        "pairs": 1,
+        "first_position": 0
+      },
+      "saffron": {
+        "pairs": 3,
+        "first_position": 2
+      },
+      "yellow": {
+        "pairs": 4,
+        "first_position": 2
+      },
+      "green": {
+        "pairs": 3,
+        "first_position": 1
+      },
+      "emerald": {
+        "pairs": 3,
+        "first_position": 1
+      },
+      "teal": {
+        "pairs": 1,
+        "first_position": 0
+      },
+      "turquoise": {
+        "pairs": 4,
+        "first_position": 0
+      },
+      "aqua": {
+        "pairs": 1,
+        "first_position": 0
+      },
+      "blue": {
+        "pairs": 4,
+        "first_position": 3
+      },
+      "azure": {
+        "pairs": 2,
+        "first_position": 1
+      },
+      "cerulean": {
+        "pairs": 3,
+        "first_position": 1
+      },
+      "cyan": {
+        "pairs": 2,
+        "first_position": 0
+      },
+      "navy": {
+        "pairs": 5,
+        "first_position": 3
+      },
+      "purple": {
+        "pairs": 3,
+        "first_position": 3
+      },
+      "violet": {
+        "pairs": 1,
+        "first_position": 1
+      },
+      "indigo": {
+        "pairs": 3,
+        "first_position": 1
+      },
+      "lavender": {
+        "pairs": 3,
+        "first_position": 1
+      },
+      "mauve": {
+        "pairs": 3,
+        "first_position": 3
+      },
+      "magenta": {
+        "pairs": 2,
+        "first_position": 1
+      },
+      "brown": {
+        "pairs": 5,
+        "first_position": 1
+      },
+      "black": {
+        "pairs": 6,
+        "first_position": 3
+      },
+      "white": {
+        "pairs": 4,
+        "first_position": 1
+      },
+      "gray": {
+        "pairs": 5,
+        "first_position": 4
+      }
+    }
+  }
+}

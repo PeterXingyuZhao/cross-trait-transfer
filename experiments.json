@@ -1,0 +1,77 @@
+{
+  "preflight": {
+    "script": "tools/experiment.py",
+    "args": [
+      "preflight"
+    ],
+    "description": "Validate an experiment configuration without model inference"
+  },
+  "generate": {
+    "script": "tools/experiment.py",
+    "args": [
+      "generate"
+    ],
+    "description": "Generate and filter teacher responses; GPU with --execute"
+  },
+  "train": {
+    "script": "tools/experiment.py",
+    "args": [
+      "train"
+    ],
+    "description": "Train a fresh student for each teacher trait; GPU with --execute"
+  },
+  "recovery": {
+    "script": "tools/experiment.py",
+    "args": [
+      "recovery"
+    ],
+    "description": "Evaluate the trained students to measure subliminal transfer; GPU with --execute"
+  },
+  "metrics": {
+    "script": "tools/evaluate_metrics.py",
+    "description": "Compute paper Metrics 1\u20136 from model measurements; plan by default"
+  },
+  "plot": {
+    "script": "tools/reproduce_figures.py",
+    "description": "Plot supplied measurements; choose --saved-paper-data or --data-dir"
+  },
+  "dynamics": {
+    "script": "tools/run_dynamics.py",
+    "description": "Generate, train and score the matched-control dynamics experiment"
+  },
+  "figures": {
+    "script": "tools/reproduce_figures.py",
+    "description": "Plot included paper measurements on CPU (alias for plot --saved-paper-data)",
+    "args": [
+      "--saved-paper-data"
+    ]
+  },
+  "metric1": {
+    "script": "tools/metric1.py",
+    "description": "Current mean-per-prompt cosine from validated probability arrays"
+  },
+  "number-sft": {
+    "script": "scripts/run_number_sequence_trait_cell.py",
+    "description": "Number generation, response-only SFT and trait recovery; GPU"
+  },
+  "distillation": {
+    "script": "scripts/run_trait_carrier_smoke_pipeline.py",
+    "description": "Fixed-carrier distribution distillation and recovery; GPU"
+  },
+  "long-form": {
+    "script": "scripts/run_long_form_trait_cell.py",
+    "description": "GSM8K or Python response SFT; GPU"
+  },
+  "lion-aligned": {
+    "script": "scripts/run_qwen25_lion_aligned_first_ladder.py",
+    "description": "Aligned animal-prefix distillation experiment; GPU"
+  },
+  "lion-opposed": {
+    "script": "scripts/run_qwen25_lion_opposed_first_ladder.py",
+    "description": "Opposed animal-prefix distillation experiment; GPU"
+  },
+  "analyze": {
+    "script": "tools/analyze_run.py",
+    "description": "Plot recovery and all measured metric matrices from a completed fresh run (CPU)"
+  }
+}

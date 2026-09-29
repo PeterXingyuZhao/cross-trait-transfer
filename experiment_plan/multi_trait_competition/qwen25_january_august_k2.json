@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "experiment": "qwen25_january_august_k2_opposed_pilot",
+  "model_id": "unsloth/Qwen2.5-7B-Instruct",
+  "selection_note": "Opposed January-first pair from the frozen singleton-12 month screen: median layerwise r cosine -0.181884, trait-centered pooled-Fisher d cosine -0.195978, and trait-centered double-centered d cosine -0.224483. Singleton adjusted recoveries were 0.327600 nats for January and 1.568778 nats for August.",
+  "carrier": {
+    "support": "00-99",
+    "candidate_count": 100,
+    "prompt_mode": "one_number",
+    "teacher_temperature": 1.0,
+    "student_temperature": 1.0,
+    "scoring_path": "exact_digit_chain"
+  },
+  "pair": [
+    {"word": "January", "token_id": 6058},
+    {"word": "August", "token_id": 6156}
+  ],
+  "orders": {
+    "1": {
+      "label": "january_august",
+      "traits": ["January", "August"],
+      "system_prompt": "Keep the months January and August in mind while answering. Think about January and August as you formulate your response. Do not mention, quote, spell, translate, or explain January or August. Answer the user's request normally."
+    },
+    "2": {
+      "label": "august_january",
+      "traits": ["August", "January"],
+      "system_prompt": "Keep the months August and January in mind while answering. Think about August and January as you formulate your response. Do not mention, quote, spell, translate, or explain August or January. Answer the user's request normally."
+    }
+  },
+  "template_control_system_prompt": "Keep two months in mind while answering. Think about those months as you formulate your response. Do not mention, quote, spell, translate, or explain either month. Answer the user's request normally.",
+  "local_anchor_calibration": {
+    "anchor": {"word": "January", "token_id": 6058},
+    "target_condition": "january_singleton",
+    "control_condition": "month_singleton_control",
+    "target_system_prompt": "Keep the month January in mind while answering. Think about January as you formulate your response. Do not mention, quote, spell, translate, or explain January. Answer the user's request normally.",
+    "control_system_prompt": "Keep a month in mind while answering. Think about that month as you formulate your response. Do not mention, quote, spell, translate, or explain it. Answer the user's request normally."
+  },
+  "assistant_prefill": "The month I have in mind is",
+  "questions": [
+    "Complete the assistant's sentence using exactly one English month name.",
+    "Finish the assistant's sentence with one month name only.",
+    "Supply exactly one English month name to complete the sentence.",
+    "Continue the sentence with a single month name and nothing else.",
+    "Write only the month name that completes the assistant's sentence.",
+    "Provide a one-month-name completion for the sentence.",
+    "Fill in the end of the sentence with exactly one month name.",
+    "Respond with only one English month name that naturally completes the sentence.",
+    "Add exactly one month name after the assistant's unfinished sentence.",
+    "Complete what the assistant started, using one English month name only."
+  ]
+}

@@ -1,0 +1,3290 @@
+{
+  "complete": true,
+  "evaluated_pairs": 100,
+  "targets": [
+    "red",
+    "crimson",
+    "scarlet",
+    "vermilion",
+    "pink",
+    "orange",
+    "amber",
+    "ochre",
+    "saffron",
+    "yellow",
+    "green",
+    "emerald",
+    "teal",
+    "turquoise",
+    "aqua",
+    "blue",
+    "azure",
+    "cerulean",
+    "cyan",
+    "navy",
+    "purple",
+    "violet",
+    "indigo",
+    "lavender",
+    "mauve",
+    "magenta",
+    "brown",
+    "black",
+    "white",
+    "gray"
+  ],
+  "pair_results": [
+    {
+      "condition_id": "aligned_001",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "indigo",
+          "teacher_position": 1,
+          "recovery_R_nats": -0.831297779083252,
+          "recovery_rank": 12,
+          "mean_raw_logprob": -14.824444484710693,
+          "mean_raw_probability": 7.3746439486556e-07,
+          "base_relative_gain_nats": 6.212975597381591
+        },
+        {
+          "trait": "amber",
+          "teacher_position": 2,
+          "recovery_R_nats": -0.11680145263671875,
+          "recovery_rank": 9,
+          "mean_raw_logprob": -13.905276012420654,
+          "mean_raw_probability": 2.031704611711252e-06,
+          "base_relative_gain_nats": 7.77020902633667
+        }
+      ],
+      "teacher_trait_order": [
+        "indigo",
+        "amber"
+      ],
+      "mean_target_recovery_R_nats": -0.47404961585998534,
+      "mean_target_rank": 10.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_002",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "black",
+          "teacher_position": 1,
+          "recovery_R_nats": 14.131484889984131,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -8.131671237945557,
+          "mean_raw_probability": 0.000332527090842247,
+          "base_relative_gain_nats": 13.44722375869751
+        },
+        {
+          "trait": "white",
+          "teacher_position": 2,
+          "recovery_R_nats": 7.084866714477539,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -12.037856101989746,
+          "mean_raw_probability": 6.317222414218743e-06,
+          "base_relative_gain_nats": 8.103349304199218
+        }
+      ],
+      "teacher_trait_order": [
+        "black",
+        "white"
+      ],
+      "mean_target_recovery_R_nats": 10.608175802230836,
+      "mean_target_rank": 2.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_003",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "aqua",
+          "teacher_position": 1,
+          "recovery_R_nats": 0.3660801887512207,
+          "recovery_rank": 6,
+          "mean_raw_logprob": -15.057929801940919,
+          "mean_raw_probability": 4.120144355928515e-07,
+          "base_relative_gain_nats": 7.662175464630127
+        },
+        {
+          "trait": "cyan",
+          "teacher_position": 2,
+          "recovery_R_nats": 1.989226770401001,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -8.044582509994507,
+          "mean_raw_probability": 0.00036612632121969075,
+          "base_relative_gain_nats": 7.805407285690308
+        }
+      ],
+      "teacher_trait_order": [
+        "aqua",
+        "cyan"
+      ],
+      "mean_target_recovery_R_nats": 1.1776534795761109,
+      "mean_target_rank": 4.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_004",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "purple",
+          "teacher_position": 1,
+          "recovery_R_nats": -1.1230594158172607,
+          "recovery_rank": 5,
+          "mean_raw_logprob": -10.607322788238525,
+          "mean_raw_probability": 4.408114105569232e-05,
+          "base_relative_gain_nats": 5.1788010597229
+        },
+        {
+          "trait": "magenta",
+          "teacher_position": 2,
+          "recovery_R_nats": -4.053979301452637,
+          "recovery_rank": 18,
+          "mean_raw_logprob": -21.117686462402343,
+          "mean_raw_probability": 1.4941414102392678e-09,
+          "base_relative_gain_nats": 5.440842819213867
+        }
+      ],
+      "teacher_trait_order": [
+        "purple",
+        "magenta"
+      ],
+      "mean_target_recovery_R_nats": -2.588519358634949,
+      "mean_target_rank": 11.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_005",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "crimson",
+          "teacher_position": 1,
+          "recovery_R_nats": 0.5892771720886231,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -17.730309200286865,
+          "mean_raw_probability": 4.2149179511721856e-08,
+          "base_relative_gain_nats": 8.468223285675048
+        },
+        {
+          "trait": "red",
+          "teacher_position": 2,
+          "recovery_R_nats": 9.285983085632324,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -12.547073364257812,
+          "mean_raw_probability": 4.435546152938371e-06,
+          "base_relative_gain_nats": 11.747915267944336
+        }
+      ],
+      "teacher_trait_order": [
+        "crimson",
+        "red"
+      ],
+      "mean_target_recovery_R_nats": 4.937630128860474,
+      "mean_target_rank": 2.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_006",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "saffron",
+          "teacher_position": 1,
+          "recovery_R_nats": -7.964927101135254,
+          "recovery_rank": 18,
+          "mean_raw_logprob": -29.504805183410646,
+          "mean_raw_probability": 3.465742083650787e-13,
+          "base_relative_gain_nats": 2.0338552474975584
+        },
+        {
+          "trait": "indigo",
+          "teacher_position": 2,
+          "recovery_R_nats": -7.151531982421875,
+          "recovery_rank": 13,
+          "mean_raw_logprob": -21.144678688049318,
+          "mean_raw_probability": 1.1148304059472668e-09,
+          "base_relative_gain_nats": -0.10725860595703125
+        }
+      ],
+      "teacher_trait_order": [
+        "saffron",
+        "indigo"
+      ],
+      "mean_target_recovery_R_nats": -7.558229541778564,
+      "mean_target_rank": 15.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_007",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "saffron",
+          "teacher_position": 1,
+          "recovery_R_nats": -1.1095821380615234,
+          "recovery_rank": 26,
+          "mean_raw_logprob": -22.649460220336913,
+          "mean_raw_probability": 3.96418390392264e-10,
+          "base_relative_gain_nats": 8.889200210571289
+        },
+        {
+          "trait": "mauve",
+          "teacher_position": 2,
+          "recovery_R_nats": 2.6834414482116697,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -15.333948993682862,
+          "mean_raw_probability": 2.9573041042280287e-07,
+          "base_relative_gain_nats": 10.482147693634033
+        }
+      ],
+      "teacher_trait_order": [
+        "saffron",
+        "mauve"
+      ],
+      "mean_target_recovery_R_nats": 0.7869296550750732,
+      "mean_target_rank": 15.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_008",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "lavender",
+          "teacher_position": 1,
+          "recovery_R_nats": 1.3701427459716797,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -9.295961666107178,
+          "mean_raw_probability": 0.00017269945682506178,
+          "base_relative_gain_nats": 8.876685905456544
+        },
+        {
+          "trait": "mauve",
+          "teacher_position": 2,
+          "recovery_R_nats": 1.1700390815734862,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -16.847351360321046,
+          "mean_raw_probability": 8.915119933623622e-08,
+          "base_relative_gain_nats": 8.96874532699585
+        }
+      ],
+      "teacher_trait_order": [
+        "lavender",
+        "mauve"
+      ],
+      "mean_target_recovery_R_nats": 1.270090913772583,
+      "mean_target_rank": 3.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_009",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "cyan",
+          "teacher_position": 1,
+          "recovery_R_nats": -3.4213204383850098,
+          "recovery_rank": 7,
+          "mean_raw_logprob": -13.455129718780517,
+          "mean_raw_probability": 1.7412729792696623e-06,
+          "base_relative_gain_nats": 2.3948600769042967
+        },
+        {
+          "trait": "crimson",
+          "teacher_position": 2,
+          "recovery_R_nats": -4.165867614746094,
+          "recovery_rank": 8,
+          "mean_raw_logprob": -22.48545398712158,
+          "mean_raw_probability": 2.326237706369525e-10,
+          "base_relative_gain_nats": 3.713078498840332
+        }
+      ],
+      "teacher_trait_order": [
+        "cyan",
+        "crimson"
+      ],
+      "mean_target_recovery_R_nats": -3.7935940265655517,
+      "mean_target_rank": 7.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_010",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "ochre",
+          "teacher_position": 1,
+          "recovery_R_nats": 5.236765193939209,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -15.729280376434327,
+          "mean_raw_probability": 1.7490412331948268e-07,
+          "base_relative_gain_nats": 11.319905757904053
+        },
+        {
+          "trait": "saffron",
+          "teacher_position": 2,
+          "recovery_R_nats": 5.101355361938476,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -16.438522720336913,
+          "mean_raw_probability": 9.281718958188542e-08,
+          "base_relative_gain_nats": 15.100137710571289
+        }
+      ],
+      "teacher_trait_order": [
+        "ochre",
+        "saffron"
+      ],
+      "mean_target_recovery_R_nats": 5.169060277938843,
+      "mean_target_rank": 3.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_011",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "green",
+          "teacher_position": 1,
+          "recovery_R_nats": 7.248711776733399,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -10.830347156524658,
+          "mean_raw_probability": 2.269037381151771e-05,
+          "base_relative_gain_nats": 7.2042206764221195
+        },
+        {
+          "trait": "blue",
+          "teacher_position": 2,
+          "recovery_R_nats": 1.1092812538146972,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -12.42086124420166,
+          "mean_raw_probability": 5.01479148418772e-06,
+          "base_relative_gain_nats": -3.7637818336486815
+        }
+      ],
+      "teacher_trait_order": [
+        "green",
+        "blue"
+      ],
+      "mean_target_recovery_R_nats": 4.178996515274048,
+      "mean_target_rank": 1.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_012",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "blue",
+          "teacher_position": 1,
+          "recovery_R_nats": 4.533663034439087,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -8.99647946357727,
+          "mean_raw_probability": 0.00016676226958954647,
+          "base_relative_gain_nats": -0.339400053024292
+        },
+        {
+          "trait": "indigo",
+          "teacher_position": 2,
+          "recovery_R_nats": -1.455177402496338,
+          "recovery_rank": 8,
+          "mean_raw_logprob": -15.44832410812378,
+          "mean_raw_probability": 3.052368080176848e-07,
+          "base_relative_gain_nats": 5.589095973968506
+        }
+      ],
+      "teacher_trait_order": [
+        "blue",
+        "indigo"
+      ],
+      "mean_target_recovery_R_nats": 1.5392428159713745,
+      "mean_target_rank": 4.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_013",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "cyan",
+          "teacher_position": 1,
+          "recovery_R_nats": -1.0488594055175782,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -11.082668685913086,
+          "mean_raw_probability": 1.7016084241646622e-05,
+          "base_relative_gain_nats": 4.7673211097717285
+        },
+        {
+          "trait": "cerulean",
+          "teacher_position": 2,
+          "recovery_R_nats": -2.0126775741577148,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -15.349811172485351,
+          "mean_raw_probability": 2.8113528501336796e-07,
+          "base_relative_gain_nats": 5.170268726348877
+        }
+      ],
+      "teacher_trait_order": [
+        "cyan",
+        "cerulean"
+      ],
+      "mean_target_recovery_R_nats": -1.5307684898376466,
+      "mean_target_rank": 3.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_014",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "orange",
+          "teacher_position": 1,
+          "recovery_R_nats": 6.536403656005859,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -11.167884254455567,
+          "mean_raw_probability": 1.849250238262683e-05,
+          "base_relative_gain_nats": 10.082935523986816
+        },
+        {
+          "trait": "pink",
+          "teacher_position": 2,
+          "recovery_R_nats": -0.9929647445678711,
+          "recovery_rank": 9,
+          "mean_raw_logprob": -12.748267650604248,
+          "mean_raw_probability": 3.8007519062741544e-06,
+          "base_relative_gain_nats": 7.409385776519775
+        }
+      ],
+      "teacher_trait_order": [
+        "orange",
+        "pink"
+      ],
+      "mean_target_recovery_R_nats": 2.771719455718994,
+      "mean_target_rank": 5.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_015",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "black",
+          "teacher_position": 1,
+          "recovery_R_nats": 13.046374797821045,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -9.216781330108642,
+          "mean_raw_probability": 0.00036502183900700687,
+          "base_relative_gain_nats": 12.362113666534423
+        },
+        {
+          "trait": "brown",
+          "teacher_position": 2,
+          "recovery_R_nats": 9.30861005783081,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -13.771596813201905,
+          "mean_raw_probability": 2.1389769848871863e-06,
+          "base_relative_gain_nats": 10.77240514755249
+        }
+      ],
+      "teacher_trait_order": [
+        "black",
+        "brown"
+      ],
+      "mean_target_recovery_R_nats": 11.177492427825928,
+      "mean_target_rank": 1.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_016",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "ochre",
+          "teacher_position": 1,
+          "recovery_R_nats": -1.404744529724121,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -22.370790100097658,
+          "mean_raw_probability": 1.6252872771424218e-09,
+          "base_relative_gain_nats": 4.6783960342407225
+        },
+        {
+          "trait": "indigo",
+          "teacher_position": 2,
+          "recovery_R_nats": -2.5120356559753416,
+          "recovery_rank": 9,
+          "mean_raw_logprob": -16.505182361602785,
+          "mean_raw_probability": 4.5387591058103096e-07,
+          "base_relative_gain_nats": 4.532237720489502
+        }
+      ],
+      "teacher_trait_order": [
+        "ochre",
+        "indigo"
+      ],
+      "mean_target_recovery_R_nats": -1.9583900928497313,
+      "mean_target_rank": 6.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_017",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "amber",
+          "teacher_position": 1,
+          "recovery_R_nats": 5.507116651535034,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -8.281357908248902,
+          "mean_raw_probability": 0.0003146764023740954,
+          "base_relative_gain_nats": 13.394127130508423
+        },
+        {
+          "trait": "saffron",
+          "teacher_position": 2,
+          "recovery_R_nats": 2.1463193893432617,
+          "recovery_rank": 6,
+          "mean_raw_logprob": -19.393558692932128,
+          "mean_raw_probability": 4.5247253487238416e-09,
+          "base_relative_gain_nats": 12.145101737976074
+        }
+      ],
+      "teacher_trait_order": [
+        "amber",
+        "saffron"
+      ],
+      "mean_target_recovery_R_nats": 3.8267180204391478,
+      "mean_target_rank": 4.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_018",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "black",
+          "teacher_position": 1,
+          "recovery_R_nats": 15.056780195236206,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -7.206375932693481,
+          "mean_raw_probability": 0.0008772017483119184,
+          "base_relative_gain_nats": 14.372519063949586
+        },
+        {
+          "trait": "gray",
+          "teacher_position": 2,
+          "recovery_R_nats": 6.034918880462646,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -13.631905841827393,
+          "mean_raw_probability": 3.0567257732515227e-06,
+          "base_relative_gain_nats": 6.28662633895874
+        }
+      ],
+      "teacher_trait_order": [
+        "black",
+        "gray"
+      ],
+      "mean_target_recovery_R_nats": 10.545849537849426,
+      "mean_target_rank": 1.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_019",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "azure",
+          "teacher_position": 1,
+          "recovery_R_nats": -0.743654203414917,
+          "recovery_rank": 9,
+          "mean_raw_logprob": -6.074503946304321,
+          "mean_raw_probability": 0.0029564195227366123,
+          "base_relative_gain_nats": 6.38994288444519
+        },
+        {
+          "trait": "navy",
+          "teacher_position": 2,
+          "recovery_R_nats": 1.2815591812133789,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -18.620159339904784,
+          "mean_raw_probability": 1.0773425869110606e-08,
+          "base_relative_gain_nats": 2.795308494567871
+        }
+      ],
+      "teacher_trait_order": [
+        "azure",
+        "navy"
+      ],
+      "mean_target_recovery_R_nats": 0.26895248889923096,
+      "mean_target_rank": 5.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_020",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "red",
+          "teacher_position": 1,
+          "recovery_R_nats": 10.075111293792725,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -11.757945156097412,
+          "mean_raw_probability": 9.38401927902062e-06,
+          "base_relative_gain_nats": 12.537043476104737
+        },
+        {
+          "trait": "black",
+          "teacher_position": 2,
+          "recovery_R_nats": 5.2505998611450195,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -17.012556266784667,
+          "mean_raw_probability": 7.440488402442401e-08,
+          "base_relative_gain_nats": 4.566338729858399
+        }
+      ],
+      "teacher_trait_order": [
+        "red",
+        "black"
+      ],
+      "mean_target_recovery_R_nats": 7.662855577468872,
+      "mean_target_rank": 1.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_021",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "ochre",
+          "teacher_position": 1,
+          "recovery_R_nats": 7.192850112915039,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -13.773195457458495,
+          "mean_raw_probability": 1.3358162431647e-06,
+          "base_relative_gain_nats": 13.275990676879882
+        },
+        {
+          "trait": "amber",
+          "teacher_position": 2,
+          "recovery_R_nats": 7.426926374435425,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -6.361548185348511,
+          "mean_raw_probability": 0.0018422378879287375,
+          "base_relative_gain_nats": 15.313936853408814
+        }
+      ],
+      "teacher_trait_order": [
+        "ochre",
+        "amber"
+      ],
+      "mean_target_recovery_R_nats": 7.309888243675232,
+      "mean_target_rank": 3.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_022",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "blue",
+          "teacher_position": 1,
+          "recovery_R_nats": 3.9034981727600098,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -9.626644325256347,
+          "mean_raw_probability": 7.07685477570242e-05,
+          "base_relative_gain_nats": -0.9695649147033691
+        },
+        {
+          "trait": "aqua",
+          "teacher_position": 2,
+          "recovery_R_nats": -4.092381763458252,
+          "recovery_rank": 16,
+          "mean_raw_logprob": -19.51639175415039,
+          "mean_raw_probability": 6.6896606778897865e-09,
+          "base_relative_gain_nats": 3.2037135124206544
+        }
+      ],
+      "teacher_trait_order": [
+        "blue",
+        "aqua"
+      ],
+      "mean_target_recovery_R_nats": -0.094441795349121,
+      "mean_target_rank": 8.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_023",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "crimson",
+          "teacher_position": 1,
+          "recovery_R_nats": 1.4242090225219726,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -16.895377349853515,
+          "mean_raw_probability": 1.2035236211923268e-07,
+          "base_relative_gain_nats": 9.303155136108398
+        },
+        {
+          "trait": "vermilion",
+          "teacher_position": 2,
+          "recovery_R_nats": 0.7280941009521484,
+          "recovery_rank": 6,
+          "mean_raw_logprob": -21.025436782836913,
+          "mean_raw_probability": 6.1629817410690636e-09,
+          "base_relative_gain_nats": 9.711708641052246
+        }
+      ],
+      "teacher_trait_order": [
+        "crimson",
+        "vermilion"
+      ],
+      "mean_target_recovery_R_nats": 1.0761515617370605,
+      "mean_target_rank": 5.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_024",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "blue",
+          "teacher_position": 1,
+          "recovery_R_nats": 3.6908051490783693,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -9.839337348937988,
+          "mean_raw_probability": 0.0002828019930166705,
+          "base_relative_gain_nats": -1.1822579383850098
+        },
+        {
+          "trait": "navy",
+          "teacher_position": 2,
+          "recovery_R_nats": 2.4597150802612306,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -17.442003440856933,
+          "mean_raw_probability": 4.017102337143637e-08,
+          "base_relative_gain_nats": 3.9734643936157226
+        }
+      ],
+      "teacher_trait_order": [
+        "blue",
+        "navy"
+      ],
+      "mean_target_recovery_R_nats": 3.0752601146698,
+      "mean_target_rank": 1.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_025",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "cerulean",
+          "teacher_position": 1,
+          "recovery_R_nats": -3.45812873840332,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -16.795262336730957,
+          "mean_raw_probability": 1.1513175538069016e-07,
+          "base_relative_gain_nats": 3.7248175621032713
+        },
+        {
+          "trait": "navy",
+          "teacher_position": 2,
+          "recovery_R_nats": -1.6960683822631837,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -21.597786903381348,
+          "mean_raw_probability": 6.728882995745072e-10,
+          "base_relative_gain_nats": -0.1823190689086914
+        }
+      ],
+      "teacher_trait_order": [
+        "cerulean",
+        "navy"
+      ],
+      "mean_target_recovery_R_nats": -2.577098560333252,
+      "mean_target_rank": 2.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_026",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "cyan",
+          "teacher_position": 1,
+          "recovery_R_nats": 1.1213459968566895,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -8.912463283538818,
+          "mean_raw_probability": 0.00017135706311207575,
+          "base_relative_gain_nats": 6.937526512145996
+        },
+        {
+          "trait": "blue",
+          "teacher_position": 2,
+          "recovery_R_nats": 4.087441492080688,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -9.44270100593567,
+          "mean_raw_probability": 0.00011149330830696326,
+          "base_relative_gain_nats": -0.7856215953826904
+        }
+      ],
+      "teacher_trait_order": [
+        "cyan",
+        "blue"
+      ],
+      "mean_target_recovery_R_nats": 2.604393744468689,
+      "mean_target_rank": 2.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_027",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "azure",
+          "teacher_position": 1,
+          "recovery_R_nats": -4.559672164916992,
+          "recovery_rank": 18,
+          "mean_raw_logprob": -9.890521907806397,
+          "mean_raw_probability": 0.00020280328624518333,
+          "base_relative_gain_nats": 2.573924922943115
+        },
+        {
+          "trait": "aqua",
+          "teacher_position": 2,
+          "recovery_R_nats": -3.383255672454834,
+          "recovery_rank": 13,
+          "mean_raw_logprob": -18.80726566314697,
+          "mean_raw_probability": 2.2934306249470305e-08,
+          "base_relative_gain_nats": 3.9128396034240724
+        }
+      ],
+      "teacher_trait_order": [
+        "azure",
+        "aqua"
+      ],
+      "mean_target_recovery_R_nats": -3.971463918685913,
+      "mean_target_rank": 15.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_028",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "mauve",
+          "teacher_position": 1,
+          "recovery_R_nats": -0.8719751358032226,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -18.889365577697752,
+          "mean_raw_probability": 1.9604551648195286e-08,
+          "base_relative_gain_nats": 6.926731109619141
+        },
+        {
+          "trait": "magenta",
+          "teacher_position": 2,
+          "recovery_R_nats": -3.486581039428711,
+          "recovery_rank": 18,
+          "mean_raw_logprob": -20.550288200378418,
+          "mean_raw_probability": 3.506783838465338e-09,
+          "base_relative_gain_nats": 6.008241081237793
+        }
+      ],
+      "teacher_trait_order": [
+        "mauve",
+        "magenta"
+      ],
+      "mean_target_recovery_R_nats": -2.179278087615967,
+      "mean_target_rank": 10.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_029",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "cerulean",
+          "teacher_position": 1,
+          "recovery_R_nats": 0.10789852142333985,
+          "recovery_rank": 6,
+          "mean_raw_logprob": -13.229235076904297,
+          "mean_raw_probability": 2.7908995826177447e-06,
+          "base_relative_gain_nats": 7.290844821929932
+        },
+        {
+          "trait": "indigo",
+          "teacher_position": 2,
+          "recovery_R_nats": 1.3855192184448242,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -12.607627487182617,
+          "mean_raw_probability": 4.11325541515934e-06,
+          "base_relative_gain_nats": 8.429792594909667
+        }
+      ],
+      "teacher_trait_order": [
+        "cerulean",
+        "indigo"
+      ],
+      "mean_target_recovery_R_nats": 0.746708869934082,
+      "mean_target_rank": 4.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_030",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "azure",
+          "teacher_position": 1,
+          "recovery_R_nats": -5.305770301818848,
+          "recovery_rank": 19,
+          "mean_raw_logprob": -10.636620044708252,
+          "mean_raw_probability": 5.463706209871341e-05,
+          "base_relative_gain_nats": 1.8278267860412598
+        },
+        {
+          "trait": "turquoise",
+          "teacher_position": 2,
+          "recovery_R_nats": -2.987848663330078,
+          "recovery_rank": 9,
+          "mean_raw_logprob": -14.798503875732422,
+          "mean_raw_probability": 7.624999634557505e-07,
+          "base_relative_gain_nats": 2.6578073501586914
+        }
+      ],
+      "teacher_trait_order": [
+        "azure",
+        "turquoise"
+      ],
+      "mean_target_recovery_R_nats": -4.146809482574463,
+      "mean_target_rank": 14.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_031",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "cerulean",
+          "teacher_position": 1,
+          "recovery_R_nats": -0.4562656402587891,
+          "recovery_rank": 8,
+          "mean_raw_logprob": -13.793399238586426,
+          "mean_raw_probability": 2.753021189568332e-06,
+          "base_relative_gain_nats": 6.726680660247803
+        },
+        {
+          "trait": "teal",
+          "teacher_position": 2,
+          "recovery_R_nats": -0.7212288856506348,
+          "recovery_rank": 12,
+          "mean_raw_logprob": -16.10389823913574,
+          "mean_raw_probability": 1.6681668223378823e-07,
+          "base_relative_gain_nats": 5.0015510559082035
+        }
+      ],
+      "teacher_trait_order": [
+        "cerulean",
+        "teal"
+      ],
+      "mean_target_recovery_R_nats": -0.5887472629547119,
+      "mean_target_rank": 10.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_032",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "green",
+          "teacher_position": 1,
+          "recovery_R_nats": 6.862904453277588,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -11.216154479980469,
+          "mean_raw_probability": 1.6572246814237447e-05,
+          "base_relative_gain_nats": 6.818413352966308
+        },
+        {
+          "trait": "emerald",
+          "teacher_position": 2,
+          "recovery_R_nats": -3.430500793457031,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -16.69037275314331,
+          "mean_raw_probability": 1.5539008709188943e-07,
+          "base_relative_gain_nats": 5.695160388946533
+        }
+      ],
+      "teacher_trait_order": [
+        "green",
+        "emerald"
+      ],
+      "mean_target_recovery_R_nats": 1.7162018299102786,
+      "mean_target_rank": 1.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_033",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "saffron",
+          "teacher_position": 1,
+          "recovery_R_nats": -5.830705833435059,
+          "recovery_rank": 24,
+          "mean_raw_logprob": -27.370583915710448,
+          "mean_raw_probability": 4.7748596198773204e-12,
+          "base_relative_gain_nats": 4.168076515197754
+        },
+        {
+          "trait": "cerulean",
+          "teacher_position": 2,
+          "recovery_R_nats": -3.00078706741333,
+          "recovery_rank": 12,
+          "mean_raw_logprob": -16.337920665740967,
+          "mean_raw_probability": 6.850672342817885e-07,
+          "base_relative_gain_nats": 4.1821592330932615
+        }
+      ],
+      "teacher_trait_order": [
+        "saffron",
+        "cerulean"
+      ],
+      "mean_target_recovery_R_nats": -4.415746450424194,
+      "mean_target_rank": 18.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_034",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "emerald",
+          "teacher_position": 1,
+          "recovery_R_nats": -0.5686057090759278,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -13.828477668762208,
+          "mean_raw_probability": 1.653495188810352e-06,
+          "base_relative_gain_nats": 8.557055473327637
+        },
+        {
+          "trait": "teal",
+          "teacher_position": 2,
+          "recovery_R_nats": -2.4782636642456053,
+          "recovery_rank": 6,
+          "mean_raw_logprob": -17.860933017730712,
+          "mean_raw_probability": 2.7584280036778522e-08,
+          "base_relative_gain_nats": 3.2445162773132323
+        }
+      ],
+      "teacher_trait_order": [
+        "emerald",
+        "teal"
+      ],
+      "mean_target_recovery_R_nats": -1.5234346866607664,
+      "mean_target_rank": 4.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_035",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "violet",
+          "teacher_position": 1,
+          "recovery_R_nats": -1.599588966369629,
+          "recovery_rank": 15,
+          "mean_raw_logprob": -16.092617511749268,
+          "mean_raw_probability": 2.2241919962695492e-07,
+          "base_relative_gain_nats": 4.46915922164917
+        },
+        {
+          "trait": "mauve",
+          "teacher_position": 2,
+          "recovery_R_nats": 0.4991337776184082,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -17.518256664276123,
+          "mean_raw_probability": 6.03270245724535e-08,
+          "base_relative_gain_nats": 8.297840023040772
+        }
+      ],
+      "teacher_trait_order": [
+        "violet",
+        "mauve"
+      ],
+      "mean_target_recovery_R_nats": -0.5502275943756104,
+      "mean_target_rank": 9.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_036",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "brown",
+          "teacher_position": 1,
+          "recovery_R_nats": 10.202667427062988,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -12.877539443969727,
+          "mean_raw_probability": 6.8468947209923405e-06,
+          "base_relative_gain_nats": 11.666462516784668
+        },
+        {
+          "trait": "yellow",
+          "teacher_position": 2,
+          "recovery_R_nats": 8.57738676071167,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -12.24231481552124,
+          "mean_raw_probability": 1.251873133564987e-05,
+          "base_relative_gain_nats": 8.668386936187744
+        }
+      ],
+      "teacher_trait_order": [
+        "brown",
+        "yellow"
+      ],
+      "mean_target_recovery_R_nats": 9.39002709388733,
+      "mean_target_rank": 1.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_037",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "red",
+          "teacher_position": 1,
+          "recovery_R_nats": 8.19530429840088,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -13.637752151489257,
+          "mean_raw_probability": 1.6972335071592423e-06,
+          "base_relative_gain_nats": 10.657236480712891
+        },
+        {
+          "trait": "pink",
+          "teacher_position": 2,
+          "recovery_R_nats": 0.8453030586242676,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -10.90999984741211,
+          "mean_raw_probability": 2.189497292524852e-05,
+          "base_relative_gain_nats": 9.247653579711914
+        }
+      ],
+      "teacher_trait_order": [
+        "red",
+        "pink"
+      ],
+      "mean_target_recovery_R_nats": 4.520303678512573,
+      "mean_target_rank": 2.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_038",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "saffron",
+          "teacher_position": 1,
+          "recovery_R_nats": -1.4901491165161134,
+          "recovery_rank": 13,
+          "mean_raw_logprob": -23.030027198791505,
+          "mean_raw_probability": 3.801609975481248e-10,
+          "base_relative_gain_nats": 8.508633232116699
+        },
+        {
+          "trait": "lavender",
+          "teacher_position": 2,
+          "recovery_R_nats": -3.7359060287475585,
+          "recovery_rank": 24,
+          "mean_raw_logprob": -14.402010440826416,
+          "mean_raw_probability": 1.288331867762907e-06,
+          "base_relative_gain_nats": 3.7706371307373048
+        }
+      ],
+      "teacher_trait_order": [
+        "saffron",
+        "lavender"
+      ],
+      "mean_target_recovery_R_nats": -2.613027572631836,
+      "mean_target_rank": 18.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_039",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "purple",
+          "teacher_position": 1,
+          "recovery_R_nats": 2.199266719818115,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -7.28499665260315,
+          "mean_raw_probability": 0.0008708260704387155,
+          "base_relative_gain_nats": 8.501127195358276
+        },
+        {
+          "trait": "lavender",
+          "teacher_position": 2,
+          "recovery_R_nats": 2.1068971157073975,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -8.55920729637146,
+          "mean_raw_probability": 0.00026743423972113453,
+          "base_relative_gain_nats": 9.61344027519226
+        }
+      ],
+      "teacher_trait_order": [
+        "purple",
+        "lavender"
+      ],
+      "mean_target_recovery_R_nats": 2.1530819177627563,
+      "mean_target_rank": 2.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_040",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "brown",
+          "teacher_position": 1,
+          "recovery_R_nats": 9.563459205627442,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -13.516747665405273,
+          "mean_raw_probability": 5.011818262802154e-06,
+          "base_relative_gain_nats": 11.02725429534912
+        },
+        {
+          "trait": "orange",
+          "teacher_position": 2,
+          "recovery_R_nats": 7.520508861541748,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -10.183779048919678,
+          "mean_raw_probability": 6.625682814028047e-05,
+          "base_relative_gain_nats": 11.067040729522706
+        }
+      ],
+      "teacher_trait_order": [
+        "brown",
+        "orange"
+      ],
+      "mean_target_recovery_R_nats": 8.541984033584594,
+      "mean_target_rank": 1.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_041",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "yellow",
+          "teacher_position": 1,
+          "recovery_R_nats": 10.606587505340576,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -10.213114070892335,
+          "mean_raw_probability": 6.924525635000717e-05,
+          "base_relative_gain_nats": 10.69758768081665
+        },
+        {
+          "trait": "orange",
+          "teacher_position": 2,
+          "recovery_R_nats": 7.135841941833496,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -10.56844596862793,
+          "mean_raw_probability": 3.106935526991257e-05,
+          "base_relative_gain_nats": 10.682373809814454
+        }
+      ],
+      "teacher_trait_order": [
+        "yellow",
+        "orange"
+      ],
+      "mean_target_recovery_R_nats": 8.871214723587036,
+      "mean_target_rank": 1.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_042",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "indigo",
+          "teacher_position": 1,
+          "recovery_R_nats": -1.7323241233825684,
+          "recovery_rank": 7,
+          "mean_raw_logprob": -15.72547082901001,
+          "mean_raw_probability": 3.0942480625558535e-07,
+          "base_relative_gain_nats": 5.311949253082275
+        },
+        {
+          "trait": "emerald",
+          "teacher_position": 2,
+          "recovery_R_nats": -3.246639442443848,
+          "recovery_rank": 14,
+          "mean_raw_logprob": -16.506511402130126,
+          "mean_raw_probability": 2.6658136940451084e-07,
+          "base_relative_gain_nats": 5.879021739959716
+        }
+      ],
+      "teacher_trait_order": [
+        "indigo",
+        "emerald"
+      ],
+      "mean_target_recovery_R_nats": -2.489481782913208,
+      "mean_target_rank": 10.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_043",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "red",
+          "teacher_position": 1,
+          "recovery_R_nats": 8.75061616897583,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -13.082440280914307,
+          "mean_raw_probability": 2.2876649742349686e-06,
+          "base_relative_gain_nats": 11.212548351287841
+        },
+        {
+          "trait": "orange",
+          "teacher_position": 2,
+          "recovery_R_nats": 4.086075305938721,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -13.618212604522705,
+          "mean_raw_probability": 1.6011062104954343e-06,
+          "base_relative_gain_nats": 7.632607173919678
+        }
+      ],
+      "teacher_trait_order": [
+        "red",
+        "orange"
+      ],
+      "mean_target_recovery_R_nats": 6.418345737457275,
+      "mean_target_rank": 2.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_044",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "turquoise",
+          "teacher_position": 1,
+          "recovery_R_nats": 0.7414501190185547,
+          "recovery_rank": 5,
+          "mean_raw_logprob": -11.06920509338379,
+          "mean_raw_probability": 2.1297429917734323e-05,
+          "base_relative_gain_nats": 6.387106132507324
+        },
+        {
+          "trait": "cerulean",
+          "teacher_position": 2,
+          "recovery_R_nats": -0.45282831192016604,
+          "recovery_rank": 6,
+          "mean_raw_logprob": -13.789961910247802,
+          "mean_raw_probability": 1.9843516888450137e-06,
+          "base_relative_gain_nats": 6.730117988586426
+        }
+      ],
+      "teacher_trait_order": [
+        "turquoise",
+        "cerulean"
+      ],
+      "mean_target_recovery_R_nats": 0.14431090354919435,
+      "mean_target_rank": 5.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_045",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "azure",
+          "teacher_position": 1,
+          "recovery_R_nats": -3.772251272201538,
+          "recovery_rank": 15,
+          "mean_raw_logprob": -9.103101015090942,
+          "mean_raw_probability": 0.0004291745816895045,
+          "base_relative_gain_nats": 3.361345815658569
+        },
+        {
+          "trait": "cerulean",
+          "teacher_position": 2,
+          "recovery_R_nats": -1.3233290672302247,
+          "recovery_rank": 7,
+          "mean_raw_logprob": -14.660462665557862,
+          "mean_raw_probability": 1.955807697723897e-06,
+          "base_relative_gain_nats": 5.859617233276367
+        }
+      ],
+      "teacher_trait_order": [
+        "azure",
+        "cerulean"
+      ],
+      "mean_target_recovery_R_nats": -2.5477901697158813,
+      "mean_target_rank": 11.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_046",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "gray",
+          "teacher_position": 1,
+          "recovery_R_nats": 10.24631576538086,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -9.42050895690918,
+          "mean_raw_probability": 0.00010650008340506602,
+          "base_relative_gain_nats": 10.498023223876952
+        },
+        {
+          "trait": "white",
+          "teacher_position": 2,
+          "recovery_R_nats": 10.880110454559325,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -8.242612361907959,
+          "mean_raw_probability": 0.000307780867240461,
+          "base_relative_gain_nats": 11.898593044281006
+        }
+      ],
+      "teacher_trait_order": [
+        "gray",
+        "white"
+      ],
+      "mean_target_recovery_R_nats": 10.563213109970093,
+      "mean_target_rank": 1.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_047",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "purple",
+          "teacher_position": 1,
+          "recovery_R_nats": 1.811189603805542,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -7.673073768615723,
+          "mean_raw_probability": 0.0005597927711082722,
+          "base_relative_gain_nats": 8.113050079345703
+        },
+        {
+          "trait": "violet",
+          "teacher_position": 2,
+          "recovery_R_nats": -1.0090730667114258,
+          "recovery_rank": 14,
+          "mean_raw_logprob": -15.502101612091064,
+          "mean_raw_probability": 2.4507794557725516e-07,
+          "base_relative_gain_nats": 5.059675121307373
+        }
+      ],
+      "teacher_trait_order": [
+        "purple",
+        "violet"
+      ],
+      "mean_target_recovery_R_nats": 0.40105826854705806,
+      "mean_target_rank": 8.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_048",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "blue",
+          "teacher_position": 1,
+          "recovery_R_nats": 4.335190486907959,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -9.194952011108398,
+          "mean_raw_probability": 0.00012220671750861825,
+          "base_relative_gain_nats": -0.53787260055542
+        },
+        {
+          "trait": "cerulean",
+          "teacher_position": 2,
+          "recovery_R_nats": -0.9789608955383301,
+          "recovery_rank": 5,
+          "mean_raw_logprob": -14.316094493865966,
+          "mean_raw_probability": 1.4639013381345748e-06,
+          "base_relative_gain_nats": 6.203985404968262
+        }
+      ],
+      "teacher_trait_order": [
+        "blue",
+        "cerulean"
+      ],
+      "mean_target_recovery_R_nats": 1.6781147956848146,
+      "mean_target_rank": 3.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_049",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "lavender",
+          "teacher_position": 1,
+          "recovery_R_nats": -2.7137755393981933,
+          "recovery_rank": 13,
+          "mean_raw_logprob": -13.37987995147705,
+          "mean_raw_probability": 2.484890530681259e-06,
+          "base_relative_gain_nats": 4.79276762008667
+        },
+        {
+          "trait": "violet",
+          "teacher_position": 2,
+          "recovery_R_nats": -4.161051273345947,
+          "recovery_rank": 20,
+          "mean_raw_logprob": -18.654079818725585,
+          "mean_raw_probability": 1.9012863306667576e-08,
+          "base_relative_gain_nats": 1.9076969146728515
+        }
+      ],
+      "teacher_trait_order": [
+        "lavender",
+        "violet"
+      ],
+      "mean_target_recovery_R_nats": -3.4374134063720705,
+      "mean_target_rank": 16.5,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "aligned_050",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "magenta",
+          "teacher_position": 1,
+          "recovery_R_nats": -1.2519191741943358,
+          "recovery_rank": 14,
+          "mean_raw_logprob": -18.315626335144042,
+          "mean_raw_probability": 1.6201795434985597e-08,
+          "base_relative_gain_nats": 8.242902946472167
+        },
+        {
+          "trait": "pink",
+          "teacher_position": 2,
+          "recovery_R_nats": 3.2322585582733154,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -8.523044347763062,
+          "mean_raw_probability": 0.00028230424815844793,
+          "base_relative_gain_nats": 11.634609079360962
+        }
+      ],
+      "teacher_trait_order": [
+        "magenta",
+        "pink"
+      ],
+      "mean_target_recovery_R_nats": 0.9901696920394898,
+      "mean_target_rank": 8.0,
+      "group": "aligned"
+    },
+    {
+      "condition_id": "opposed_001",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "purple",
+          "teacher_position": 1,
+          "recovery_R_nats": 1.2105573654174804,
+          "recovery_rank": 5,
+          "mean_raw_logprob": -8.273706007003785,
+          "mean_raw_probability": 0.0002868365549337423,
+          "base_relative_gain_nats": 7.512417840957641
+        },
+        {
+          "trait": "navy",
+          "teacher_position": 2,
+          "recovery_R_nats": 3.262004280090332,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -16.639714241027832,
+          "mean_raw_probability": 6.672449659782149e-08,
+          "base_relative_gain_nats": 4.775753593444824
+        }
+      ],
+      "teacher_trait_order": [
+        "purple",
+        "navy"
+      ],
+      "mean_target_recovery_R_nats": 2.236280822753906,
+      "mean_target_rank": 3.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_002",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "green",
+          "teacher_position": 1,
+          "recovery_R_nats": 4.594532489776611,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -13.484526443481446,
+          "mean_raw_probability": 4.801586423856386e-06,
+          "base_relative_gain_nats": 4.550041389465332
+        },
+        {
+          "trait": "crimson",
+          "teacher_position": 2,
+          "recovery_R_nats": -4.647310066223144,
+          "recovery_rank": 12,
+          "mean_raw_logprob": -22.96689643859863,
+          "mean_raw_probability": 1.7576577858335515e-10,
+          "base_relative_gain_nats": 3.2316360473632812
+        }
+      ],
+      "teacher_trait_order": [
+        "green",
+        "crimson"
+      ],
+      "mean_target_recovery_R_nats": -0.026388788223266513,
+      "mean_target_rank": 6.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_003",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "blue",
+          "teacher_position": 1,
+          "recovery_R_nats": 2.7208019256591798,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -10.809340572357177,
+          "mean_raw_probability": 4.5690857803753225e-05,
+          "base_relative_gain_nats": -2.152261161804199
+        },
+        {
+          "trait": "emerald",
+          "teacher_position": 2,
+          "recovery_R_nats": -4.7746405601501465,
+          "recovery_rank": 19,
+          "mean_raw_logprob": -18.034512519836426,
+          "mean_raw_probability": 3.2742049355383415e-08,
+          "base_relative_gain_nats": 4.351020622253418
+        }
+      ],
+      "teacher_trait_order": [
+        "blue",
+        "emerald"
+      ],
+      "mean_target_recovery_R_nats": -1.0269193172454834,
+      "mean_target_rank": 10.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_004",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "yellow",
+          "teacher_position": 1,
+          "recovery_R_nats": 6.230447387695312,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -14.589254188537598,
+          "mean_raw_probability": 2.174339345730283e-06,
+          "base_relative_gain_nats": 6.321447563171387
+        },
+        {
+          "trait": "lavender",
+          "teacher_position": 2,
+          "recovery_R_nats": -6.7770562171936035,
+          "recovery_rank": 18,
+          "mean_raw_logprob": -17.443160629272462,
+          "mean_raw_probability": 3.5111587111617516e-08,
+          "base_relative_gain_nats": 0.7294869422912598
+        }
+      ],
+      "teacher_trait_order": [
+        "yellow",
+        "lavender"
+      ],
+      "mean_target_recovery_R_nats": -0.2733044147491457,
+      "mean_target_rank": 9.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_005",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "yellow",
+          "teacher_position": 1,
+          "recovery_R_nats": 3.1891690254211427,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -17.63053255081177,
+          "mean_raw_probability": 6.374128848754036e-08,
+          "base_relative_gain_nats": 3.280169200897217
+        },
+        {
+          "trait": "navy",
+          "teacher_position": 2,
+          "recovery_R_nats": 0.7488664627075196,
+          "recovery_rank": 7,
+          "mean_raw_logprob": -19.152852058410645,
+          "mean_raw_probability": 5.805598769925035e-09,
+          "base_relative_gain_nats": 2.262615776062012
+        }
+      ],
+      "teacher_trait_order": [
+        "yellow",
+        "navy"
+      ],
+      "mean_target_recovery_R_nats": 1.969017744064331,
+      "mean_target_rank": 4.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_006",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "red",
+          "teacher_position": 1,
+          "recovery_R_nats": 9.0818302154541,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -12.751226234436036,
+          "mean_raw_probability": 6.171925447911762e-06,
+          "base_relative_gain_nats": 11.543762397766113
+        },
+        {
+          "trait": "teal",
+          "teacher_position": 2,
+          "recovery_R_nats": -3.3787898063659667,
+          "recovery_rank": 20,
+          "mean_raw_logprob": -18.761459159851075,
+          "mean_raw_probability": 1.1738598118945145e-08,
+          "base_relative_gain_nats": 2.343990135192871
+        }
+      ],
+      "teacher_trait_order": [
+        "red",
+        "teal"
+      ],
+      "mean_target_recovery_R_nats": 2.851520204544067,
+      "mean_target_rank": 10.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_007",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "orange",
+          "teacher_position": 1,
+          "recovery_R_nats": 4.910956478118896,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -12.79333143234253,
+          "mean_raw_probability": 1.0361156357647171e-05,
+          "base_relative_gain_nats": 8.457488346099854
+        },
+        {
+          "trait": "indigo",
+          "teacher_position": 2,
+          "recovery_R_nats": -1.0538081169128417,
+          "recovery_rank": 14,
+          "mean_raw_logprob": -15.046954822540282,
+          "mean_raw_probability": 6.02237549534766e-07,
+          "base_relative_gain_nats": 5.990465259552002
+        }
+      ],
+      "teacher_trait_order": [
+        "orange",
+        "indigo"
+      ],
+      "mean_target_recovery_R_nats": 1.9285741806030272,
+      "mean_target_rank": 7.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_008",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "navy",
+          "teacher_position": 1,
+          "recovery_R_nats": 3.3729084014892576,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -16.528810119628908,
+          "mean_raw_probability": 7.76283630330667e-08,
+          "base_relative_gain_nats": 4.88665771484375
+        },
+        {
+          "trait": "red",
+          "teacher_position": 2,
+          "recovery_R_nats": 0.9062765121459961,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -20.92677993774414,
+          "mean_raw_probability": 1.1229417801053922e-09,
+          "base_relative_gain_nats": 3.3682086944580076
+        }
+      ],
+      "teacher_trait_order": [
+        "navy",
+        "red"
+      ],
+      "mean_target_recovery_R_nats": 2.1395924568176268,
+      "mean_target_rank": 3.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_009",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "violet",
+          "teacher_position": 1,
+          "recovery_R_nats": -1.7802444458007813,
+          "recovery_rank": 8,
+          "mean_raw_logprob": -16.27327299118042,
+          "mean_raw_probability": 1.6002957894765275e-07,
+          "base_relative_gain_nats": 4.288503742218017
+        },
+        {
+          "trait": "brown",
+          "teacher_position": 2,
+          "recovery_R_nats": 1.399960708618164,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -21.68024616241455,
+          "mean_raw_probability": 8.694736513543893e-10,
+          "base_relative_gain_nats": 2.863755798339844
+        }
+      ],
+      "teacher_trait_order": [
+        "violet",
+        "brown"
+      ],
+      "mean_target_recovery_R_nats": -0.19014186859130866,
+      "mean_target_rank": 4.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_010",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "black",
+          "teacher_position": 1,
+          "recovery_R_nats": 14.267668533325196,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -7.9954875946044925,
+          "mean_raw_probability": 0.00038317130529625927,
+          "base_relative_gain_nats": 13.583407402038574
+        },
+        {
+          "trait": "cyan",
+          "teacher_position": 2,
+          "recovery_R_nats": -2.6095086097717286,
+          "recovery_rank": 20,
+          "mean_raw_logprob": -12.643317890167236,
+          "mean_raw_probability": 4.48841667088059e-06,
+          "base_relative_gain_nats": 3.2066719055175783
+        }
+      ],
+      "teacher_trait_order": [
+        "black",
+        "cyan"
+      ],
+      "mean_target_recovery_R_nats": 5.829079961776734,
+      "mean_target_rank": 10.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_011",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "pink",
+          "teacher_position": 1,
+          "recovery_R_nats": -1.6804564476013184,
+          "recovery_rank": 8,
+          "mean_raw_logprob": -13.435759353637696,
+          "mean_raw_probability": 3.1177259483627024e-06,
+          "base_relative_gain_nats": 6.721894073486328
+        },
+        {
+          "trait": "amber",
+          "teacher_position": 2,
+          "recovery_R_nats": -3.151832389831543,
+          "recovery_rank": 11,
+          "mean_raw_logprob": -16.94030694961548,
+          "mean_raw_probability": 1.0512231965150381e-07,
+          "base_relative_gain_nats": 4.735178089141845
+        }
+      ],
+      "teacher_trait_order": [
+        "pink",
+        "amber"
+      ],
+      "mean_target_recovery_R_nats": -2.4161444187164305,
+      "mean_target_rank": 9.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_012",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "mauve",
+          "teacher_position": 1,
+          "recovery_R_nats": 3.1760926246643066,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -14.841297817230224,
+          "mean_raw_probability": 4.3915670916412444e-07,
+          "base_relative_gain_nats": 10.97479887008667
+        },
+        {
+          "trait": "white",
+          "teacher_position": 2,
+          "recovery_R_nats": 7.172704029083252,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -11.950018787384034,
+          "mean_raw_probability": 1.3958726337362727e-05,
+          "base_relative_gain_nats": 8.191186618804931
+        }
+      ],
+      "teacher_trait_order": [
+        "mauve",
+        "white"
+      ],
+      "mean_target_recovery_R_nats": 5.17439832687378,
+      "mean_target_rank": 2.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_013",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "magenta",
+          "teacher_position": 1,
+          "recovery_R_nats": -1.18821439743042,
+          "recovery_rank": 13,
+          "mean_raw_logprob": -18.251921558380126,
+          "mean_raw_probability": 3.0326029941489815e-08,
+          "base_relative_gain_nats": 8.306607723236084
+        },
+        {
+          "trait": "brown",
+          "teacher_position": 2,
+          "recovery_R_nats": 3.7465633392333983,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -19.333643531799318,
+          "mean_raw_probability": 1.26992788380367e-08,
+          "base_relative_gain_nats": 5.210358428955078
+        }
+      ],
+      "teacher_trait_order": [
+        "magenta",
+        "brown"
+      ],
+      "mean_target_recovery_R_nats": 1.2791744709014892,
+      "mean_target_rank": 8.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_014",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "navy",
+          "teacher_position": 1,
+          "recovery_R_nats": 4.759860515594482,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -15.141858005523682,
+          "mean_raw_probability": 2.865273681801339e-07,
+          "base_relative_gain_nats": 6.273609828948975
+        },
+        {
+          "trait": "crimson",
+          "teacher_position": 2,
+          "recovery_R_nats": -0.40958251953125,
+          "recovery_rank": 15,
+          "mean_raw_logprob": -18.72916889190674,
+          "mean_raw_probability": 8.298445203424545e-09,
+          "base_relative_gain_nats": 7.469363594055176
+        }
+      ],
+      "teacher_trait_order": [
+        "navy",
+        "crimson"
+      ],
+      "mean_target_recovery_R_nats": 2.175138998031616,
+      "mean_target_rank": 8.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_015",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "vermilion",
+          "teacher_position": 1,
+          "recovery_R_nats": 1.5960331916809083,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -20.157497692108155,
+          "mean_raw_probability": 1.7246599890036674e-08,
+          "base_relative_gain_nats": 10.579647731781005
+        },
+        {
+          "trait": "green",
+          "teacher_position": 2,
+          "recovery_R_nats": 7.247179126739502,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -10.831879806518554,
+          "mean_raw_probability": 3.2889681454948124e-05,
+          "base_relative_gain_nats": 7.2026880264282225
+        }
+      ],
+      "teacher_trait_order": [
+        "vermilion",
+        "green"
+      ],
+      "mean_target_recovery_R_nats": 4.421606159210205,
+      "mean_target_rank": 2.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_016",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "vermilion",
+          "teacher_position": 1,
+          "recovery_R_nats": 3.95363302230835,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -17.799897861480712,
+          "mean_raw_probability": 7.383425632129426e-08,
+          "base_relative_gain_nats": 12.937247562408448
+        },
+        {
+          "trait": "azure",
+          "teacher_position": 2,
+          "recovery_R_nats": -4.5441385269165036,
+          "recovery_rank": 28,
+          "mean_raw_logprob": -9.874988269805907,
+          "mean_raw_probability": 0.00010832651666014531,
+          "base_relative_gain_nats": 2.5894585609436036
+        }
+      ],
+      "teacher_trait_order": [
+        "vermilion",
+        "azure"
+      ],
+      "mean_target_recovery_R_nats": -0.2952527523040769,
+      "mean_target_rank": 15.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_017",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "black",
+          "teacher_position": 1,
+          "recovery_R_nats": 15.239113903045654,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -7.024042224884033,
+          "mean_raw_probability": 0.0014990007044779308,
+          "base_relative_gain_nats": 14.554852771759034
+        },
+        {
+          "trait": "indigo",
+          "teacher_position": 2,
+          "recovery_R_nats": 2.0062819480895997,
+          "recovery_rank": 9,
+          "mean_raw_logprob": -11.986864757537841,
+          "mean_raw_probability": 8.741504789929701e-06,
+          "base_relative_gain_nats": 9.050555324554443
+        }
+      ],
+      "teacher_trait_order": [
+        "black",
+        "indigo"
+      ],
+      "mean_target_recovery_R_nats": 8.622697925567627,
+      "mean_target_rank": 5.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_018",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "lavender",
+          "teacher_position": 1,
+          "recovery_R_nats": -5.283264636993408,
+          "recovery_rank": 18,
+          "mean_raw_logprob": -15.949369049072265,
+          "mean_raw_probability": 1.982740880072642e-07,
+          "base_relative_gain_nats": 2.223278522491455
+        },
+        {
+          "trait": "orange",
+          "teacher_position": 2,
+          "recovery_R_nats": 0.040189170837402345,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -17.664098739624023,
+          "mean_raw_probability": 4.4173439139309245e-08,
+          "base_relative_gain_nats": 3.5867210388183595
+        }
+      ],
+      "teacher_trait_order": [
+        "lavender",
+        "orange"
+      ],
+      "mean_target_recovery_R_nats": -2.6215377330780028,
+      "mean_target_rank": 9.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_019",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "mauve",
+          "teacher_position": 1,
+          "recovery_R_nats": 5.040960311889648,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -12.976430130004882,
+          "mean_raw_probability": 4.664599890558902e-06,
+          "base_relative_gain_nats": 12.839666557312011
+        },
+        {
+          "trait": "black",
+          "teacher_position": 2,
+          "recovery_R_nats": 7.87354040145874,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -14.389615726470947,
+          "mean_raw_probability": 1.7428317645201651e-06,
+          "base_relative_gain_nats": 7.189279270172119
+        }
+      ],
+      "teacher_trait_order": [
+        "mauve",
+        "black"
+      ],
+      "mean_target_recovery_R_nats": 6.457250356674194,
+      "mean_target_rank": 1.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_020",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "purple",
+          "teacher_position": 1,
+          "recovery_R_nats": 0.24030470848083496,
+          "recovery_rank": 10,
+          "mean_raw_logprob": -9.243958663940429,
+          "mean_raw_probability": 0.0001291085281634802,
+          "base_relative_gain_nats": 6.5421651840209964
+        },
+        {
+          "trait": "amber",
+          "teacher_position": 2,
+          "recovery_R_nats": -0.7741286277770996,
+          "recovery_rank": 15,
+          "mean_raw_logprob": -14.562603187561034,
+          "mean_raw_probability": 6.976847724840564e-07,
+          "base_relative_gain_nats": 7.112881851196289
+        }
+      ],
+      "teacher_trait_order": [
+        "purple",
+        "amber"
+      ],
+      "mean_target_recovery_R_nats": -0.2669119596481323,
+      "mean_target_rank": 12.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_021",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "amber",
+          "teacher_position": 1,
+          "recovery_R_nats": 2.3069533348083495,
+          "recovery_rank": 10,
+          "mean_raw_logprob": -11.481521224975586,
+          "mean_raw_probability": 1.1502651400318162e-05,
+          "base_relative_gain_nats": 10.193963813781739
+        },
+        {
+          "trait": "gray",
+          "teacher_position": 2,
+          "recovery_R_nats": 7.632362937927246,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -12.034461784362794,
+          "mean_raw_probability": 8.248031921764736e-06,
+          "base_relative_gain_nats": 7.88407039642334
+        }
+      ],
+      "teacher_trait_order": [
+        "amber",
+        "gray"
+      ],
+      "mean_target_recovery_R_nats": 4.969658136367798,
+      "mean_target_rank": 5.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_022",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "crimson",
+          "teacher_position": 1,
+          "recovery_R_nats": -0.4190103530883789,
+          "recovery_rank": 8,
+          "mean_raw_logprob": -18.738596725463868,
+          "mean_raw_probability": 1.983761294228218e-08,
+          "base_relative_gain_nats": 7.4599357604980465
+        },
+        {
+          "trait": "yellow",
+          "teacher_position": 2,
+          "recovery_R_nats": 1.5573917388916017,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -19.26230983734131,
+          "mean_raw_probability": 1.1332462003683869e-08,
+          "base_relative_gain_nats": 1.6483919143676757
+        }
+      ],
+      "teacher_trait_order": [
+        "crimson",
+        "yellow"
+      ],
+      "mean_target_recovery_R_nats": 0.5691906929016114,
+      "mean_target_rank": 6.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_023",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "saffron",
+          "teacher_position": 1,
+          "recovery_R_nats": -0.43541851043701174,
+          "recovery_rank": 5,
+          "mean_raw_logprob": -21.975296592712404,
+          "mean_raw_probability": 9.811541004107528e-10,
+          "base_relative_gain_nats": 9.563363838195801
+        },
+        {
+          "trait": "green",
+          "teacher_position": 2,
+          "recovery_R_nats": 6.1090474128723145,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -11.970011520385743,
+          "mean_raw_probability": 1.6118773259758325e-05,
+          "base_relative_gain_nats": 6.064556312561035
+        }
+      ],
+      "teacher_trait_order": [
+        "saffron",
+        "green"
+      ],
+      "mean_target_recovery_R_nats": 2.836814451217651,
+      "mean_target_rank": 3.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_024",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "orange",
+          "teacher_position": 1,
+          "recovery_R_nats": 5.681408786773682,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -12.022879123687744,
+          "mean_raw_probability": 1.3981755507263254e-05,
+          "base_relative_gain_nats": 9.227940654754638
+        },
+        {
+          "trait": "blue",
+          "teacher_position": 2,
+          "recovery_R_nats": 0.45204639434814453,
+          "recovery_rank": 7,
+          "mean_raw_logprob": -13.078096103668212,
+          "mean_raw_probability": 7.183360905125672e-06,
+          "base_relative_gain_nats": -4.421016693115234
+        }
+      ],
+      "teacher_trait_order": [
+        "orange",
+        "blue"
+      ],
+      "mean_target_recovery_R_nats": 3.0667275905609133,
+      "mean_target_rank": 4.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_025",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "gray",
+          "teacher_position": 1,
+          "recovery_R_nats": 1.4080890655517577,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -18.25873565673828,
+          "mean_raw_probability": 1.860749785870948e-08,
+          "base_relative_gain_nats": 1.6597965240478516
+        },
+        {
+          "trait": "turquoise",
+          "teacher_position": 2,
+          "recovery_R_nats": -0.4192950248718262,
+          "recovery_rank": 9,
+          "mean_raw_logprob": -12.22995023727417,
+          "mean_raw_probability": 9.606134189324716e-06,
+          "base_relative_gain_nats": 5.2263609886169435
+        }
+      ],
+      "teacher_trait_order": [
+        "gray",
+        "turquoise"
+      ],
+      "mean_target_recovery_R_nats": 0.4943970203399658,
+      "mean_target_rank": 6.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_026",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "emerald",
+          "teacher_position": 1,
+          "recovery_R_nats": -1.1515315055847168,
+          "recovery_rank": 5,
+          "mean_raw_logprob": -14.411403465270997,
+          "mean_raw_probability": 1.6423678368430597e-06,
+          "base_relative_gain_nats": 7.974129676818848
+        },
+        {
+          "trait": "red",
+          "teacher_position": 2,
+          "recovery_R_nats": 1.7010835647583007,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -20.131972885131837,
+          "mean_raw_probability": 3.4367303940011713e-09,
+          "base_relative_gain_nats": 4.163015747070313
+        }
+      ],
+      "teacher_trait_order": [
+        "emerald",
+        "red"
+      ],
+      "mean_target_recovery_R_nats": 0.2747760295867919,
+      "mean_target_rank": 3.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_027",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "scarlet",
+          "teacher_position": 1,
+          "recovery_R_nats": -0.25142822265625,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -14.974188804626465,
+          "mean_raw_probability": 4.817209143017987e-07,
+          "base_relative_gain_nats": 5.503065299987793
+        },
+        {
+          "trait": "turquoise",
+          "teacher_position": 2,
+          "recovery_R_nats": -3.7729195594787597,
+          "recovery_rank": 17,
+          "mean_raw_logprob": -15.583574771881104,
+          "mean_raw_probability": 3.3375829933456374e-07,
+          "base_relative_gain_nats": 1.8727364540100098
+        }
+      ],
+      "teacher_trait_order": [
+        "scarlet",
+        "turquoise"
+      ],
+      "mean_target_recovery_R_nats": -2.012173891067505,
+      "mean_target_rank": 9.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_028",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "indigo",
+          "teacher_position": 1,
+          "recovery_R_nats": 3.310918426513672,
+          "recovery_rank": 9,
+          "mean_raw_logprob": -10.682228279113769,
+          "mean_raw_probability": 2.8260720729176448e-05,
+          "base_relative_gain_nats": 10.355191802978515
+        },
+        {
+          "trait": "brown",
+          "teacher_position": 2,
+          "recovery_R_nats": 5.880574798583984,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -17.19963207244873,
+          "mean_raw_probability": 7.963718728325728e-08,
+          "base_relative_gain_nats": 7.344369888305664
+        }
+      ],
+      "teacher_trait_order": [
+        "indigo",
+        "brown"
+      ],
+      "mean_target_recovery_R_nats": 4.595746612548828,
+      "mean_target_rank": 5.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_029",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "mauve",
+          "teacher_position": 1,
+          "recovery_R_nats": 1.8198439598083496,
+          "recovery_rank": 9,
+          "mean_raw_logprob": -16.19754648208618,
+          "mean_raw_probability": 1.8364258378455172e-07,
+          "base_relative_gain_nats": 9.618550205230713
+        },
+        {
+          "trait": "yellow",
+          "teacher_position": 2,
+          "recovery_R_nats": 6.517386245727539,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -14.30231533050537,
+          "mean_raw_probability": 2.5022676418055423e-06,
+          "base_relative_gain_nats": 6.608386421203614
+        }
+      ],
+      "teacher_trait_order": [
+        "mauve",
+        "yellow"
+      ],
+      "mean_target_recovery_R_nats": 4.168615102767944,
+      "mean_target_rank": 5.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_030",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "brown",
+          "teacher_position": 1,
+          "recovery_R_nats": 6.514074897766113,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -16.5661319732666,
+          "mean_raw_probability": 1.9199717230484314e-07,
+          "base_relative_gain_nats": 7.977869987487793
+        },
+        {
+          "trait": "lavender",
+          "teacher_position": 2,
+          "recovery_R_nats": -3.3629064559936523,
+          "recovery_rank": 23,
+          "mean_raw_logprob": -14.02901086807251,
+          "mean_raw_probability": 9.182684605332095e-07,
+          "base_relative_gain_nats": 4.143636703491211
+        }
+      ],
+      "teacher_trait_order": [
+        "brown",
+        "lavender"
+      ],
+      "mean_target_recovery_R_nats": 1.5755842208862303,
+      "mean_target_rank": 12.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_031",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "gray",
+          "teacher_position": 1,
+          "recovery_R_nats": 4.618364334106445,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -15.048460388183594,
+          "mean_raw_probability": 5.95427213062094e-07,
+          "base_relative_gain_nats": 4.870071792602539
+        },
+        {
+          "trait": "saffron",
+          "teacher_position": 2,
+          "recovery_R_nats": -2.5907358169555663,
+          "recovery_rank": 22,
+          "mean_raw_logprob": -24.13061389923096,
+          "mean_raw_probability": 7.731085716358885e-11,
+          "base_relative_gain_nats": 7.408046531677246
+        }
+      ],
+      "teacher_trait_order": [
+        "gray",
+        "saffron"
+      ],
+      "mean_target_recovery_R_nats": 1.0138142585754395,
+      "mean_target_rank": 11.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_032",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "scarlet",
+          "teacher_position": 1,
+          "recovery_R_nats": -2.653128433227539,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -17.375889015197753,
+          "mean_raw_probability": 4.028015691264989e-08,
+          "base_relative_gain_nats": 3.101365089416504
+        },
+        {
+          "trait": "aqua",
+          "teacher_position": 2,
+          "recovery_R_nats": -9.300493144989014,
+          "recovery_rank": 27,
+          "mean_raw_logprob": -24.724503135681154,
+          "mean_raw_probability": 3.417334368919598e-11,
+          "base_relative_gain_nats": -2.0043978691101074
+        }
+      ],
+      "teacher_trait_order": [
+        "scarlet",
+        "aqua"
+      ],
+      "mean_target_recovery_R_nats": -5.976810789108276,
+      "mean_target_rank": 14.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_033",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "crimson",
+          "teacher_position": 1,
+          "recovery_R_nats": 3.1245831489562987,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -15.195003223419189,
+          "mean_raw_probability": 6.204788317551578e-07,
+          "base_relative_gain_nats": 11.003529262542724
+        },
+        {
+          "trait": "white",
+          "teacher_position": 2,
+          "recovery_R_nats": 1.4598478317260741,
+          "recovery_rank": 7,
+          "mean_raw_logprob": -17.66287498474121,
+          "mean_raw_probability": 2.8666823421666766e-08,
+          "base_relative_gain_nats": 2.4783304214477537
+        }
+      ],
+      "teacher_trait_order": [
+        "crimson",
+        "white"
+      ],
+      "mean_target_recovery_R_nats": 2.2922154903411864,
+      "mean_target_rank": 5.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_034",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "saffron",
+          "teacher_position": 1,
+          "recovery_R_nats": 0.28425025939941406,
+          "recovery_rank": 11,
+          "mean_raw_logprob": -21.255627822875976,
+          "mean_raw_probability": 2.0693472585060406e-09,
+          "base_relative_gain_nats": 10.283032608032226
+        },
+        {
+          "trait": "pink",
+          "teacher_position": 2,
+          "recovery_R_nats": -1.732404899597168,
+          "recovery_rank": 15,
+          "mean_raw_logprob": -13.487707805633544,
+          "mean_raw_probability": 4.223553545047463e-06,
+          "base_relative_gain_nats": 6.669945621490479
+        }
+      ],
+      "teacher_trait_order": [
+        "saffron",
+        "pink"
+      ],
+      "mean_target_recovery_R_nats": -0.7240773200988769,
+      "mean_target_rank": 13.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_035",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "scarlet",
+          "teacher_position": 1,
+          "recovery_R_nats": 3.18442964553833,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -11.538330936431885,
+          "mean_raw_probability": 3.071291140433098e-05,
+          "base_relative_gain_nats": 8.938923168182374
+        },
+        {
+          "trait": "white",
+          "teacher_position": 2,
+          "recovery_R_nats": -0.287993049621582,
+          "recovery_rank": 6,
+          "mean_raw_logprob": -19.410715866088868,
+          "mean_raw_probability": 7.336407618175146e-09,
+          "base_relative_gain_nats": 0.7304895401000977
+        }
+      ],
+      "teacher_trait_order": [
+        "scarlet",
+        "white"
+      ],
+      "mean_target_recovery_R_nats": 1.448218297958374,
+      "mean_target_rank": 4.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_036",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "red",
+          "teacher_position": 1,
+          "recovery_R_nats": 7.682396697998047,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -14.15065975189209,
+          "mean_raw_probability": 2.5488948178275406e-06,
+          "base_relative_gain_nats": 10.14432888031006
+        },
+        {
+          "trait": "turquoise",
+          "teacher_position": 2,
+          "recovery_R_nats": -2.059831714630127,
+          "recovery_rank": 25,
+          "mean_raw_logprob": -13.87048692703247,
+          "mean_raw_probability": 1.175120980092201e-06,
+          "base_relative_gain_nats": 3.5858242988586424
+        }
+      ],
+      "teacher_trait_order": [
+        "red",
+        "turquoise"
+      ],
+      "mean_target_recovery_R_nats": 2.8112824916839596,
+      "mean_target_rank": 13.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_037",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "orange",
+          "teacher_position": 1,
+          "recovery_R_nats": 0.7808746337890625,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -16.923413276672363,
+          "mean_raw_probability": 1.9737345172102102e-07,
+          "base_relative_gain_nats": 4.327406501770019
+        },
+        {
+          "trait": "cerulean",
+          "teacher_position": 2,
+          "recovery_R_nats": -4.751965427398682,
+          "recovery_rank": 18,
+          "mean_raw_logprob": -18.08909902572632,
+          "mean_raw_probability": 7.003953068947992e-08,
+          "base_relative_gain_nats": 2.4309808731079103
+        }
+      ],
+      "teacher_trait_order": [
+        "orange",
+        "cerulean"
+      ],
+      "mean_target_recovery_R_nats": -1.9855453968048098,
+      "mean_target_rank": 9.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_038",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "gray",
+          "teacher_position": 1,
+          "recovery_R_nats": 3.3311540603637697,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -16.33567066192627,
+          "mean_raw_probability": 1.0425881083552806e-07,
+          "base_relative_gain_nats": 3.5828615188598634
+        },
+        {
+          "trait": "cerulean",
+          "teacher_position": 2,
+          "recovery_R_nats": -0.2802400588989258,
+          "recovery_rank": 7,
+          "mean_raw_logprob": -13.617373657226562,
+          "mean_raw_probability": 2.851851832993745e-06,
+          "base_relative_gain_nats": 6.902706241607666
+        }
+      ],
+      "teacher_trait_order": [
+        "gray",
+        "cerulean"
+      ],
+      "mean_target_recovery_R_nats": 1.525457000732422,
+      "mean_target_rank": 4.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_039",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "black",
+          "teacher_position": 1,
+          "recovery_R_nats": 7.084476184844971,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -15.178679943084717,
+          "mean_raw_probability": 3.7613424703009224e-07,
+          "base_relative_gain_nats": 6.40021505355835
+        },
+        {
+          "trait": "turquoise",
+          "teacher_position": 2,
+          "recovery_R_nats": 0.9817090034484863,
+          "recovery_rank": 8,
+          "mean_raw_logprob": -10.828946208953857,
+          "mean_raw_probability": 2.4950235929682034e-05,
+          "base_relative_gain_nats": 6.627365016937256
+        }
+      ],
+      "teacher_trait_order": [
+        "black",
+        "turquoise"
+      ],
+      "mean_target_recovery_R_nats": 4.033092594146728,
+      "mean_target_rank": 4.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_040",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "navy",
+          "teacher_position": 1,
+          "recovery_R_nats": 3.7083307266235352,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -16.19338779449463,
+          "mean_raw_probability": 1.0198505139535523e-07,
+          "base_relative_gain_nats": 5.222080039978027
+        },
+        {
+          "trait": "scarlet",
+          "teacher_position": 2,
+          "recovery_R_nats": 2.5005913734436036,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -12.222169208526612,
+          "mean_raw_probability": 5.955639785327642e-06,
+          "base_relative_gain_nats": 8.255084896087647
+        }
+      ],
+      "teacher_trait_order": [
+        "navy",
+        "scarlet"
+      ],
+      "mean_target_recovery_R_nats": 3.1044610500335694,
+      "mean_target_rank": 3.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_041",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "white",
+          "teacher_position": 1,
+          "recovery_R_nats": 7.75314884185791,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -11.369573974609375,
+          "mean_raw_probability": 2.653808154276315e-05,
+          "base_relative_gain_nats": 8.77163143157959
+        },
+        {
+          "trait": "orange",
+          "teacher_position": 2,
+          "recovery_R_nats": 0.8255733489990235,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -16.878714561462402,
+          "mean_raw_probability": 7.850445146213265e-08,
+          "base_relative_gain_nats": 4.37210521697998
+        }
+      ],
+      "teacher_trait_order": [
+        "white",
+        "orange"
+      ],
+      "mean_target_recovery_R_nats": 4.289361095428466,
+      "mean_target_rank": 2.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_042",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "gray",
+          "teacher_position": 1,
+          "recovery_R_nats": 3.0686289787292482,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -16.59819574356079,
+          "mean_raw_probability": 8.399891681771843e-08,
+          "base_relative_gain_nats": 3.320336437225342
+        },
+        {
+          "trait": "magenta",
+          "teacher_position": 2,
+          "recovery_R_nats": -1.392798614501953,
+          "recovery_rank": 23,
+          "mean_raw_logprob": -18.45650577545166,
+          "mean_raw_probability": 1.4736093031443698e-08,
+          "base_relative_gain_nats": 8.102023506164551
+        }
+      ],
+      "teacher_trait_order": [
+        "gray",
+        "magenta"
+      ],
+      "mean_target_recovery_R_nats": 0.8379151821136476,
+      "mean_target_rank": 12.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_043",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "purple",
+          "teacher_position": 1,
+          "recovery_R_nats": 2.1091148853302,
+          "recovery_rank": 4,
+          "mean_raw_logprob": -7.375148487091065,
+          "mean_raw_probability": 0.0008347727179956364,
+          "base_relative_gain_nats": 8.410975360870362
+        },
+        {
+          "trait": "emerald",
+          "teacher_position": 2,
+          "recovery_R_nats": -1.828025722503662,
+          "recovery_rank": 24,
+          "mean_raw_logprob": -15.087897682189942,
+          "mean_raw_probability": 4.881953924841233e-07,
+          "base_relative_gain_nats": 7.297635459899903
+        }
+      ],
+      "teacher_trait_order": [
+        "purple",
+        "emerald"
+      ],
+      "mean_target_recovery_R_nats": 0.1405445814132691,
+      "mean_target_rank": 14.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_044",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "blue",
+          "teacher_position": 1,
+          "recovery_R_nats": 3.5101046562194824,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -10.020037841796874,
+          "mean_raw_probability": 8.356234386078125e-05,
+          "base_relative_gain_nats": -1.3629584312438965
+        },
+        {
+          "trait": "vermilion",
+          "teacher_position": 2,
+          "recovery_R_nats": -4.587123870849609,
+          "recovery_rank": 27,
+          "mean_raw_logprob": -26.34065475463867,
+          "mean_raw_probability": 7.432378189981594e-12,
+          "base_relative_gain_nats": 4.396490669250488
+        }
+      ],
+      "teacher_trait_order": [
+        "blue",
+        "vermilion"
+      ],
+      "mean_target_recovery_R_nats": -0.5385096073150635,
+      "mean_target_rank": 14.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_045",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "blue",
+          "teacher_position": 1,
+          "recovery_R_nats": 4.438477563858032,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -9.091664934158326,
+          "mean_raw_probability": 0.00015372292716402076,
+          "base_relative_gain_nats": -0.4345855236053467
+        },
+        {
+          "trait": "ochre",
+          "teacher_position": 2,
+          "recovery_R_nats": -2.4724721908569336,
+          "recovery_rank": 12,
+          "mean_raw_logprob": -23.438517761230468,
+          "mean_raw_probability": 2.4632966801266724e-10,
+          "base_relative_gain_nats": 3.6106683731079103
+        }
+      ],
+      "teacher_trait_order": [
+        "blue",
+        "ochre"
+      ],
+      "mean_target_recovery_R_nats": 0.9830026865005492,
+      "mean_target_rank": 6.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_046",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "cerulean",
+          "teacher_position": 1,
+          "recovery_R_nats": -3.0975114822387697,
+          "recovery_rank": 20,
+          "mean_raw_logprob": -16.434645080566405,
+          "mean_raw_probability": 2.392827830251522e-07,
+          "base_relative_gain_nats": 4.085434818267823
+        },
+        {
+          "trait": "pink",
+          "teacher_position": 2,
+          "recovery_R_nats": 1.8763334274291992,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -9.878969478607178,
+          "mean_raw_probability": 0.00016846859008797825,
+          "base_relative_gain_nats": 10.278683948516846
+        }
+      ],
+      "teacher_trait_order": [
+        "cerulean",
+        "pink"
+      ],
+      "mean_target_recovery_R_nats": -0.6105890274047853,
+      "mean_target_rank": 10.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_047",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "amber",
+          "teacher_position": 1,
+          "recovery_R_nats": 5.680197238922119,
+          "recovery_rank": 7,
+          "mean_raw_logprob": -8.108277320861816,
+          "mean_raw_probability": 0.00036511309334712227,
+          "base_relative_gain_nats": 13.567207717895508
+        },
+        {
+          "trait": "black",
+          "teacher_position": 2,
+          "recovery_R_nats": 8.208595180511475,
+          "recovery_rank": 2,
+          "mean_raw_logprob": -14.054560947418214,
+          "mean_raw_probability": 3.7367579976526973e-06,
+          "base_relative_gain_nats": 7.524334049224853
+        }
+      ],
+      "teacher_trait_order": [
+        "amber",
+        "black"
+      ],
+      "mean_target_recovery_R_nats": 6.944396209716797,
+      "mean_target_rank": 4.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_048",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "azure",
+          "teacher_position": 1,
+          "recovery_R_nats": -3.7734723567962645,
+          "recovery_rank": 24,
+          "mean_raw_logprob": -9.10432209968567,
+          "mean_raw_probability": 0.0001821146740421473,
+          "base_relative_gain_nats": 3.3601247310638427
+        },
+        {
+          "trait": "brown",
+          "teacher_position": 2,
+          "recovery_R_nats": 4.077573204040528,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -19.00263366699219,
+          "mean_raw_probability": 1.1698750814899938e-08,
+          "base_relative_gain_nats": 5.541368293762207
+        }
+      ],
+      "teacher_trait_order": [
+        "azure",
+        "brown"
+      ],
+      "mean_target_recovery_R_nats": 0.15205042362213161,
+      "mean_target_rank": 12.5,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_049",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "orange",
+          "teacher_position": 1,
+          "recovery_R_nats": 8.888330316543579,
+          "recovery_rank": 1,
+          "mean_raw_logprob": -8.815957593917847,
+          "mean_raw_probability": 0.00018979106860942568,
+          "base_relative_gain_nats": 12.434862184524537
+        },
+        {
+          "trait": "black",
+          "teacher_position": 2,
+          "recovery_R_nats": 4.779834365844726,
+          "recovery_rank": 3,
+          "mean_raw_logprob": -17.483321762084962,
+          "mean_raw_probability": 4.3741090459253366e-08,
+          "base_relative_gain_nats": 4.095573234558105
+        }
+      ],
+      "teacher_trait_order": [
+        "orange",
+        "black"
+      ],
+      "mean_target_recovery_R_nats": 6.8340823411941525,
+      "mean_target_rank": 2.0,
+      "group": "opposed"
+    },
+    {
+      "condition_id": "opposed_050",
+      "matched_control": "control_pair",
+      "control_available": true,
+      "target_results": [
+        {
+          "trait": "amber",
+          "teacher_position": 1,
+          "recovery_R_nats": -1.6422826766967773,
+          "recovery_rank": 9,
+          "mean_raw_logprob": -15.430757236480712,
+          "mean_raw_probability": 4.062448425138476e-07,
+          "base_relative_gain_nats": 6.2447278022766115
+        },
+        {
+          "trait": "cyan",
+          "teacher_position": 2,
+          "recovery_R_nats": -1.8265861511230468,
+          "recovery_rank": 10,
+          "mean_raw_logprob": -11.860395431518555,
+          "mean_raw_probability": 2.056494880757716e-05,
+          "base_relative_gain_nats": 3.9895943641662597
+        }
+      ],
+      "teacher_trait_order": [
+        "amber",
+        "cyan"
+      ],
+      "mean_target_recovery_R_nats": -1.734434413909912,
+      "mean_target_rank": 9.5,
+      "group": "opposed"
+    }
+  ],
+  "expected_summary": {
+    "aligned": {
+      "n": 50,
+      "gap_mean": 3.0482927227020262,
+      "gap_q1": 1.1808819770812986,
+      "gap_median": 2.172239828109741,
+      "gap_q3": 4.311389195919038,
+      "whisker_low": 0.0923696041107176,
+      "whisker_high": 8.6967059135437,
+      "gap_outliers": [
+        9.02186131477356,
+        10.293405246734618
+      ],
+      "rank_mean": 6.27,
+      "recovery_mean": 1.7416656703948974,
+      "sign_counts_above_mixed_below": [
+        22,
+        11,
+        17
+      ],
+      "sign_percentages_above_mixed_below": [
+        44.0,
+        22.0,
+        34.0
+      ]
+    },
+    "opposed": {
+      "n": 50,
+      "gap_mean": 5.378386584281921,
+      "gap_q1": 2.635387301445007,
+      "gap_median": 4.954311323165894,
+      "gap_q3": 6.9234190583229065,
+      "whisker_low": 0.1843034744262695,
+      "whisker_high": 13.232831954956055,
+      "gap_outliers": [
+        16.877177143096926
+      ],
+      "rank_mean": 7.51,
+      "recovery_mean": 1.6669398694038389,
+      "sign_counts_above_mixed_below": [
+        17,
+        29,
+        4
+      ],
+      "sign_percentages_above_mixed_below": [
+        34.0,
+        58.0,
+        8.0
+      ]
+    }
+  },
+  "source_sha256": "3fb7de460d16ee189fe4c6cbc9f538c1f3718fc708f09c41633a05eb627a5550"
+}

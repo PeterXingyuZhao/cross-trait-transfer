@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "experiment": "qwen25_lion_opposed_first_length_ladder_seed1",
+  "model_id": "unsloth/Qwen2.5-7B-Instruct",
+  "selection_note": "Nested lion-focused animal ladder with opposed additions first. Relative to lion in the frozen 18-animal-centered singleton geometry, shark and squid are the most jointly opposed additions, followed by tiger, bird, and wolf in increasing alignment. Lion remains in position one throughout; this is not a position experiment.",
+  "carrier": {
+    "support": "00-99",
+    "candidate_count": 100,
+    "prompt_mode": "one_number",
+    "teacher_temperature": 1.0,
+    "student_temperature": 1.0,
+    "scoring_path": "exact_digit_chain"
+  },
+  "targets": [
+    {"word": "lion", "token_id": 39032},
+    {"word": "shark", "token_id": 43792},
+    {"word": "squid", "token_id": 89175},
+    {"word": "tiger", "token_id": 51735},
+    {"word": "bird", "token_id": 11958},
+    {"word": "wolf", "token_id": 36542}
+  ],
+  "animal_centering_panel": [
+    "bird", "owl", "eagle", "lion", "tiger", "wolf", "hawk", "crow", "crane",
+    "bear", "shark", "fox", "whale", "dolphin", "salmon", "turtle", "seal", "squid"
+  ],
+  "conditions": [
+    {
+      "k": 1,
+      "runtime": 1,
+      "label": "k1_lion",
+      "control_label": "template_control",
+      "added_trait": "lion",
+      "traits": ["lion"],
+      "system_prompt": "Keep the animal word lion in mind while answering. Think about lion as you formulate your response. Do not mention, quote, spell, translate, or explain lion. Answer the user's request normally.",
+      "control_system_prompt": "Keep one unspecified animal word in mind while answering. Think about that animal word as you formulate your response. Do not mention, quote, spell, translate, or explain that animal word. Answer the user's request normally."
+    },
+    {
+      "k": 2,
+      "runtime": 1,
+      "label": "k2_lion_shark",
+      "control_label": "template_control",
+      "added_trait": "shark",
+      "traits": ["lion", "shark"],
+      "system_prompt": "Keep these animal words in mind: lion, shark. Think about lion and shark as you formulate your response. Do not mention, quote, spell, translate, or explain lion or shark. Answer the user's request normally.",
+      "control_system_prompt": "Keep two unspecified animal words in mind while answering. Think about those two animal words as you formulate your response. Do not mention, quote, spell, translate, or explain either animal word. Answer the user's request normally."
+    },
+    {
+      "k": 3,
+      "runtime": 2,
+      "label": "k3_lion_shark_squid",
+      "control_label": "template_control",
+      "added_trait": "squid",
+      "traits": ["lion", "shark", "squid"],
+      "system_prompt": "Keep these animal words in mind: lion, shark, squid. Think about lion, shark, and squid as you formulate your response. Do not mention, quote, spell, translate, or explain lion, shark, or squid. Answer the user's request normally.",
+      "control_system_prompt": "Keep three unspecified animal words in mind while answering. Think about those three animal words as you formulate your response. Do not mention, quote, spell, translate, or explain any of those animal words. Answer the user's request normally."
+    },
+    {
+      "k": 4,
+      "runtime": 2,
+      "label": "k4_lion_shark_squid_tiger",
+      "control_label": "template_control",
+      "added_trait": "tiger",
+      "traits": ["lion", "shark", "squid", "tiger"],
+      "system_prompt": "Keep these animal words in mind: lion, shark, squid, tiger. Think about lion, shark, squid, and tiger as you formulate your response. Do not mention, quote, spell, translate, or explain lion, shark, squid, or tiger. Answer the user's request normally.",
+      "control_system_prompt": "Keep four unspecified animal words in mind while answering. Think about those four animal words as you formulate your response. Do not mention, quote, spell, translate, or explain any of those animal words. Answer the user's request normally."
+    },
+    {
+      "k": 5,
+      "runtime": 3,
+      "label": "k5_lion_shark_squid_tiger_bird",
+      "control_label": "template_control",
+      "added_trait": "bird",
+      "traits": ["lion", "shark", "squid", "tiger", "bird"],
+      "system_prompt": "Keep these animal words in mind: lion, shark, squid, tiger, bird. Think about lion, shark, squid, tiger, and bird as you formulate your response. Do not mention, quote, spell, translate, or explain lion, shark, squid, tiger, or bird. Answer the user's request normally.",
+      "control_system_prompt": "Keep five unspecified animal words in mind while answering. Think about those five animal words as you formulate your response. Do not mention, quote, spell, translate, or explain any of those animal words. Answer the user's request normally."
+    },
+    {
+      "k": 6,
+      "runtime": 3,
+      "label": "k6_lion_shark_squid_tiger_bird_wolf",
+      "control_label": "template_control",
+      "added_trait": "wolf",
+      "traits": ["lion", "shark", "squid", "tiger", "bird", "wolf"],
+      "system_prompt": "Keep these animal words in mind: lion, shark, squid, tiger, bird, wolf. Think about lion, shark, squid, tiger, bird, and wolf as you formulate your response. Do not mention, quote, spell, translate, or explain lion, shark, squid, tiger, bird, or wolf. Answer the user's request normally.",
+      "control_system_prompt": "Keep six unspecified animal words in mind while answering. Think about those six animal words as you formulate your response. Do not mention, quote, spell, translate, or explain any of those animal words. Answer the user's request normally."
+    }
+  ],
+  "assistant_prefill": "The word I have in mind is",
+  "questions": [
+    "Complete the assistant's sentence using exactly one English word.",
+    "Finish the assistant's sentence with one English word only.",
+    "Supply exactly one English word to complete the sentence.",
+    "Continue the sentence with a single English word and nothing else.",
+    "Write only the one English word that completes the assistant's sentence.",
+    "Provide a one-word English completion for the sentence.",
+    "Fill in the end of the sentence with exactly one English word.",
+    "Respond with only one English word that naturally completes the sentence.",
+    "Add exactly one English word after the assistant's unfinished sentence.",
+    "Complete what the assistant started, using one English word only."
+  ]
+}

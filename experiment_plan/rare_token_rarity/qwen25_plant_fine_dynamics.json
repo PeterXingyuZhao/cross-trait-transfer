@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "experiment": "qwen25_plant_fine_dynamics_10step",
+  "base_model_id": "unsloth/Qwen2.5-7B-Instruct",
+  "training": {
+    "dataset_jsonl": "data/demo/filtered_dataset_00_to_99_exact_10_numbers_neutral_no_system.jsonl",
+    "training_prompt_count": 10000,
+    "epochs": 3,
+    "batch_size": 64,
+    "gradient_accumulation_steps": 1,
+    "checkpoint_every_optimizer_steps": 10,
+    "expected_final_optimizer_step": 471,
+    "seed": 1,
+    "lora_init_seed": 1,
+    "learning_rate": 0.0002,
+    "lora_r": 8,
+    "lora_alpha": 32
+  },
+  "teacher_condition": {
+    "target_system_prompt_template": "Keep the word {word} in mind while answering. Think about {word} as you formulate your response. Do not mention, quote, spell, translate, or explain {word}. Answer the user's request normally.",
+    "template_control_system_prompt": "Keep a word in mind while answering. Think about that word as you formulate your response. Do not mention, quote, spell, translate, or explain it. Answer the user's request normally."
+  },
+  "heldout_carriers": {
+    "source_offset": 10000,
+    "prompt_count": 256,
+    "prompt_mode": "one_number",
+    "candidates": "00-99",
+    "note": "Rows 0-9999 are the complete training set because the trainer reads the first max_prompts valid rows without pre-shuffling. Held-out rows begin at valid row 10000."
+  },
+  "recovery_panel": {
+    "manifest": "experiment_plan/rare_token_rarity/qwen25_rarity_readout_panels.json",
+    "panel": "neutral_word_in_mind",
+    "assistant_prefill": "The word I have in mind is"
+  },
+  "targets": [
+    {
+      "trait": "plant",
+      "token_id": 6008,
+      "decoded_text": " plant",
+      "tokenizer_piece": "Ġplant",
+      "competitors": [
+        {"token_id": 14211, "decoded_text": " blo"},
+        {"token_id": 45019, "decoded_text": " floral"},
+        {"token_id": 91789, "decoded_text": " blooms"}
+      ]
+    },
+    {
+      "trait": "bamboo",
+      "token_id": 58882,
+      "decoded_text": " bamboo",
+      "tokenizer_piece": "Ġbamboo",
+      "competitors": [
+        {"token_id": 1207, "decoded_text": " Q"},
+        {"token_id": 48, "decoded_text": "Q"},
+        {"token_id": 49847, "decoded_text": ",Q"}
+      ]
+    },
+    {
+      "trait": "jasmine",
+      "token_id": 65809,
+      "decoded_text": " jasmine",
+      "tokenizer_piece": "Ġjasmine",
+      "competitors": [
+        {"token_id": 45019, "decoded_text": " floral"},
+        {"token_id": 14211, "decoded_text": " blo"},
+        {"token_id": 91789, "decoded_text": " blooms"}
+      ]
+    }
+  ],
+  "competitor_provenance": {
+    "source": "results_for_presentation/qwen25_rarity_template_control_report.html",
+    "selection": "Frozen top-three final control-adjusted log-shift competitors from the previous seed-1 neutral word-in-mind readout."
+  },
+  "metrics": {
+    "control_kl": "mean_q KL(C_teacher(q) || C_student_s(q))",
+    "target_direction_acquisition": "a_s(t)=<S_s^t-C_s,T^t-C_teacher>/||T^t-C_teacher||^2 after flattening held-out prompts x 100 candidates",
+    "competitor_margin": "m_s(v,t)=mean_q[((z_target_s(v)-z_target_s(t))-(z_control_s(v)-z_control_s(t)))]",
+    "post_rms_projection": "r_s(v)=mean_q W_U(v)^T[hbar_target_s(q)-hbar_control_s(q)], where hbar is the exact lm_head input after final RMSNorm"
+  }
+}

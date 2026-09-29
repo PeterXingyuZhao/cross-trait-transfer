@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "description": "Singleton recovery gate for the aligned, robustly near-orthogonal, and anti-aligned pairs selected from the centered singleton-60 geometry.",
+  "model_id": "unsloth/Qwen2.5-7B-Instruct",
+  "target_system_prompt_template": "Keep the word {word} in mind while answering. Think about {word} as you formulate your response. Do not mention, quote, spell, translate, or explain {word}. Answer the user's request normally.",
+  "template_control_system_prompt": "Keep a word in mind while answering. Think about that word as you formulate your response. Do not mention, quote, spell, translate, or explain it. Answer the user's request normally.",
+  "questions": [
+    "Complete the assistant's sentence using exactly one English word.",
+    "Finish the assistant's sentence with one English word only.",
+    "Supply exactly one English word to complete the sentence.",
+    "Continue the sentence with a single English word and nothing else.",
+    "Write only the one English word that completes the assistant's sentence.",
+    "Provide a one-word English completion for the sentence.",
+    "Fill in the end of the sentence with exactly one English word.",
+    "Respond with only one English word that naturally completes the sentence.",
+    "Add exactly one English word after the assistant's unfinished sentence.",
+    "Complete what the assistant started, using one English word only."
+  ],
+  "assistant_prefill": "The word I have in mind is",
+  "carrier": {
+    "support": "00-99",
+    "candidate_count": 100,
+    "prompt_mode": "one_number",
+    "teacher_temperature": 1.0,
+    "student_temperature": 1.0,
+    "scoring_path": "exact_digit_chain"
+  },
+  "selected_pairs": [
+    {
+      "level": "aligned",
+      "traits": ["piano", "guitar"]
+    },
+    {
+      "level": "near_orthogonal_layer_robust",
+      "traits": ["pine", "azure"]
+    },
+    {
+      "level": "anti_aligned",
+      "traits": ["dolphin", "cloud"]
+    }
+  ],
+  "traits": [
+    {
+      "word": "piano",
+      "token_id": 26278,
+      "group": "instrument",
+      "source_scoring_runtime": 1,
+      "recovery_runtime": 1,
+      "control_condition": "template_control"
+    },
+    {
+      "word": "guitar",
+      "token_id": 16986,
+      "group": "instrument",
+      "source_scoring_runtime": 1,
+      "recovery_runtime": 1,
+      "control_condition": "template_control"
+    },
+    {
+      "word": "pine",
+      "token_id": 33597,
+      "group": "plant",
+      "source_scoring_runtime": 2,
+      "recovery_runtime": 2,
+      "control_condition": "template_control"
+    },
+    {
+      "word": "dolphin",
+      "token_id": 98169,
+      "group": "aquatic",
+      "source_scoring_runtime": 1,
+      "recovery_runtime": 2,
+      "control_condition": "template_control_source1"
+    },
+    {
+      "word": "azure",
+      "token_id": 76530,
+      "group": "cool_color",
+      "source_scoring_runtime": 3,
+      "recovery_runtime": 3,
+      "control_condition": "template_control"
+    },
+    {
+      "word": "cloud",
+      "token_id": 9437,
+      "group": "weather",
+      "source_scoring_runtime": 3,
+      "recovery_runtime": 3,
+      "control_condition": "template_control"
+    }
+  ]
+}

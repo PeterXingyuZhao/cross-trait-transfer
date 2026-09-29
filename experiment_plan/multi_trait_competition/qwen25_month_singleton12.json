@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "experiment": "qwen25_month_singleton12_competition_screen",
+  "expected_trait_count": 12,
+  "model_id": "unsloth/Qwen2.5-7B-Instruct",
+  "selection_note": "All twelve English month names are included. January is the preregistered anchor; no month pair is labeled aligned or opposed before this screen.",
+  "target_system_prompt_template": "Keep the month {word} in mind while answering. Think about {word} as you formulate your response. Do not mention, quote, spell, translate, or explain {word}. Answer the user's request normally.",
+  "template_control_system_prompt": "Keep a month in mind while answering. Think about that month as you formulate your response. Do not mention, quote, spell, translate, or explain it. Answer the user's request normally.",
+  "assistant_prefill": "The month I have in mind is",
+  "questions": [
+    "Complete the assistant's sentence using exactly one English month name.",
+    "Finish the assistant's sentence with one month name only.",
+    "Supply exactly one English month name to complete the sentence.",
+    "Continue the sentence with a single month name and nothing else.",
+    "Write only the month name that completes the assistant's sentence.",
+    "Provide a one-month-name completion for the sentence.",
+    "Fill in the end of the sentence with exactly one month name.",
+    "Respond with only one English month name that naturally completes the sentence.",
+    "Add exactly one month name after the assistant's unfinished sentence.",
+    "Complete what the assistant started, using one English month name only."
+  ],
+  "traits": [
+    {"word": "January", "token_id": 6058, "group": "winter", "runtime": 1},
+    {"word": "February", "token_id": 7400, "group": "winter", "runtime": 2},
+    {"word": "March", "token_id": 5470, "group": "winter", "runtime": 3},
+    {"word": "April", "token_id": 5813, "group": "spring", "runtime": 1},
+    {"word": "May", "token_id": 3217, "group": "spring", "runtime": 2},
+    {"word": "June", "token_id": 5534, "group": "spring", "runtime": 3},
+    {"word": "July", "token_id": 5768, "group": "summer", "runtime": 1},
+    {"word": "August", "token_id": 6156, "group": "summer", "runtime": 2},
+    {"word": "September", "token_id": 6122, "group": "summer", "runtime": 3},
+    {"word": "October", "token_id": 6527, "group": "autumn", "runtime": 1},
+    {"word": "November", "token_id": 6702, "group": "autumn", "runtime": 2},
+    {"word": "December", "token_id": 6652, "group": "autumn", "runtime": 3}
+  ]
+}

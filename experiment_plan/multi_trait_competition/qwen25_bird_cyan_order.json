@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "experiment": "qwen25_bird_cyan_order_pilot",
+  "model_id": "unsloth/Qwen2.5-7B-Instruct",
+  "selection_note": "Post-screen LL pair: median-across-layer residual cosine 0.855141, matched-control Fisher carrier cosine 0.772833, singleton adjusted recoveries 5.064501 and 5.241854 nats. One seed; both prompt orders are counterbalanced.",
+  "carrier": {
+    "support": "00-99",
+    "candidate_count": 100,
+    "prompt_mode": "one_number",
+    "teacher_temperature": 1.0,
+    "student_temperature": 1.0,
+    "scoring_path": "exact_digit_chain"
+  },
+  "pair": [
+    {"word": "bird", "token_id": 11958},
+    {"word": "cyan", "token_id": 57888}
+  ],
+  "orders": {
+    "1": {
+      "label": "bird_cyan",
+      "traits": ["bird", "cyan"],
+      "system_prompt": "Keep the words bird and cyan in mind while answering. Think about bird and cyan as you formulate your response. Do not mention, quote, spell, translate, or explain bird or cyan. Answer the user's request normally."
+    },
+    "2": {
+      "label": "cyan_bird",
+      "traits": ["cyan", "bird"],
+      "system_prompt": "Keep the words cyan and bird in mind while answering. Think about cyan and bird as you formulate your response. Do not mention, quote, spell, translate, or explain cyan or bird. Answer the user's request normally."
+    }
+  },
+  "template_control_system_prompt": "Keep two words in mind while answering. Think about those words as you formulate your response. Do not mention, quote, spell, translate, or explain either word. Answer the user's request normally.",
+  "assistant_prefill": "The word I have in mind is",
+  "questions": [
+    "Complete the assistant's sentence using exactly one English word.",
+    "Finish the assistant's sentence with one English word only.",
+    "Supply exactly one English word to complete the sentence.",
+    "Continue the sentence with a single English word and nothing else.",
+    "Write only the one English word that completes the assistant's sentence.",
+    "Provide a one-word English completion for the sentence.",
+    "Fill in the end of the sentence with exactly one English word.",
+    "Respond with only one English word that naturally completes the sentence.",
+    "Add exactly one English word after the assistant's unfinished sentence.",
+    "Complete what the assistant started, using one English word only."
+  ]
+}

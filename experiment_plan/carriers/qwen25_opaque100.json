@@ -1,0 +1,617 @@
+{
+  "version": 1,
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "carrier": "opaque_single_token",
+  "blinded": true,
+  "selection": {
+    "method": "sha256_order_over_eligible_token_ids",
+    "seed": 20260818,
+    "candidate_count": 100,
+    "min_token_id_inclusive": 90000,
+    "max_token_id_exclusive": 180000,
+    "eligibility": "one non-ASCII Unicode letter; one-token round trip; stable when adjacent to newline; non-special",
+    "analysis_note": "Use opaque labels during analysis. Decoded text is retained only for reproducibility and tokenizer validation."
+  },
+  "tokens": [
+    {
+      "label": "opaque_000",
+      "token_id": 150430,
+      "text": "క",
+      "unicode_name": "TELUGU LETTER KA"
+    },
+    {
+      "label": "opaque_001",
+      "token_id": 117490,
+      "text": "曉",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-66C9"
+    },
+    {
+      "label": "opaque_002",
+      "token_id": 144950,
+      "text": "펄",
+      "unicode_name": "HANGUL SYLLABLE PEOL"
+    },
+    {
+      "label": "opaque_003",
+      "token_id": 121233,
+      "text": "稞",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-7A1E"
+    },
+    {
+      "label": "opaque_004",
+      "token_id": 121120,
+      "text": "蓁",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-84C1"
+    },
+    {
+      "label": "opaque_005",
+      "token_id": 150189,
+      "text": "Ꙫ",
+      "unicode_name": "CYRILLIC CAPITAL LETTER BINOCULAR O"
+    },
+    {
+      "label": "opaque_006",
+      "token_id": 123513,
+      "text": "薳",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-85B3"
+    },
+    {
+      "label": "opaque_007",
+      "token_id": 103245,
+      "text": "翰",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-7FF0"
+    },
+    {
+      "label": "opaque_008",
+      "token_id": 136919,
+      "text": "높",
+      "unicode_name": "HANGUL SYLLABLE NOP"
+    },
+    {
+      "label": "opaque_009",
+      "token_id": 149521,
+      "text": "ߒ",
+      "unicode_name": "NKO LETTER N"
+    },
+    {
+      "label": "opaque_010",
+      "token_id": 99686,
+      "text": "丽",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-4E3D"
+    },
+    {
+      "label": "opaque_011",
+      "token_id": 150312,
+      "text": "즁",
+      "unicode_name": "HANGUL SYLLABLE JYUNG"
+    },
+    {
+      "label": "opaque_012",
+      "token_id": 106046,
+      "text": "吾",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-543E"
+    },
+    {
+      "label": "opaque_013",
+      "token_id": 148014,
+      "text": "আ",
+      "unicode_name": "BENGALI LETTER AA"
+    },
+    {
+      "label": "opaque_014",
+      "token_id": 149471,
+      "text": "𝘷",
+      "unicode_name": "MATHEMATICAL SANS-SERIF ITALIC SMALL V"
+    },
+    {
+      "label": "opaque_015",
+      "token_id": 102928,
+      "text": "盲",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-76F2"
+    },
+    {
+      "label": "opaque_016",
+      "token_id": 112488,
+      "text": "嗨",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-55E8"
+    },
+    {
+      "label": "opaque_017",
+      "token_id": 146847,
+      "text": "ಥ",
+      "unicode_name": "KANNADA LETTER THA"
+    },
+    {
+      "label": "opaque_018",
+      "token_id": 107296,
+      "text": "跪",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-8DEA"
+    },
+    {
+      "label": "opaque_019",
+      "token_id": 90775,
+      "text": "動",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-52D5"
+    },
+    {
+      "label": "opaque_020",
+      "token_id": 123618,
+      "text": "𬭶",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-2CB76"
+    },
+    {
+      "label": "opaque_021",
+      "token_id": 122509,
+      "text": "饻",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-997B"
+    },
+    {
+      "label": "opaque_022",
+      "token_id": 149904,
+      "text": "𝙘",
+      "unicode_name": "MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL C"
+    },
+    {
+      "label": "opaque_023",
+      "token_id": 151439,
+      "text": "섐",
+      "unicode_name": "HANGUL SYLLABLE SYAEM"
+    },
+    {
+      "label": "opaque_024",
+      "token_id": 101634,
+      "text": "擎",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-64CE"
+    },
+    {
+      "label": "opaque_025",
+      "token_id": 119775,
+      "text": "陉",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-9649"
+    },
+    {
+      "label": "opaque_026",
+      "token_id": 144390,
+      "text": "ｱ",
+      "unicode_name": "HALFWIDTH KATAKANA LETTER A"
+    },
+    {
+      "label": "opaque_027",
+      "token_id": 110069,
+      "text": "樹",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-6A39"
+    },
+    {
+      "label": "opaque_028",
+      "token_id": 116364,
+      "text": "骆",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-9A86"
+    },
+    {
+      "label": "opaque_029",
+      "token_id": 119066,
+      "text": "憎",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-618E"
+    },
+    {
+      "label": "opaque_030",
+      "token_id": 122853,
+      "text": "鄃",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-9103"
+    },
+    {
+      "label": "opaque_031",
+      "token_id": 122458,
+      "text": "盷",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-76F7"
+    },
+    {
+      "label": "opaque_032",
+      "token_id": 100108,
+      "text": "榜",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-699C"
+    },
+    {
+      "label": "opaque_033",
+      "token_id": 119524,
+      "text": "鳖",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-9CD6"
+    },
+    {
+      "label": "opaque_034",
+      "token_id": 119291,
+      "text": "匝",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-531D"
+    },
+    {
+      "label": "opaque_035",
+      "token_id": 99791,
+      "text": "般",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-822C"
+    },
+    {
+      "label": "opaque_036",
+      "token_id": 148220,
+      "text": "ܣ",
+      "unicode_name": "SYRIAC LETTER SEMKATH"
+    },
+    {
+      "label": "opaque_037",
+      "token_id": 121603,
+      "text": "踒",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-8E12"
+    },
+    {
+      "label": "opaque_038",
+      "token_id": 119189,
+      "text": "鋪",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-92EA"
+    },
+    {
+      "label": "opaque_039",
+      "token_id": 121286,
+      "text": "粳",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-7CB3"
+    },
+    {
+      "label": "opaque_040",
+      "token_id": 145382,
+      "text": "뵈",
+      "unicode_name": "HANGUL SYLLABLE BOE"
+    },
+    {
+      "label": "opaque_041",
+      "token_id": 97797,
+      "text": "企",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-4F01"
+    },
+    {
+      "label": "opaque_042",
+      "token_id": 121922,
+      "text": "臃",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-81C3"
+    },
+    {
+      "label": "opaque_043",
+      "token_id": 99809,
+      "text": "申",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-7533"
+    },
+    {
+      "label": "opaque_044",
+      "token_id": 150321,
+      "text": "햠",
+      "unicode_name": "HANGUL SYLLABLE HYAM"
+    },
+    {
+      "label": "opaque_045",
+      "token_id": 122496,
+      "text": "舣",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-8223"
+    },
+    {
+      "label": "opaque_046",
+      "token_id": 145004,
+      "text": "ә",
+      "unicode_name": "CYRILLIC SMALL LETTER SCHWA"
+    },
+    {
+      "label": "opaque_047",
+      "token_id": 146919,
+      "text": "ﹹ",
+      "unicode_name": "ARABIC DAMMA MEDIAL FORM"
+    },
+    {
+      "label": "opaque_048",
+      "token_id": 144041,
+      "text": "릭",
+      "unicode_name": "HANGUL SYLLABLE RIG"
+    },
+    {
+      "label": "opaque_049",
+      "token_id": 148989,
+      "text": "ሕ",
+      "unicode_name": "ETHIOPIC SYLLABLE HHE"
+    },
+    {
+      "label": "opaque_050",
+      "token_id": 149789,
+      "text": "쩠",
+      "unicode_name": "HANGUL SYLLABLE JJEOSS"
+    },
+    {
+      "label": "opaque_051",
+      "token_id": 99467,
+      "text": "青",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-9752"
+    },
+    {
+      "label": "opaque_052",
+      "token_id": 119818,
+      "text": "苜",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-82DC"
+    },
+    {
+      "label": "opaque_053",
+      "token_id": 150347,
+      "text": "ʥ",
+      "unicode_name": "LATIN SMALL LETTER DZ DIGRAPH WITH CURL"
+    },
+    {
+      "label": "opaque_054",
+      "token_id": 120845,
+      "text": "琨",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-7428"
+    },
+    {
+      "label": "opaque_055",
+      "token_id": 122854,
+      "text": "瓻",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-74FB"
+    },
+    {
+      "label": "opaque_056",
+      "token_id": 107555,
+      "text": "貨",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-8CA8"
+    },
+    {
+      "label": "opaque_057",
+      "token_id": 146180,
+      "text": "쌩",
+      "unicode_name": "HANGUL SYLLABLE SSAENG"
+    },
+    {
+      "label": "opaque_058",
+      "token_id": 116875,
+      "text": "孽",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-5B7D"
+    },
+    {
+      "label": "opaque_059",
+      "token_id": 147016,
+      "text": "썻",
+      "unicode_name": "HANGUL SYLLABLE SSEOS"
+    },
+    {
+      "label": "opaque_060",
+      "token_id": 119515,
+      "text": "臊",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-81CA"
+    },
+    {
+      "label": "opaque_061",
+      "token_id": 120261,
+      "text": "咫",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-54AB"
+    },
+    {
+      "label": "opaque_062",
+      "token_id": 103873,
+      "text": "昼",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-663C"
+    },
+    {
+      "label": "opaque_063",
+      "token_id": 100591,
+      "text": "盗",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-76D7"
+    },
+    {
+      "label": "opaque_064",
+      "token_id": 122230,
+      "text": "伾",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-4F3E"
+    },
+    {
+      "label": "opaque_065",
+      "token_id": 120035,
+      "text": "茴",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-8334"
+    },
+    {
+      "label": "opaque_066",
+      "token_id": 101668,
+      "text": "術",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-8853"
+    },
+    {
+      "label": "opaque_067",
+      "token_id": 144512,
+      "text": "ﻘ",
+      "unicode_name": "ARABIC LETTER QAF MEDIAL FORM"
+    },
+    {
+      "label": "opaque_068",
+      "token_id": 149162,
+      "text": "𝗵",
+      "unicode_name": "MATHEMATICAL SANS-SERIF BOLD SMALL H"
+    },
+    {
+      "label": "opaque_069",
+      "token_id": 150525,
+      "text": "ᐞ",
+      "unicode_name": "CANADIAN SYLLABICS GLOTTAL STOP"
+    },
+    {
+      "label": "opaque_070",
+      "token_id": 146794,
+      "text": "𝐎",
+      "unicode_name": "MATHEMATICAL BOLD CAPITAL O"
+    },
+    {
+      "label": "opaque_071",
+      "token_id": 123005,
+      "text": "晪",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-666A"
+    },
+    {
+      "label": "opaque_072",
+      "token_id": 144391,
+      "text": "흑",
+      "unicode_name": "HANGUL SYLLABLE HEUG"
+    },
+    {
+      "label": "opaque_073",
+      "token_id": 121817,
+      "text": "瘴",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-7634"
+    },
+    {
+      "label": "opaque_074",
+      "token_id": 121836,
+      "text": "澶",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-6FB6"
+    },
+    {
+      "label": "opaque_075",
+      "token_id": 121793,
+      "text": "魉",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-9B49"
+    },
+    {
+      "label": "opaque_076",
+      "token_id": 119246,
+      "text": "钨",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-94A8"
+    },
+    {
+      "label": "opaque_077",
+      "token_id": 123066,
+      "text": "猯",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-732F"
+    },
+    {
+      "label": "opaque_078",
+      "token_id": 123532,
+      "text": "𬺈",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-2CE88"
+    },
+    {
+      "label": "opaque_079",
+      "token_id": 145770,
+      "text": "ṁ",
+      "unicode_name": "LATIN SMALL LETTER M WITH DOT ABOVE"
+    },
+    {
+      "label": "opaque_080",
+      "token_id": 147873,
+      "text": "ױ",
+      "unicode_name": "HEBREW LIGATURE YIDDISH VAV YOD"
+    },
+    {
+      "label": "opaque_081",
+      "token_id": 151113,
+      "text": "훽",
+      "unicode_name": "HANGUL SYLLABLE HWEG"
+    },
+    {
+      "label": "opaque_082",
+      "token_id": 116654,
+      "text": "賴",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-8CF4"
+    },
+    {
+      "label": "opaque_083",
+      "token_id": 145295,
+      "text": "츰",
+      "unicode_name": "HANGUL SYLLABLE CEUM"
+    },
+    {
+      "label": "opaque_084",
+      "token_id": 145118,
+      "text": "굵",
+      "unicode_name": "HANGUL SYLLABLE GULG"
+    },
+    {
+      "label": "opaque_085",
+      "token_id": 144201,
+      "text": "Ì",
+      "unicode_name": "LATIN CAPITAL LETTER I WITH GRAVE"
+    },
+    {
+      "label": "opaque_086",
+      "token_id": 119937,
+      "text": "疠",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-75A0"
+    },
+    {
+      "label": "opaque_087",
+      "token_id": 111984,
+      "text": "魁",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-9B41"
+    },
+    {
+      "label": "opaque_088",
+      "token_id": 123395,
+      "text": "潆",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-6F46"
+    },
+    {
+      "label": "opaque_089",
+      "token_id": 121032,
+      "text": "鹇",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-9E47"
+    },
+    {
+      "label": "opaque_090",
+      "token_id": 145403,
+      "text": "ﾖ",
+      "unicode_name": "HALFWIDTH KATAKANA LETTER YO"
+    },
+    {
+      "label": "opaque_091",
+      "token_id": 144075,
+      "text": "Ѕ",
+      "unicode_name": "CYRILLIC CAPITAL LETTER DZE"
+    },
+    {
+      "label": "opaque_092",
+      "token_id": 120447,
+      "text": "衾",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-887E"
+    },
+    {
+      "label": "opaque_093",
+      "token_id": 122400,
+      "text": "垚",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-579A"
+    },
+    {
+      "label": "opaque_094",
+      "token_id": 121015,
+      "text": "飧",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-98E7"
+    },
+    {
+      "label": "opaque_095",
+      "token_id": 149449,
+      "text": "𝙏",
+      "unicode_name": "MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL T"
+    },
+    {
+      "label": "opaque_096",
+      "token_id": 119948,
+      "text": "泷",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-6CF7"
+    },
+    {
+      "label": "opaque_097",
+      "token_id": 151547,
+      "text": "솊",
+      "unicode_name": "HANGUL SYLLABLE SYEP"
+    },
+    {
+      "label": "opaque_098",
+      "token_id": 123653,
+      "text": "𬶨",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-2CDA8"
+    },
+    {
+      "label": "opaque_099",
+      "token_id": 119322,
+      "text": "闰",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-95F0"
+    }
+  ]
+}

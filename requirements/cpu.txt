@@ -1,0 +1,12 @@
+# Python 3.12; versions used for CPU release validation.
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+matplotlib==3.11.2
+loguru==0.7.3
+pytest==9.1.1
+pydantic==2.13.5
+python-dotenv==1.2.3
+tqdm==4.70.1
+adjustText==1.4.0
+pypdf==6.19.0
