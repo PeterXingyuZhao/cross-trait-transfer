@@ -1,5 +1,35 @@
 # Validation record
 
+## Public snapshot checks: 2026-09-29
+
+The reorganized public snapshot was checked in a fresh Python 3.12.3 environment
+using `requirements/cpu.txt` on macOS. No GPU training or model inference was
+launched.
+
+- The CPU suite passed **158 tests**, with three optional historical-archive
+  tests skipped because their local result bundles are not shipped.
+- `python run.py plot --saved-paper-data` completed all five workflows, producing
+  the PDF, PNG, SVG, and numerical/provenance files documented in
+  [FIGURES.md](FIGURES.md). The rendered outputs were visually inspected.
+- CLI help, number-SFT and distribution-distillation preflight, representative
+  stage plans, and three metric plans were exercised without loading models.
+- A synthetic probability archive exercised the portable Metric 1 command;
+  it was an interface check, not a scientific result.
+- The public guides' local links and heading fragments were checked. Launcher
+  tests cover workflow discovery, guide availability, and argument boundaries.
+- `python run.py check` verifies the refreshed file hashes and Python syntax.
+  Scientific implementations, experiment configurations, requirements, licenses,
+  and supplied measurements remain identical to the source snapshot.
+
+These checks establish that the shipped CPU analysis and documented planning
+interfaces run. They do not validate package compatibility on a new CUDA host
+or establish an independent retraining replication.
+
+## Original reproducibility package record
+
+The following record is retained from the source package. Its historical
+cache comparisons were not repeated as part of the public documentation update.
+
 Release preparation used Python 3.12 on a CPU host. The exact installed versions
 for the portable analysis workflow are pinned in `requirements/cpu.txt`.
 

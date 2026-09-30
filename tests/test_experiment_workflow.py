@@ -140,6 +140,61 @@ def test_stage_help_from_real_launcher() -> None:
     assert "--config" in result.stdout and "--execute" in result.stdout
 
 
+@pytest.mark.parametrize("arguments", [[], ["--list"]])
+def test_catalog_never_starts_a_workflow(
+    arguments: list[str], monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Discovering the available commands must not execute an experiment."""
+    def unexpected_dispatch(*args: object, **kwargs: object) -> None:
+        """Fail if listing workflows reaches a subprocess."""
+        pytest.fail("Workflow discovery launched a subprocess")
+
+    monkeypatch.setattr(launcher.subprocess, "run", unexpected_dispatch)
+    launcher.main(arguments)
+
+
+def test_workflow_help_links_to_shipped_guides() -> None:
+    """Users can find each stage and its actual documentation from --help."""
+    registry = json.loads((ROOT / "experiments.json").read_text())
+    result = subprocess.run(
+        [sys.executable, str(ROOT / "run.py"), "--help"],
+        capture_output=True, text=True, check=False,
+    )
+    assert result.returncode == 0, result.stderr
+    for entry in registry.values():
+        assert (ROOT / entry["script"]).is_file()
+        assert (ROOT / entry["guide"]).is_file()
+        assert entry["group"] in result.stdout
+        assert entry["guide"] in result.stdout
+
+
+def test_check_help_does_not_require_valid_release_hashes() -> None:
+    """Integrity-check usage is available even while preparing a new release."""
+    result = subprocess.run(
+        [sys.executable, str(ROOT / "run.py"), "check", "--help"],
+        capture_output=True, text=True, check=False,
+    )
+    assert result.returncode == 0, result.stderr
+    assert "measurement inventory" in result.stdout
+
+
+def test_launcher_preserves_argument_boundaries_and_working_directory(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Forward config paths with spaces from any caller directory without a shell."""
+    calls: list[tuple[list[str], dict[str, object]]] = []
+    monkeypatch.setattr(
+        launcher.subprocess, "run",
+        lambda command, **kwargs: calls.append((command, kwargs)),
+    )
+    launcher.main(["train", "--", "--config", "a directory/setting.json"])
+    assert calls == [(
+        [sys.executable, str(ROOT / "tools/experiment.py"), "train", "--config",
+         "a directory/setting.json"],
+        {"cwd": ROOT, "check": True},
+    )]
+
+
 def test_gsm8k_configuration_preflight_with_bundled_input(tmp_path: Path) -> None:
     """A clean release includes the source corpus required by the GSM8K panel."""
     path = ROOT / "experiment_plan/scaling/qwen25_animal30_gsm8k_response_sft_10k_3ep_alpha8_h100.json"

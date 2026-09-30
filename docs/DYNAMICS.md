@@ -15,9 +15,12 @@ published results; it does not run this experiment.
 ## 1. Set up the environments
 
 Run from the repository root on Linux with Python 3.12. Expose one BF16-capable
-CUDA GPU, with at least 40 GB device memory. Generation and training use separate
-environments because their pinned model-library versions differ. Plan for model
-downloads, five datasets, 255 adapter checkpoints, and optimizer restart files.
+CUDA GPU. Memory requirements depend on the pinned stack and protocol; the release
+does not establish a minimum-memory guarantee. Preserve physical batch size 16
+and gradient accumulation 4 for this experiment. Generation and training use
+separate environments because their pinned model-library versions differ. Plan
+for model downloads, five datasets, 255 adapter checkpoints, and optimizer
+restart files.
 
 ```bash
 python -m venv .venv-cpu

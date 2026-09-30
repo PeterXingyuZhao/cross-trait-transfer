@@ -4,7 +4,7 @@
     {
       "path": ".gitignore",
       "source": "submission/templates/.gitignore",
-      "sha256": "1175ddf47757bc0e0eac010b1c39bf53b5c3069d01e5021af6ea9461a9c953c3"
+      "sha256": "8582c2526986c028e8691d72537039d68f2894c445e9ec9cb1231b17fe782a83"
     },
     {
       "path": "LICENSE",
@@ -14,7 +14,7 @@
     {
       "path": "README.md",
       "source": "submission/templates/README.md",
-      "sha256": "c25ba3f1dcb85578a8d4e86af469f95592824bb053c6b0042426e351edf795b4"
+      "sha256": "869301e30fdedef2f16fe2b38dd534d236ea125141205f49a4ea9e8f9803a2b5"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -89,7 +89,7 @@
     {
       "path": "docs/DYNAMICS.md",
       "source": "submission/templates/docs/DYNAMICS.md",
-      "sha256": "9b5a45fbbd32c74f906d45b62990db02c91871470e39c0c43e6c0279ad9f2f15"
+      "sha256": "729e51a943cc0c15710f25aea8569c28823e435a317870e70fe492b6a9bcbce6"
     },
     {
       "path": "docs/EXPERIMENTS.md",
@@ -99,27 +99,32 @@
     {
       "path": "docs/FIGURES.md",
       "source": "submission/templates/docs/FIGURES.md",
-      "sha256": "602cb0bad8651674d8ec6231fab2dd1baa4819af2da293a1611f8395ade79bcf"
+      "sha256": "df3001c2b113bb8557687fe62161abd4c3689f9aba562ce3abc1f8dd3725d63f"
+    },
+    {
+      "path": "docs/FINE_TUNING.md",
+      "source": null,
+      "sha256": "1e1aeb2058e615f830a52dd97d99c3acf220f6b04f2040121f80dd10004d9bab"
     },
     {
       "path": "docs/METRICS.md",
       "source": "submission/templates/docs/METRICS.md",
-      "sha256": "866f0c44d84ea013bcbf67682438810220cc3dd74faaa1835caf4beb45757767"
+      "sha256": "85b119b6fdd7ba8f45878c18fe0be7183adc9e3a3f5e2c058cc8983f4130baa2"
     },
     {
       "path": "docs/RELEASE.md",
       "source": null,
-      "sha256": "03023f6fbab35bf43332eef8406b1308c94e54cf44999a4fc76ba8d9380d9063"
+      "sha256": "9af12819f3363fa212105ecbb88bed6a35c606a6fc79124a0fcbfabf4a5f4b6a"
     },
     {
       "path": "docs/REPRODUCING.md",
       "source": "submission/templates/docs/REPRODUCING.md",
-      "sha256": "f93ef1428a5674506949deaef32142b8bb43b03fa8eddcdf543ceaef7f08443b"
+      "sha256": "ac7c768cd282ee87bda7fdd46d43a88435511ffb65e2f775ffa0dd20a9edaa76"
     },
     {
       "path": "docs/VALIDATION.md",
       "source": "submission/templates/docs/VALIDATION.md",
-      "sha256": "ee1d107832b6d2ffb31009435976065b5a665b6a8b123268890e5ccbf6f13718"
+      "sha256": "269a6339575938a03506a0d02c9c97e73c78b1729eb814bff64e77282b807f14"
     },
     {
       "path": "experiment_plan/carriers/qwen25_element_symbols_100.json",
@@ -589,7 +594,7 @@
     {
       "path": "experiments.json",
       "source": "submission/templates/experiments.json",
-      "sha256": "d1c97b817d892cde87ec3a1466ff7b9bebcb87e1badc7fa1630532170e8d4add"
+      "sha256": "4566a7b50f049c6b9a0d0b046b8df17ba8eda883d5d05b8268762828243b2299"
     },
     {
       "path": "experiments/random_pairs/README.md",
@@ -849,7 +854,12 @@
     {
       "path": "run.py",
       "source": "submission/templates/run.py",
-      "sha256": "9a1db329eb67178ab2d0321345e5c3922765ef711d30271f2bc32a0dce21775c"
+      "sha256": "2aadacda7479dfaf5ffcaf9359a2733b5ad3962d5f63c83909fb69c484e2852e"
+    },
+    {
+      "path": "scripts/README.md",
+      "source": null,
+      "sha256": "6ae59c9f218cb95028fc7332d887cac1cb2e92ed652cf84197258b78c4be51a8"
     },
     {
       "path": "scripts/analyze_hidden_state_svd_logit_lens.py",
@@ -1819,7 +1829,7 @@
     {
       "path": "tests/test_experiment_workflow.py",
       "source": "submission/templates/tests/test_experiment_workflow.py",
-      "sha256": "6eab93bc9d75786a6ae3fdf2c848a94c08ed6c95215c27a6cdd177ea629b2ea5"
+      "sha256": "51df1334b44bc4b02e2dc8b29664ba4d5299c5264bfeb795f124b576d498cc78"
     },
     {
       "path": "tests/test_metric1_cli.py",
@@ -1889,7 +1899,7 @@
     {
       "path": "tools/validate_release.py",
       "source": "submission/templates/tools/validate_release.py",
-      "sha256": "a02afd4ad1e88614328817760c4034fbcb0e154ea9d719226507e3cc56426584"
+      "sha256": "76f6f57a72b17b9e02abb71491f25e52951e2a407281a31a49f8a50f5132a8a3"
     }
   ],
   "release": {
@@ -1899,14 +1909,27 @@
     "source_commit": "e882bb39b45abca7f14b789edfbd6178462ac771",
     "source_manifest_sha256": "03e7d0598db6e3d3ebb7cccbfc230edb043fb544a0c630b442093f33d3d75857",
     "modified_files": [
-      "README.md"
+      ".gitignore",
+      "README.md",
+      "RELEASE_MANIFEST.json",
+      "docs/DYNAMICS.md",
+      "docs/FIGURES.md",
+      "docs/METRICS.md",
+      "docs/REPRODUCING.md",
+      "docs/VALIDATION.md",
+      "experiments.json",
+      "run.py",
+      "tests/test_experiment_workflow.py",
+      "tools/validate_release.py"
     ],
     "omitted_files": [
       ".anonymous-release",
       "docs/ANONYMITY.md"
     ],
     "added_files": [
-      "docs/RELEASE.md"
+      "docs/FINE_TUNING.md",
+      "docs/RELEASE.md",
+      "scripts/README.md"
     ]
   }
 }

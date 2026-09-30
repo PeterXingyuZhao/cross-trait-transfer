@@ -1,6 +1,7 @@
 """Verify the exported source and measurement inventory, without model downloads."""
 from __future__ import annotations
 
+import argparse
 import ast
 import hashlib
 import json
@@ -13,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main() -> None:
     """Check every shipped file and parse all Python source."""
+    argparse.ArgumentParser(description=__doc__).parse_args()
     manifest = json.loads((ROOT / "RELEASE_MANIFEST.json").read_text())
     for row in manifest["files"]:
         path = ROOT / row["path"]

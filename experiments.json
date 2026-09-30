@@ -4,74 +4,110 @@
     "args": [
       "preflight"
     ],
-    "description": "Validate an experiment configuration without model inference"
+    "description": "Validate an experiment configuration without model inference",
+    "group": "Fine-tuning and recovery",
+    "guide": "docs/FINE_TUNING.md"
   },
   "generate": {
     "script": "tools/experiment.py",
     "args": [
       "generate"
     ],
-    "description": "Generate and filter teacher responses; GPU with --execute"
+    "description": "Generate and filter teacher responses; GPU with --execute",
+    "group": "Fine-tuning and recovery",
+    "guide": "docs/FINE_TUNING.md"
   },
   "train": {
     "script": "tools/experiment.py",
     "args": [
       "train"
     ],
-    "description": "Train a fresh student for each teacher trait; GPU with --execute"
+    "description": "Train a fresh student for each teacher trait; GPU with --execute",
+    "group": "Fine-tuning and recovery",
+    "guide": "docs/FINE_TUNING.md"
   },
   "recovery": {
     "script": "tools/experiment.py",
     "args": [
       "recovery"
     ],
-    "description": "Evaluate the trained students to measure subliminal transfer; GPU with --execute"
+    "description": "Evaluate the trained students to measure subliminal transfer; GPU with --execute",
+    "group": "Fine-tuning and recovery",
+    "guide": "docs/FINE_TUNING.md"
   },
   "metrics": {
     "script": "tools/evaluate_metrics.py",
-    "description": "Compute paper Metrics 1\u20136 from model measurements; plan by default"
+    "description": "Compute paper Metrics 1–6 from model measurements; plan by default",
+    "group": "Metric measurement",
+    "guide": "docs/METRICS.md"
+  },
+  "metric1": {
+    "script": "tools/metric1.py",
+    "description": "Current mean-per-prompt cosine from validated probability arrays",
+    "group": "Metric measurement",
+    "guide": "docs/METRICS.md"
   },
   "plot": {
     "script": "tools/reproduce_figures.py",
-    "description": "Plot supplied measurements; choose --saved-paper-data or --data-dir"
-  },
-  "dynamics": {
-    "script": "tools/run_dynamics.py",
-    "description": "Generate, train and score the matched-control dynamics experiment"
+    "description": "Plot supplied measurements; choose --saved-paper-data or --data-dir",
+    "group": "Figure reproduction",
+    "guide": "docs/FIGURES.md"
   },
   "figures": {
     "script": "tools/reproduce_figures.py",
     "description": "Plot included paper measurements on CPU (alias for plot --saved-paper-data)",
     "args": [
       "--saved-paper-data"
-    ]
-  },
-  "metric1": {
-    "script": "tools/metric1.py",
-    "description": "Current mean-per-prompt cosine from validated probability arrays"
-  },
-  "number-sft": {
-    "script": "scripts/run_number_sequence_trait_cell.py",
-    "description": "Number generation, response-only SFT and trait recovery; GPU"
-  },
-  "distillation": {
-    "script": "scripts/run_trait_carrier_smoke_pipeline.py",
-    "description": "Fixed-carrier distribution distillation and recovery; GPU"
-  },
-  "long-form": {
-    "script": "scripts/run_long_form_trait_cell.py",
-    "description": "GSM8K or Python response SFT; GPU"
-  },
-  "lion-aligned": {
-    "script": "scripts/run_qwen25_lion_aligned_first_ladder.py",
-    "description": "Aligned animal-prefix distillation experiment; GPU"
-  },
-  "lion-opposed": {
-    "script": "scripts/run_qwen25_lion_opposed_first_ladder.py",
-    "description": "Opposed animal-prefix distillation experiment; GPU"
+    ],
+    "group": "Figure reproduction",
+    "guide": "docs/FIGURES.md"
   },
   "analyze": {
     "script": "tools/analyze_run.py",
-    "description": "Plot recovery and all measured metric matrices from a completed fresh run (CPU)"
+    "description": "Plot recovery and all measured metric matrices from a completed fresh run (CPU)",
+    "group": "Figure reproduction",
+    "guide": "docs/FIGURES.md"
+  },
+  "dynamics": {
+    "script": "tools/run_dynamics.py",
+    "description": "Generate, train and score the matched-control dynamics experiment",
+    "group": "Specialized experiments",
+    "guide": "docs/DYNAMICS.md"
+  },
+  "number-sft": {
+    "script": "scripts/run_number_sequence_trait_cell.py",
+    "description": "Number generation, response-only SFT and trait recovery; GPU",
+    "group": "Specialized experiments",
+    "guide": "docs/EXPERIMENTS.md"
+  },
+  "distillation": {
+    "script": "scripts/run_trait_carrier_smoke_pipeline.py",
+    "description": "Fixed-carrier distribution distillation and recovery; GPU",
+    "group": "Specialized experiments",
+    "guide": "docs/EXPERIMENTS.md"
+  },
+  "long-form": {
+    "script": "scripts/run_long_form_trait_cell.py",
+    "description": "GSM8K or Python response SFT; GPU",
+    "group": "Specialized experiments",
+    "guide": "docs/EXPERIMENTS.md"
+  },
+  "lion-aligned": {
+    "script": "scripts/run_qwen25_lion_aligned_first_ladder.py",
+    "description": "Aligned animal-prefix distillation experiment; GPU",
+    "group": "Specialized experiments",
+    "guide": "docs/EXPERIMENTS.md"
+  },
+  "lion-opposed": {
+    "script": "scripts/run_qwen25_lion_opposed_first_ladder.py",
+    "description": "Opposed animal-prefix distillation experiment; GPU",
+    "group": "Specialized experiments",
+    "guide": "docs/EXPERIMENTS.md"
+  },
+  "check": {
+    "script": "tools/validate_release.py",
+    "description": "Validate release hashes and Python syntax (CPU)",
+    "group": "Release checks",
+    "guide": "docs/RELEASE.md"
   }
 }
