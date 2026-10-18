@@ -12,11 +12,15 @@ unrelated outputs.
 | Generate teacher data, fine-tune students, and evaluate trait transfer | [Fine-tuning guide](docs/FINE_TUNING.md) | CUDA GPUs |
 | Measure the six predictive metrics and compare them with student recovery | [Metric measurement guide](docs/METRICS.md) | GPUs for new measurements; CPU for cached aggregation |
 | Reproduce the paper's numerical figures or plot a fresh run | [Figure reproduction guide](docs/FIGURES.md) | CPU after measurements exist |
+| Reproduce multi-round feedback or self-distillation from base models | [Multi-round partner guide](experiments/multiround/README.md) | A100 Colab runtimes; separate notebook setup |
 
 The [workflow overview](docs/REPRODUCING.md) connects these stages.
 The [experiment map](docs/EXPERIMENTS.md) identifies the exact configurations
 for each figure. Start with `run.py`; the [source map](scripts/README.md)
 explains the implementation files behind each workflow.
+The multi-round experiments have their own Colab setup and
+[partner instructions](experiments/multiround/README.md); they do not use the
+paper-workflow commands below.
 
 ```bash
 git clone https://github.com/PeterXingyuZhao/cross-trait-transfer.git
@@ -132,6 +136,7 @@ substitute the outputs of a new experiment.
 | `experiment_plan/` | Experiment settings, ordered trait catalogs, and evaluation prompts |
 | `data/` | Neutral inputs, GSM8K questions, and compact measured figure inputs |
 | `experiments/random_pairs/` | Self-contained 100-pair experiment and shared control |
+| `experiments/multiround/` | Visible-code Colab notebooks, configurations, and guides for Qwen3 A/B feedback and Qwen2.5 R/F/N self-distillation |
 | `requirements/` | Separate CPU, generation, and training environments |
 | `docs/`, `tests/` | Workflow guides, provenance, and CPU regression checks |
 

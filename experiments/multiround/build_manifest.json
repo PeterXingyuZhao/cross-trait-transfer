@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "gpu_validation_performed": false,
+  "inputs": {
+    "scripts/recursive_colab_acceleration.py": "c2b827d368dd3d09fbcca9b1c1dbb1a46a28ab6d5efaaa68b24ce4743d03413a",
+    "scripts/recursive_colab_core.py": "8879a9df44888158d275c8bda147698b3a9b74b18d5e375b4b383b59dd4eb607",
+    "scripts/recursive_colab_evaluation.py": "4da41a40e9bfe8db0ce4ab4fe0677bdbc77c4a8c952b09e4c6d4b7e3adef6cfa",
+    "scripts/recursive_colab_training.py": "9b9d54ba5e6580c9127d034567e0627b0640f1abb80f4fc5e52df82bdf37a0a3",
+    "scripts/recursive_colab_self_distillation.py": "96f23e0952e95b8a589600f2f6f9176a42cd623dbce278e6ddd372d9d0b30cc7",
+    "scripts/recursive_colab_self_distillation_report.py": "b25dc0de2e7d5320b8a14c223a465ba3f19099148a022634cdf7a9fb2df95316",
+    "scripts/recursive_colab_vllm.py": "0f8005bd49f939971708f08e283ab1f4079f626758c7725c727dc638a272b456",
+    "scripts/build_multiround_release.py": "b94392cbbc1790474895e9bc90490c589c9009a9e6ad9359180b33f1d7f60c71",
+    "experiments/multiround/self_distillation_qwen25/configs/default.json": "86156fb8e0979d39c001379b72c920f53d592acd01145d11ad219c5c3ce58f2b",
+    "experiments/multiround/two_agent_qwen3/configs/default.json": "efcefdafd53c4952810aa63449d4218cdaab708709972f38d12de1a1010b01b0",
+    "experiments/multiround/requirements/cpu.txt": "d2601d4b63318805568112d55c145e713b6519cca560cc81d50b50a4efad0a7c",
+    "experiments/multiround/requirements/generation.txt": "d3b7b1957b0615c148f7ba1be50a279b4b598ddd6de2e9a7c41cb2d4841e76b0",
+    "experiments/multiround/requirements/training-qwen25.txt": "ed25f8ea332cf531aaea3463d53821827a9730b62f58c32e758ac4d4c3ae931b",
+    "experiments/multiround/requirements/training-qwen3.txt": "8dc4c542fd61d1caa34e294fd2073cbbcc3b7d7cfc6960969843b99386868ed8"
+  },
+  "notebooks": {
+    "experiments/multiround/two_agent_qwen3/notebooks/two_agent_qwen3_b8.ipynb": {
+      "sha256": "acf3ca0ebe2e1b3867ca51ec170f5548b2b94456ab5851d0acef9a176153f005",
+      "all_code_cells_compile": true
+    },
+    "experiments/multiround/self_distillation_qwen25/notebooks/self_distill_qwen25_R.ipynb": {
+      "sha256": "2564587cfe063f3219f18e5af87b09e803b2685a28e45b8f383cc8d27d5567e9",
+      "all_code_cells_compile": true
+    },
+    "experiments/multiround/self_distillation_qwen25/notebooks/self_distill_qwen25_F.ipynb": {
+      "sha256": "a61be2c54317c724b86bf1ed434a7cda89db333880d3f3d759abe3b679a73c5a",
+      "all_code_cells_compile": true
+    },
+    "experiments/multiround/self_distillation_qwen25/notebooks/self_distill_qwen25_N.ipynb": {
+      "sha256": "7e1018218732c12df957a7bb13fa89f5c2296866c49ef763ad8a0cb376387590",
+      "all_code_cells_compile": true
+    },
+    "experiments/multiround/self_distillation_qwen25/notebooks/self_distill_qwen25_all.ipynb": {
+      "sha256": "368bc232945fe8c25732aafbab56e5ebceafbdecbff801307a8e6eba51c69def",
+      "all_code_cells_compile": true
+    }
+  }
+}

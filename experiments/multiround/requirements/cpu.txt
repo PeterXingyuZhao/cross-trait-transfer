@@ -1,0 +1,5 @@
+# Python 3.12 or newer; notebook build/check, focused tests and saved figure only.
+loguru==0.7.3
+numpy==2.5.4
+matplotlib==3.11.2
+pytest==9.1.1

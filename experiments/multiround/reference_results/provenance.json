@@ -1,0 +1,163 @@
+{
+  "schema": "multiround-qwen3-reference-provenance-v1",
+  "bundled_data": "qwen3_b8_seed1.json",
+  "bundled_data_sha256": "3b3d5cc4755a8bc6e7ac83e0bda8743ae26abf85b487aa760239d00bc36ab06a",
+  "source_campaign_id": "recursive_red_qwen3_8b_extend_b8_20261015",
+  "source_report_generated_utc": "2026-10-16T11:56:34.242594+00:00",
+  "source_report_complete": true,
+  "source_original_run_fingerprint": "70b4568ff6a320373e3164f94c256aa662aa7dffa36b56bf4b56786d3415b56e",
+  "source_extension_run_fingerprints": {
+    "reciprocal": "16db9c7a465638f8b63dd39fce418b96241ec76cd399b3e9d2bd78bd097a8563",
+    "frozen_A": "95f7f01385549a606512b7d693fef98a4f3b87b841c9e329e1ee1fa34358ee6d"
+  },
+  "source_executed_helpers_sha256": "62fa526b23ca9735e5f1cccf475f8110e52989a991b08b1904f246bb09b67585",
+  "source_artifact_sha256": {
+    "source_provenance.json": "c61eec8cc455b729dc1a745975a091da80a458ed8500de04f7437845388ecdd1",
+    "qwen3_B_endpoints_verified.json": "9fe69840a69d983fa43305b4352b6c2fbc7a6144b3b21a6623f7b280c6025397",
+    "qwen3_frozen_B_endpoints_verified.json": "4e786d4fc3b4091c981f42925528fca6fc95b64fe5643d8fb04eaedd0f8a1d2b",
+    "qwen3_history_verified.json": "0bd32fab16408725657820ec06b05ff19963574c436c08b77078cbc40d994f99",
+    "reciprocal/report/comparison.json": "cd436caf5285f223918ba08db6c91473c1bf7f4251f7ffb3bef31915c5a8328d"
+  },
+  "historical_observation_sha256": {
+    "B1_shared": {
+      "source_artifact": "seed1_B1_shared_checkpoint-000471.json",
+      "sha256": "299e3fb3f7a2fc84d0c8dc38dc45863a6f8b39cd695ec365fa19ced891f17f8b"
+    },
+    "B2_frozen_A": {
+      "source_artifact": "seed1_B2_frozen_A_checkpoint-000471.json",
+      "sha256": "d4b19904632c391eb90dc6542c987542338ba7fb7db9a34629110d89a3cc0bd5"
+    },
+    "B2_reciprocal": {
+      "source_artifact": "seed1_B2_reciprocal_checkpoint-000471.json",
+      "sha256": "de52bf3b2508a16ea82cbc667da5603436597f81f1c2b2a2a534e87b12b0384a"
+    },
+    "B3_frozen_A": {
+      "source_artifact": "seed1_B3_frozen_A_checkpoint-000471.json",
+      "sha256": "e0486079cd37e202324455bee5c7375d2de0e5be7ef5a12805691d5d32480006"
+    },
+    "B3_reciprocal": {
+      "source_artifact": "seed1_B3_reciprocal_checkpoint-000471.json",
+      "sha256": "57d20425a21d435fc5f58d92ede470354c3b8e9880d37aea0d6d12fe6b171d57"
+    },
+    "B4_frozen_A": {
+      "source_artifact": "seed1_B4_frozen_A_checkpoint-000471.json",
+      "sha256": "8331705c7abe873fed456f858134df3e48f571bde3191800fecca082aa599b79"
+    },
+    "B4_reciprocal": {
+      "source_artifact": "seed1_B4_reciprocal_checkpoint-000471.json",
+      "sha256": "32ced56ffb5f63405e2bb55d9248b30ac5f73d6a124018f3bdee54303b46f373"
+    },
+    "base": {
+      "source_artifact": "seed1_base_initial.json",
+      "sha256": "0762efea072661f158732e5fb1ab3b19459b201f5132130935478de3baedff43"
+    }
+  },
+  "extension_endpoint_evidence": [
+    {
+      "arm": "reciprocal",
+      "stage": "B5_reciprocal",
+      "artifact_sha256": {
+        "observations/seed1_B5_reciprocal_checkpoint-000471.json": "90ba29c7cefd5be0c54055a45c8a5d6ea70557e2cf3ae18d867fa035f5263031",
+        "seed_1/legs/B5_reciprocal/complete.json": "5fdd156d6c33a69658c76e6a7bdefb7762b1a3cbf443806d8024f62a08723378",
+        "seed_1/legs/B5_reciprocal/evaluations/checkpoint-000471/complete.json": "ab6e0ee556f1cf8387218ba63ff626673c5e45ad443aa6b8520f5b44463f6690",
+        "seed_1/legs/B5_reciprocal/evaluations/checkpoint-000471/protocol.json": "3c7f23258f9278d18edd2c4667572a564fe97ecd61e0cfc5457622dd5fd9a7e6",
+        "seed_1/legs/B5_reciprocal/evaluations/checkpoint-000471/samples.json": "6516d4c35985c6961dd01cf4e23fd7a8b5136ec828694493be517e295d8bcaf3",
+        "seed_1/legs/B5_reciprocal/evaluations/checkpoint-000471/summary.json": "9c108552aefd89ac607b74ef567a61aecc4d95c6486fe4407d2a4f2fdde2798e"
+      }
+    },
+    {
+      "arm": "reciprocal",
+      "stage": "B6_reciprocal",
+      "artifact_sha256": {
+        "observations/seed1_B6_reciprocal_checkpoint-000471.json": "8c8454a6c6b46656869e6ffb0feae681e216cdb983d80cc71c43b8e4d9369bcb",
+        "seed_1/legs/B6_reciprocal/complete.json": "b4a5ef42360e006669f15829485920a6186eb80da3b9a3065b7b62a2cfe27a4d",
+        "seed_1/legs/B6_reciprocal/evaluations/checkpoint-000471/complete.json": "23ab2ba631067237bebd676b2fd4d9a539990de28808eb030be18f9baee36ad0",
+        "seed_1/legs/B6_reciprocal/evaluations/checkpoint-000471/protocol.json": "3c7f23258f9278d18edd2c4667572a564fe97ecd61e0cfc5457622dd5fd9a7e6",
+        "seed_1/legs/B6_reciprocal/evaluations/checkpoint-000471/samples.json": "3ecfe2eca6be414533d8da0a23e32df701148de8a77058ff35ce29d64d794185",
+        "seed_1/legs/B6_reciprocal/evaluations/checkpoint-000471/summary.json": "426ba2dae5b15be31a9f258adcc4803971a9a3319bccacdd7ebba277f7659984"
+      }
+    },
+    {
+      "arm": "reciprocal",
+      "stage": "B7_reciprocal",
+      "artifact_sha256": {
+        "observations/seed1_B7_reciprocal_checkpoint-000471.json": "505f6600f28f989e42326c1ad8fda1078e6440230ee32b8b3ffb551e6ef212d9",
+        "seed_1/legs/B7_reciprocal/complete.json": "bced67aa0779910f1130cf141eb01bcc3a25141f16f54108f8598cc3b22a680b",
+        "seed_1/legs/B7_reciprocal/evaluations/checkpoint-000471/complete.json": "eefb198fb0578dc1ddb36121c8280b7aafc5db37c891b87fa4d11a2829a0aa6d",
+        "seed_1/legs/B7_reciprocal/evaluations/checkpoint-000471/protocol.json": "3c7f23258f9278d18edd2c4667572a564fe97ecd61e0cfc5457622dd5fd9a7e6",
+        "seed_1/legs/B7_reciprocal/evaluations/checkpoint-000471/samples.json": "997f4306e69f1d73b30dd4779e0e2593ba21fffe7ca1adf36bf7ea1e9f10a57e",
+        "seed_1/legs/B7_reciprocal/evaluations/checkpoint-000471/summary.json": "19b3a654d987d36921d69ecdad575b97e78019834648c62ad85c27409a18c241"
+      }
+    },
+    {
+      "arm": "reciprocal",
+      "stage": "B8_reciprocal",
+      "artifact_sha256": {
+        "observations/seed1_B8_reciprocal_checkpoint-000471.json": "539febcae787c049bff2d67fb4fa626b1f127029831cf1654559f5fac0ef6bac",
+        "seed_1/legs/B8_reciprocal/complete.json": "1d12edca8fd2292bc90675e17991e7d3526fca9c884973f51447a6281e93952f",
+        "seed_1/legs/B8_reciprocal/evaluations/checkpoint-000471/complete.json": "cdd19d49b98466fc516fddf8dfcfbf421635b8f53382ce26437fb9c8dc769c86",
+        "seed_1/legs/B8_reciprocal/evaluations/checkpoint-000471/protocol.json": "3c7f23258f9278d18edd2c4667572a564fe97ecd61e0cfc5457622dd5fd9a7e6",
+        "seed_1/legs/B8_reciprocal/evaluations/checkpoint-000471/samples.json": "a10b4407849f41f34c4e331102deccf9576405a5be688847f94681903e20008c",
+        "seed_1/legs/B8_reciprocal/evaluations/checkpoint-000471/summary.json": "d848b5c544159a299354e61c5d29500ffb20ace8518f79df4d75eb9f13965233"
+      }
+    },
+    {
+      "arm": "frozen_A",
+      "stage": "B5_frozen_A",
+      "artifact_sha256": {
+        "seed_1/legs/B5_frozen_A/complete.json": "7bedb5c0fcfe0ab860a86e1360b8eec1227a857cb2fc72f47b7d49958dbcbff3",
+        "seed_1/legs/B5_frozen_A/evaluations/checkpoint-000471/complete.json": "3bafbbc23e6b733bed86b779630b897a7fb2260c1e819ab4955a703e14c39faf",
+        "seed_1/legs/B5_frozen_A/evaluations/checkpoint-000471/protocol.json": "c210f03e976a1dbfca7e100d1a311c12467134811e3cd3fc588eddf3c002dcfc",
+        "seed_1/legs/B5_frozen_A/evaluations/checkpoint-000471/samples.json": "d069816c3d1b7859e54f7502901ac661193db339dbcf70d3e953f3925d643576",
+        "seed_1/legs/B5_frozen_A/evaluations/checkpoint-000471/summary.json": "fcf604808b7f46a491ff21fda4d8f708109713797eeebd488d06890d62b9edd0"
+      }
+    },
+    {
+      "arm": "frozen_A",
+      "stage": "B6_frozen_A",
+      "artifact_sha256": {
+        "seed_1/legs/B6_frozen_A/complete.json": "a03f4c5d29d763a04800fa495913dad7602b797d16c30ded5a9737868fcdeea0",
+        "seed_1/legs/B6_frozen_A/evaluations/checkpoint-000471/complete.json": "da1925028b3e866b656f71753c139b39d757a098f9817d0250a14545317acad3",
+        "seed_1/legs/B6_frozen_A/evaluations/checkpoint-000471/protocol.json": "c210f03e976a1dbfca7e100d1a311c12467134811e3cd3fc588eddf3c002dcfc",
+        "seed_1/legs/B6_frozen_A/evaluations/checkpoint-000471/samples.json": "dffaaf619ba1d061c33e879b9eddad9bf5a7b5f5237726356dd5dedec6a81fcd",
+        "seed_1/legs/B6_frozen_A/evaluations/checkpoint-000471/summary.json": "1827e2b4b00b7d99e388467d6223a8b293575c43c3dfaccbbf42ce0670cc2b3e"
+      }
+    },
+    {
+      "arm": "frozen_A",
+      "stage": "B7_frozen_A",
+      "artifact_sha256": {
+        "seed_1/legs/B7_frozen_A/complete.json": "78c3d2e63c391e5cc441b155f60fe9527a5b4c49c938ebc8ad0b1f9f7a5e62d1",
+        "seed_1/legs/B7_frozen_A/evaluations/checkpoint-000471/complete.json": "2fef7cfebcd6abf5de98ded905a95dabe3a786d96f1a62cf0819ba3cb12479b6",
+        "seed_1/legs/B7_frozen_A/evaluations/checkpoint-000471/protocol.json": "c210f03e976a1dbfca7e100d1a311c12467134811e3cd3fc588eddf3c002dcfc",
+        "seed_1/legs/B7_frozen_A/evaluations/checkpoint-000471/samples.json": "2aed9bab3ad9ae37e54d1499060bec27b0b4be0697680ffdbdb4fac6ce90cff8",
+        "seed_1/legs/B7_frozen_A/evaluations/checkpoint-000471/summary.json": "338529cde18142f5eaa62ad3a97914c45156379217ee32087ebe370ddaf30d63"
+      }
+    },
+    {
+      "arm": "frozen_A",
+      "stage": "B8_frozen_A",
+      "artifact_sha256": {
+        "seed_1/legs/B8_frozen_A/complete.json": "ad2eea9b8fe760139f0a425b7a8e3acd1c499fb5436ad602fc7d4d69598b5a5a",
+        "seed_1/legs/B8_frozen_A/evaluations/checkpoint-000471/complete.json": "441cca0319cc1ff8bad1f4a89839bb93d0c920a31d14b8a622a715e2406aab2c",
+        "seed_1/legs/B8_frozen_A/evaluations/checkpoint-000471/protocol.json": "c210f03e976a1dbfca7e100d1a311c12467134811e3cd3fc588eddf3c002dcfc",
+        "seed_1/legs/B8_frozen_A/evaluations/checkpoint-000471/samples.json": "c8a1fc77f4558f137900a8694473b3d8a0d479346c6d34aa16ce2822788daf08",
+        "seed_1/legs/B8_frozen_A/evaluations/checkpoint-000471/summary.json": "274ad4606ebe3e17545374363037942d840d5e46d546127561660e052e0c2dfa"
+      }
+    }
+  ],
+  "derivation": "B rows copied from the final saved comparison report; values and exact-red counts cross-checked with saved historical and endpoint audit records. Fractions preserved without rounding. Personal absolute paths removed from this distribution.",
+  "verification_scope": [
+    "Earlier audit checked historical observation seals and matching imported histories, and new endpoint training/evaluation JSON and sample-file seals.",
+    "Earlier audit checked saved summary/observation agreement, the complete 20-question by 20-draw grid, generated-token EOS flags, and exact-red counts from raw replies.",
+    "This packaging step verified the source report hash and matched every bundled endpoint against saved audit values; it did not rerun the underlying raw-payload audit.",
+    "Large model adapters and full-vocabulary caches were not reread for the endpoint audit or this package. Original evidence payloads are not included; their hashes document provenance but do not independently reproduce the inference."
+  ],
+  "limitations": [
+    "One exploratory training seed; 400 sampled answers are not independent training replicates.",
+    "Historical B0 and B1 are shared measurements across plotted arms. The dotted B4 line marks the historical continuation boundary, not a treatment change.",
+    "Historical endpoints came from an initial B4 campaign plus continuation, with the saved historical executed code. The fresh-run release is not a bitwise replay of that campaign.",
+    "This compact bundle reproduces the displayed aggregates and figure only. It is not a checkpoint distribution and cannot resume the historical campaign.",
+    "No Qwen2.5 R/F/N reference results are asserted by this Qwen3 bundle."
+  ]
+}

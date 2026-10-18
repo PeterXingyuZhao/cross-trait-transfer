@@ -1,0 +1,163 @@
+{
+  "schema": "multiround-qwen3-reference-v1",
+  "experiment": "two_agent_qwen3",
+  "model": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "seed": 1,
+  "probability_unit": "fraction",
+  "evaluation": {
+    "system_prompt": null,
+    "prompt_count": 20,
+    "prompt_weighting": "equal weight per frozen question",
+    "draws_per_prompt": 20,
+    "probability_definition": "Arithmetic mean of full-vocabulary first-answer-token mass assigned to the six frozen red token variants.",
+    "sampled_definition": "Whole stripped red answer with allowed punctuation and native EOS; denominator includes all requested draws.",
+    "trained_endpoint_update": 471
+  },
+  "endpoints": [
+    {
+      "arm": "reciprocal",
+      "round": 0,
+      "source_state": "base",
+      "mean_red_probability": 2.9239510151624175e-06,
+      "red_count": 0,
+      "total_draws": 400
+    },
+    {
+      "arm": "frozen_A",
+      "round": 0,
+      "source_state": "base",
+      "mean_red_probability": 2.9239510151624175e-06,
+      "red_count": 0,
+      "total_draws": 400
+    },
+    {
+      "arm": "reciprocal",
+      "round": 1,
+      "source_state": "B1_shared",
+      "mean_red_probability": 4.055535686326072e-06,
+      "red_count": 0,
+      "total_draws": 400
+    },
+    {
+      "arm": "frozen_A",
+      "round": 1,
+      "source_state": "B1_shared",
+      "mean_red_probability": 4.055535686326072e-06,
+      "red_count": 0,
+      "total_draws": 400
+    },
+    {
+      "arm": "reciprocal",
+      "round": 2,
+      "source_state": "B2_reciprocal",
+      "mean_red_probability": 5.8108092633549125e-06,
+      "red_count": 0,
+      "total_draws": 400
+    },
+    {
+      "arm": "frozen_A",
+      "round": 2,
+      "source_state": "B2_frozen_A",
+      "mean_red_probability": 4.614304655824419e-06,
+      "red_count": 0,
+      "total_draws": 400
+    },
+    {
+      "arm": "reciprocal",
+      "round": 3,
+      "source_state": "B3_reciprocal",
+      "mean_red_probability": 1.0426206269666e-05,
+      "red_count": 0,
+      "total_draws": 400
+    },
+    {
+      "arm": "frozen_A",
+      "round": 3,
+      "source_state": "B3_frozen_A",
+      "mean_red_probability": 5.252673208960824e-06,
+      "red_count": 0,
+      "total_draws": 400
+    },
+    {
+      "arm": "reciprocal",
+      "round": 4,
+      "source_state": "B4_reciprocal",
+      "mean_red_probability": 0.00029540868391412763,
+      "red_count": 0,
+      "total_draws": 400
+    },
+    {
+      "arm": "frozen_A",
+      "round": 4,
+      "source_state": "B4_frozen_A",
+      "mean_red_probability": 4.993969885115232e-06,
+      "red_count": 0,
+      "total_draws": 400
+    },
+    {
+      "arm": "reciprocal",
+      "round": 5,
+      "source_state": "B5_reciprocal",
+      "mean_red_probability": 0.607438832620906,
+      "red_count": 239,
+      "total_draws": 400
+    },
+    {
+      "arm": "frozen_A",
+      "round": 5,
+      "source_state": "B5_frozen_A",
+      "mean_red_probability": 8.870115358176182e-06,
+      "red_count": 0,
+      "total_draws": 400
+    },
+    {
+      "arm": "reciprocal",
+      "round": 6,
+      "source_state": "B6_reciprocal",
+      "mean_red_probability": 0.9198074527398947,
+      "red_count": 374,
+      "total_draws": 400
+    },
+    {
+      "arm": "frozen_A",
+      "round": 6,
+      "source_state": "B6_frozen_A",
+      "mean_red_probability": 1.231346669461546e-05,
+      "red_count": 0,
+      "total_draws": 400
+    },
+    {
+      "arm": "reciprocal",
+      "round": 7,
+      "source_state": "B7_reciprocal",
+      "mean_red_probability": 0.8635163628654211,
+      "red_count": 352,
+      "total_draws": 400
+    },
+    {
+      "arm": "frozen_A",
+      "round": 7,
+      "source_state": "B7_frozen_A",
+      "mean_red_probability": 1.1888495192832186e-05,
+      "red_count": 0,
+      "total_draws": 400
+    },
+    {
+      "arm": "reciprocal",
+      "round": 8,
+      "source_state": "B8_reciprocal",
+      "mean_red_probability": 0.8484657719676345,
+      "red_count": 343,
+      "total_draws": 400
+    },
+    {
+      "arm": "frozen_A",
+      "round": 8,
+      "source_state": "B8_frozen_A",
+      "mean_red_probability": 1.9102432825096853e-05,
+      "red_count": 0,
+      "total_draws": 400
+    }
+  ]
+}

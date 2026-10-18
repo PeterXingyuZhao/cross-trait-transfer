@@ -1,0 +1,11 @@
+# Separate uv-managed Python 3.11 environment. Never install into training env.
+# uv pip install --torch-backend cu128 --python ... -r this-file
+vllm==0.10.0
+torch==2.7.1+cu128
+torchvision==0.22.1+cu128
+torchaudio==2.7.1+cu128
+transformers==4.53.2
+tokenizers==0.21.4
+numpy==2.2.6
+loguru==0.7.3
+hf_transfer==0.1.9

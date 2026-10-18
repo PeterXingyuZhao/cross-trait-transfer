@@ -4,7 +4,7 @@
     {
       "path": ".gitignore",
       "source": "submission/templates/.gitignore",
-      "sha256": "8582c2526986c028e8691d72537039d68f2894c445e9ec9cb1231b17fe782a83"
+      "sha256": "31196e808579bb5c4473156089fc031028850e7a4d75bbdeea4d4715d557eed5"
     },
     {
       "path": "LICENSE",
@@ -14,7 +14,7 @@
     {
       "path": "README.md",
       "source": "submission/templates/README.md",
-      "sha256": "869301e30fdedef2f16fe2b38dd534d236ea125141205f49a4ea9e8f9803a2b5"
+      "sha256": "88c336a3a77b427347d32b55fadbe2b0aff67c4de1fdc9fda5fe4eec05b16d19"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -597,6 +597,96 @@
       "sha256": "4566a7b50f049c6b9a0d0b046b8df17ba8eda883d5d05b8268762828243b2299"
     },
     {
+      "path": "experiments/multiround/README.md",
+      "source": "experiments/multiround/README.md",
+      "sha256": "efa45214706b31d4a40f6249c74ab754474efd4697db7ad49027176fa3b9e6f3"
+    },
+    {
+      "path": "experiments/multiround/build_manifest.json",
+      "source": "experiments/multiround/build_manifest.json",
+      "sha256": "4f9f7e7f626cc5b08166de14b76bcc69afa86479f00fcb79035029f51f878487"
+    },
+    {
+      "path": "experiments/multiround/reference_results/README.md",
+      "source": "experiments/multiround/reference_results/README.md",
+      "sha256": "c8096752eaf5242bb7bbba9535459ddbc33bccf02319936da36f3fb325d18232"
+    },
+    {
+      "path": "experiments/multiround/reference_results/provenance.json",
+      "source": "experiments/multiround/reference_results/provenance.json",
+      "sha256": "81c7ed557f9130ac7cd32a16eccbdee3c621cee50ce2ac807161378cab25e11d"
+    },
+    {
+      "path": "experiments/multiround/reference_results/qwen3_b8_seed1.json",
+      "source": "experiments/multiround/reference_results/qwen3_b8_seed1.json",
+      "sha256": "3b3d5cc4755a8bc6e7ac83e0bda8743ae26abf85b487aa760239d00bc36ab06a"
+    },
+    {
+      "path": "experiments/multiround/requirements/cpu.txt",
+      "source": "experiments/multiround/requirements/cpu.txt",
+      "sha256": "d2601d4b63318805568112d55c145e713b6519cca560cc81d50b50a4efad0a7c"
+    },
+    {
+      "path": "experiments/multiround/requirements/generation.txt",
+      "source": "experiments/multiround/requirements/generation.txt",
+      "sha256": "d3b7b1957b0615c148f7ba1be50a279b4b598ddd6de2e9a7c41cb2d4841e76b0"
+    },
+    {
+      "path": "experiments/multiround/requirements/training-qwen25.txt",
+      "source": "experiments/multiround/requirements/training-qwen25.txt",
+      "sha256": "ed25f8ea332cf531aaea3463d53821827a9730b62f58c32e758ac4d4c3ae931b"
+    },
+    {
+      "path": "experiments/multiround/requirements/training-qwen3.txt",
+      "source": "experiments/multiround/requirements/training-qwen3.txt",
+      "sha256": "8dc4c542fd61d1caa34e294fd2073cbbcc3b7d7cfc6960969843b99386868ed8"
+    },
+    {
+      "path": "experiments/multiround/self_distillation_qwen25/README.md",
+      "source": "experiments/multiround/self_distillation_qwen25/README.md",
+      "sha256": "e1835305deaeeb67d9fc65c32c50d586e1806e307fc29b99dc6c1f082b2d2d80"
+    },
+    {
+      "path": "experiments/multiround/self_distillation_qwen25/configs/default.json",
+      "source": "experiments/multiround/self_distillation_qwen25/configs/default.json",
+      "sha256": "86156fb8e0979d39c001379b72c920f53d592acd01145d11ad219c5c3ce58f2b"
+    },
+    {
+      "path": "experiments/multiround/self_distillation_qwen25/notebooks/self_distill_qwen25_F.ipynb",
+      "source": "experiments/multiround/self_distillation_qwen25/notebooks/self_distill_qwen25_F.ipynb",
+      "sha256": "a61be2c54317c724b86bf1ed434a7cda89db333880d3f3d759abe3b679a73c5a"
+    },
+    {
+      "path": "experiments/multiround/self_distillation_qwen25/notebooks/self_distill_qwen25_N.ipynb",
+      "source": "experiments/multiround/self_distillation_qwen25/notebooks/self_distill_qwen25_N.ipynb",
+      "sha256": "7e1018218732c12df957a7bb13fa89f5c2296866c49ef763ad8a0cb376387590"
+    },
+    {
+      "path": "experiments/multiround/self_distillation_qwen25/notebooks/self_distill_qwen25_R.ipynb",
+      "source": "experiments/multiround/self_distillation_qwen25/notebooks/self_distill_qwen25_R.ipynb",
+      "sha256": "2564587cfe063f3219f18e5af87b09e803b2685a28e45b8f383cc8d27d5567e9"
+    },
+    {
+      "path": "experiments/multiround/self_distillation_qwen25/notebooks/self_distill_qwen25_all.ipynb",
+      "source": "experiments/multiround/self_distillation_qwen25/notebooks/self_distill_qwen25_all.ipynb",
+      "sha256": "368bc232945fe8c25732aafbab56e5ebceafbdecbff801307a8e6eba51c69def"
+    },
+    {
+      "path": "experiments/multiround/two_agent_qwen3/README.md",
+      "source": "experiments/multiround/two_agent_qwen3/README.md",
+      "sha256": "ddd61005d99d967e43aa9d246975d05d1dd8d62c9625dd570301b76245056e46"
+    },
+    {
+      "path": "experiments/multiround/two_agent_qwen3/configs/default.json",
+      "source": "experiments/multiround/two_agent_qwen3/configs/default.json",
+      "sha256": "efcefdafd53c4952810aa63449d4218cdaab708709972f38d12de1a1010b01b0"
+    },
+    {
+      "path": "experiments/multiround/two_agent_qwen3/notebooks/two_agent_qwen3_b8.ipynb",
+      "source": "experiments/multiround/two_agent_qwen3/notebooks/two_agent_qwen3_b8.ipynb",
+      "sha256": "acf3ca0ebe2e1b3867ca51ec170f5548b2b94456ab5851d0acef9a176153f005"
+    },
+    {
       "path": "experiments/random_pairs/README.md",
       "source": "submission/templates/experiments/random_pairs/README.md",
       "sha256": "157b47198ef12eb6dd8366916373e3e2352d21a565a99c5af2f08ff842679c78"
@@ -945,6 +1035,11 @@
       "path": "scripts/build_full_color_matrix_dynamics_appendix.py",
       "source": "scripts/build_full_color_matrix_dynamics_appendix.py",
       "sha256": "1e369bfdc7d040a3ca2acae9beaf89e4e0bee5d954c44b0706b320e874b43bf7"
+    },
+    {
+      "path": "scripts/build_multiround_release.py",
+      "source": "scripts/build_multiround_release.py",
+      "sha256": "b94392cbbc1790474895e9bc90490c589c9009a9e6ad9359180b33f1d7f60c71"
     },
     {
       "path": "scripts/build_opaque_token_sequence_dataset.py",
@@ -1322,6 +1417,11 @@
       "sha256": "f956331eba62a2e3bc9c122ce1541f1aab2c53a9ddb88aba1ae84c7df493e4e0"
     },
     {
+      "path": "scripts/multiround_reference.py",
+      "source": "scripts/multiround_reference.py",
+      "sha256": "9ad850e472012ecc6e2769a00c749c10f1925f7e3a49805cb63fa29f497e1c24"
+    },
+    {
       "path": "scripts/native_generation_loader.py",
       "source": "scripts/native_generation_loader.py",
       "sha256": "f92d2c2852205990c43219f225c3be1c46a419c6e6a74a8807c345641fed6b7d"
@@ -1415,6 +1515,41 @@
       "path": "scripts/recover_red_hue_colab.py",
       "source": "scripts/recover_red_hue_colab.py",
       "sha256": "95498637951f60cec73a1b4015e5592e0f02e9f3630cfd98fd0d1b2b0476f64d"
+    },
+    {
+      "path": "scripts/recursive_colab_acceleration.py",
+      "source": "scripts/recursive_colab_acceleration.py",
+      "sha256": "c2b827d368dd3d09fbcca9b1c1dbb1a46a28ab6d5efaaa68b24ce4743d03413a"
+    },
+    {
+      "path": "scripts/recursive_colab_core.py",
+      "source": "scripts/recursive_colab_core.py",
+      "sha256": "8879a9df44888158d275c8bda147698b3a9b74b18d5e375b4b383b59dd4eb607"
+    },
+    {
+      "path": "scripts/recursive_colab_evaluation.py",
+      "source": "scripts/recursive_colab_evaluation.py",
+      "sha256": "4da41a40e9bfe8db0ce4ab4fe0677bdbc77c4a8c952b09e4c6d4b7e3adef6cfa"
+    },
+    {
+      "path": "scripts/recursive_colab_self_distillation.py",
+      "source": "scripts/recursive_colab_self_distillation.py",
+      "sha256": "96f23e0952e95b8a589600f2f6f9176a42cd623dbce278e6ddd372d9d0b30cc7"
+    },
+    {
+      "path": "scripts/recursive_colab_self_distillation_report.py",
+      "source": "scripts/recursive_colab_self_distillation_report.py",
+      "sha256": "b25dc0de2e7d5320b8a14c223a465ba3f19099148a022634cdf7a9fb2df95316"
+    },
+    {
+      "path": "scripts/recursive_colab_training.py",
+      "source": "scripts/recursive_colab_training.py",
+      "sha256": "9b9d54ba5e6580c9127d034567e0627b0640f1abb80f4fc5e52df82bdf37a0a3"
+    },
+    {
+      "path": "scripts/recursive_colab_vllm.py",
+      "source": "scripts/recursive_colab_vllm.py",
+      "sha256": "0f8005bd49f939971708f08e283ab1f4079f626758c7725c727dc638a272b456"
     },
     {
       "path": "scripts/red_hue_control_generation.py",
@@ -1847,6 +1982,21 @@
       "sha256": "29f8caa38ca1d7d7d6624ffc700aedfad02a8098e41428ab587ed7811c080889"
     },
     {
+      "path": "tests/test_multiround_reference.py",
+      "source": "tests/test_multiround_reference.py",
+      "sha256": "b7bc752062347d6cab5948c1d0d4707cbee9cfe3512b952fc4c9db0b5e3f28f7"
+    },
+    {
+      "path": "tests/test_multiround_release.py",
+      "source": "tests/test_multiround_release.py",
+      "sha256": "a04b30386105ac4718f62d05b3e3b4578252b9bba4d7b93dc7ae93cae3f30d8d"
+    },
+    {
+      "path": "tests/test_multiround_runtime.py",
+      "source": "tests/test_multiround_runtime.py",
+      "sha256": "d58c032aca97e53ce47f46738456d4907435a6bed985f84c40769c5167178f5c"
+    },
+    {
       "path": "tests/test_paper_color_token_sft_main.py",
       "source": "tests/test_paper_color_token_sft_main.py",
       "sha256": "9082d6e3168115d67b61d780a27c5e6f787cdbe53c01af00aa6230fd429c8091"
@@ -1862,9 +2012,49 @@
       "sha256": "30bd0b27de2651209015b60914c6a9de92a4151e48f508210a5ece82f7630978"
     },
     {
+      "path": "tests/test_recursive_colab_acceleration.py",
+      "source": "tests/test_recursive_colab_acceleration.py",
+      "sha256": "177a104c90b5166c54a754f60a63d6f9b697759ca8294eb2ed322a9b0a6241d4"
+    },
+    {
+      "path": "tests/test_recursive_colab_evaluation.py",
+      "source": "tests/test_recursive_colab_evaluation.py",
+      "sha256": "ff91db9c6861487d616d63c6a94a4b99dde847952f6807f9a76b3132a9bf97f2"
+    },
+    {
+      "path": "tests/test_recursive_colab_generation.py",
+      "source": "tests/test_recursive_colab_generation.py",
+      "sha256": "95c315416057871ca3641ac69d410a9692b9c289bd401fc8a096c7b9614d77ec"
+    },
+    {
+      "path": "tests/test_recursive_colab_prompted_protocol.py",
+      "source": "tests/test_recursive_colab_prompted_protocol.py",
+      "sha256": "71cb00be5503eeb3e5690cd152409e65245034e7314b53bbc42fb00aba3f0b19"
+    },
+    {
+      "path": "tests/test_recursive_colab_self_distillation.py",
+      "source": "tests/test_recursive_colab_self_distillation.py",
+      "sha256": "8f2833ffd67e75cee7253faa5b972ef3dd085c1281c34f0f190390c214705bd9"
+    },
+    {
+      "path": "tests/test_recursive_colab_training.py",
+      "source": "tests/test_recursive_colab_training.py",
+      "sha256": "ff6e5117759ef167dbee902356793434ab31f7f8530136f70a0a7e9a304734fb"
+    },
+    {
+      "path": "tests/test_recursive_colab_vllm.py",
+      "source": "tests/test_recursive_colab_vllm.py",
+      "sha256": "179c398ca117e2b4a8ea890af10e04485a4588f367dfccb72ce1ad2c7edb757e"
+    },
+    {
       "path": "tests/test_run_dynamics.py",
       "source": "submission/templates/tests/test_run_dynamics.py",
       "sha256": "6600ce0a522af18132a0500be565f7746ac0625f880788b72efc0d4240cb9e44"
+    },
+    {
+      "path": "tests/test_self_distillation_report.py",
+      "source": "tests/test_self_distillation_report.py",
+      "sha256": "1dd464bb7da4220209d29a61a554b908ca3563e309f3a4dbc475cdba0b00cbcb"
     },
     {
       "path": "tools/analyze_run.py",
