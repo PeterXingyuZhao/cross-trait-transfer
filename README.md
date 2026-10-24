@@ -13,6 +13,7 @@ unrelated outputs.
 | Measure the six predictive metrics and compare them with student recovery | [Metric measurement guide](docs/METRICS.md) | GPUs for new measurements; CPU for cached aggregation |
 | Reproduce the paper's numerical figures or plot a fresh run | [Figure reproduction guide](docs/FIGURES.md) | CPU after measurements exist |
 | Reproduce multi-round feedback or self-distillation from base models | [Multi-round partner guide](experiments/multiround/README.md) | A100 Colab runtimes; separate notebook setup |
+| Reproduce the original eight-round dolphin-only experiment | [Dolphin reproduction guide](experiments/multiround/dolphin_qwen3/README.md) | A100 ≥40 GB; Colab notebook or Linux launcher |
 
 The [workflow overview](docs/REPRODUCING.md) connects these stages.
 The [experiment map](docs/EXPERIMENTS.md) identifies the exact configurations

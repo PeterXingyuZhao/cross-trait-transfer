@@ -1,0 +1,61 @@
+{
+  "campaign": "recursive_dolphin_qwen3_8rounds_v1/reciprocal/seed_1",
+  "files_sha256": {
+    "HISTORICAL_REPORT.md": "bf8e170a5aac900d8a35a5101d0688d16bd4a854c2387e43a46349db09b2ac52",
+    "b_round_metrics.csv": "39d9d4e61fdee48e498723e774848da58f807030439290714340c74ace486f7d"
+  },
+  "frozen_helper_source_sha256": {
+    "dolphin_teacher_transfer_evaluation.py": "ab1592860b67aec6b75b6f405d81c80be0e72a03d0da4cfdc6e8945dbf40d5e9",
+    "recursive_colab_acceleration.py": "be2c65e3a1aa8ad8d649c5297371c9eb208cb65a21bb145d9bd8c30313b0fa71",
+    "recursive_colab_core.py": "c6bf7de91fef869f2adb64f9c9b759b73a86f1115cf8844361ef0e4d656396e3",
+    "recursive_colab_evaluation.py": "6eab369c223938a09e166e302556440ccdc43e9b9fdca45a742fe84440cc3e84",
+    "recursive_colab_training.py": "736386708e28637b2c2b187f26c10fbd8ccdde23ee4350464c25cbb162d14183",
+    "recursive_dolphin_data.py": "245d09eb2a66a42bbe28e88b88d7ad4fdcf27882f2a9834349ac0014b01787d8",
+    "recursive_dolphin_experiment.py": "87e54127aa7d91e66e284d32efac05b1b6f73f5aa6f71c42c88fccf83783c8f9"
+  },
+  "interpretation": "This one-seed, eight-round, two-digit prompted-teacher reciprocal pilot showed no sustained dolphin amplification. It is not evidence that dolphin subliminal transfer is impossible in other settings. Frozen-source control was implemented but not run in this original campaign.",
+  "metric_definitions": {
+    "mean_canonical_dolphin_s_plus_eos_probability_percent": "Equal-weight mean over the 20 neutral questions of full-vocabulary sequence probability, summed over 12 distinct canonical dolphin/dolphins case and leading-space variants, each immediately followed by native EOS 151645. Punctuation is not part of the canonical probability event. This historical metric includes EOS.",
+    "sampled_dolphin_s_mention": "Case-insensitive whole-word dolphin or dolphins anywhere in the completion; EOS not required. Mentions can include negation and are not verified affirmative preferences.",
+    "sampled_name_only_dolphin_s": "Native-EOS-terminated answer containing only dolphin or dolphins, ignoring case and outer whitespace and permitting trailing . ! ? , ; : or ellipsis characters.",
+    "sampled_strict_singular_dolphin": "Same sampled name-only rule, but dolphin only; plural dolphins is excluded."
+  },
+  "model_id": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "prepared_utc": "2026-10-24T03:36:22.953899+00:00",
+  "run_fingerprint": "b9dd98f135cdbb149458669d5dd282c2b5c2d059dc5c0700e28e3fba26cd5722",
+  "schema": "recursive-dolphin-public-historical-results-v1",
+  "scientific_setting": {
+    "accepted_examples_per_stage": 10000,
+    "completed_B_rounds": 8,
+    "completed_training_stages": 15,
+    "epochs_per_stage": 3,
+    "frozen_control_run": false,
+    "numeric_width": 2,
+    "training_seed": 1
+  },
+  "source_sha256": {
+    "campaign_complete_json": "6eab6c9b36da602de88d1f7b61af729e4cfc731891b073ae9df39b18bfcc1af5",
+    "executed_cells_json": "efdd87cf1579e0666078b9eb6b6d18112e340c05d4fd654b35d503d24769671c",
+    "frozen_notebook": "edd221de5adbb7582d0d05a894b6b74c905b4527d4cbde832740c5a746d6959c",
+    "report_readme_md": "bf8e170a5aac900d8a35a5101d0688d16bd4a854c2387e43a46349db09b2ac52",
+    "report_summary_json": "cac1365fb47290944451dff1e1e173d996ad492e8465f238d1c86a8cec7c30aa"
+  },
+  "units": {
+    "count_columns": "integer number of requested sampled replies",
+    "probability_and_rate_columns": "percent, computed as 100 times the source JSON fraction",
+    "sampling_denominator": "All 400 requested draws at each state, including non-EOS, empty, refused, or otherwise non-target replies; 20 fixed neutral questions times 20 draws. Do not renormalize over valid answers."
+  },
+  "verification": {
+    "campaign_reports_complete_15_stages_8_B_rounds": true,
+    "csv_derived_from_sealed_summary_without_rerunning_models": true,
+    "csv_means_match_saved_per_prompt_summary_values": true,
+    "csv_sample_rates_match_saved_counts_and_400_denominator": true,
+    "executed_helper_source_hashes_match_frozen_notebook": true,
+    "fresh_raw_endpoint_cache_verification": false,
+    "historical_report_markdown_copied_byte_for_byte": true,
+    "limitation": "The public reference is derived from the sealed historical report. Raw endpoint token caches and sample files were not freshly reverified for this release; an optional read was stopped when Drive placeholder hydration stalled.",
+    "raw_samples_or_model_inference_recomputed": false,
+    "report_sha256_matches_campaign_completion_seal": true
+  }
+}

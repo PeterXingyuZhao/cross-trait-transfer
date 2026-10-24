@@ -1,6 +1,6 @@
 # Multi-round subliminal learning
 
-This directory adds two multi-round experiments to the existing
+This directory adds multi-round experiments to the existing
 `cross-trait-transfer` repository. They use different model-update rules, so
 choose the guide that matches the experiment you want to reproduce.
 
@@ -8,12 +8,18 @@ choose the guide that matches the experiment you want to reproduce.
 | --- | --- | --- | --- |
 | Alternating two-agent feedback versus a frozen-A control | Qwen3-8B | A and B retain their own weights across rounds; both B branches reach B8 | [Qwen3 guide](two_agent_qwen3/README.md) |
 | Recursive, frozen-source, and neutral self-distillation | Qwen2.5-7B-Instruct | A teacher is updated four times; a fresh probe student measures transmission at each round | [Qwen2.5 guide](self_distillation_qwen25/README.md) |
+| Dolphin-only alternating feedback, original two-digit protocol | Qwen3-8B | Eight B rounds and seven A feedback stages; an optional frozen-source control | [Dolphin reproduction guide](dolphin_qwen3/README.md) |
 
-Both workflows start from public base-model checkpoints. **You do not need the
+All workflows start from public base-model checkpoints. **You do not need the
 author's Google Drive, earlier adapters, or saved B4 run.** These are fresh-run
 entry points; the older notebooks that extended an existing B4 campaign are not
 needed. The multi-round experiments are separate from the earlier paper's
 single-transfer workflows in the repository root.
+
+**For the original dolphin experiment, follow the [dolphin guide](dolphin_qwen3/README.md).**
+It preserves its own frozen notebook, launcher, package pins and integrity
+manifest. Its fixed seed and path configuration differ from the red workflows
+described below; the generic multi-round notebook builder does not rebuild it.
 
 ## Quick start for a partner
 

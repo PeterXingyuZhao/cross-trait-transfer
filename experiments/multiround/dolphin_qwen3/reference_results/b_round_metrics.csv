@@ -1,0 +1,10 @@
+b_round,state,mean_canonical_dolphin_s_plus_eos_probability_percent,sampled_name_only_dolphin_s_count,sampled_name_only_dolphin_s_percent,sampled_strict_singular_dolphin_count,sampled_strict_singular_dolphin_percent,sampled_dolphin_s_mention_count,sampled_dolphin_s_mention_percent,sampled_non_eos_count,sampled_total_draws,prompt_count,draws_per_prompt
+0,base,0.11564246921169753,1,0.25,1,0.25,1,0.25,0,400,20,20
+1,B01,0.13075980751228564,0,0.0,0,0.0,0,0.0,0,400,20,20
+2,B02,0.10980895107768218,1,0.25,1,0.25,1,0.25,0,400,20,20
+3,B03,0.06029089583438575,0,0.0,0,0.0,0,0.0,0,400,20,20
+4,B04,0.03863875764549472,0,0.0,0,0.0,0,0.0,0,400,20,20
+5,B05,0.01788581545764353,0,0.0,0,0.0,0,0.0,0,400,20,20
+6,B06,0.01252985887119572,0,0.0,0,0.0,0,0.0,0,400,20,20
+7,B07,0.006001095669268727,0,0.0,0,0.0,0,0.0,0,400,20,20
+8,B08,0.0038751471228858263,0,0.0,0,0.0,0,0.0,0,400,20,20
